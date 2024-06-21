@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="CName">
+          <DataField>CName</DataField>
+        </Field>
+        <Field Name="CPic">
+          <DataField>CPic</DataField>
+        </Field>
+        <Field Name="CAddress2">
+          <DataField>CAddress2</DataField>
+        </Field>
+        <Field Name="CCity">
+          <DataField>CCity</DataField>
+        </Field>
+        <Field Name="CAddress">
+          <DataField>CAddress</DataField>
+        </Field>
+        <Field Name="RegionName">
+          <DataField>RegionName</DataField>
+        </Field>
+        <Field Name="DocumentType_CommunicationPlanHeader">
+          <DataField>DocumentType_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="DocumentNo_CommunicationPlanHeader">
+          <DataField>DocumentNo_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="ProjectID_CommunicationPlanHeader">
+          <DataField>ProjectID_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="WorkExecutionPlanID_CommunicationPlanHeader">
+          <DataField>WorkExecutionPlanID_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="Description_CommunicationPlanHeader">
+          <DataField>Description_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="PrimaryMIssion_CommunicationPlanHeader">
+          <DataField>PrimaryMIssion_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="ProjectName_CommunicationPlanHeader">
+          <DataField>ProjectName_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="ProjectStartDate_CommunicationPlanHeader">
+          <DataField>ProjectStartDate_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="ProjectEndDate_CommunicationPlanHeader">
+          <DataField>ProjectEndDate_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="NoOfPlannedMeetings_CommunicationPlanHeader">
+          <DataField>NoOfPlannedMeetings_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="NoOfMeetingsHeld_CommunicationPlanHeader">
+          <DataField>NoOfMeetingsHeld_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="NoOfProjectReport_CommunicationPlanHeader">
+          <DataField>NoOfProjectReport_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="Blocked_CommunicationPlanHeader">
+          <DataField>Blocked_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="Status_CommunicationPlanHeader">
+          <DataField>Status_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="CreatedBy_CommunicationPlanHeader">
+          <DataField>CreatedBy_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="CreatedDateTime_CommunicationPlanHeader">
+          <DataField>CreatedDateTime_CommunicationPlanHeader</DataField>
+        </Field>
+        <Field Name="PreparedBy">
+          <DataField>PreparedBy</DataField>
+        </Field>
+        <Field Name="DatePrepared">
+          <DataField>DatePrepared</DataField>
+        </Field>
+        <Field Name="PreparedBy_Signature">
+          <DataField>PreparedBy_Signature</DataField>
+        </Field>
+        <Field Name="ExaminedBy">
+          <DataField>ExaminedBy</DataField>
+        </Field>
+        <Field Name="DateApproved">
+          <DataField>DateApproved</DataField>
+        </Field>
+        <Field Name="ExaminedBy_Signature">
+          <DataField>ExaminedBy_Signature</DataField>
+        </Field>
+        <Field Name="VBC">
+          <DataField>VBC</DataField>
+        </Field>
+        <Field Name="VBCDate">
+          <DataField>VBCDate</DataField>
+        </Field>
+        <Field Name="VBC_Signature">
+          <DataField>VBC_Signature</DataField>
+        </Field>
+        <Field Name="Authorizer">
+          <DataField>Authorizer</DataField>
+        </Field>
+        <Field Name="DateAuthorized">
+          <DataField>DateAuthorized</DataField>
+        </Field>
+        <Field Name="Authorizer_Signature">
+          <DataField>Authorizer_Signature</DataField>
+        </Field>
+        <Field Name="ReportForNavId_60">
+          <DataField>ReportForNavId_60</DataField>
+        </Field>
+        <Field Name="DocumentType_CommunicationPlanObjective">
+          <DataField>DocumentType_CommunicationPlanObjective</DataField>
+        </Field>
+        <Field Name="DocumentNo_CommunicationPlanObjective">
+          <DataField>DocumentNo_CommunicationPlanObjective</DataField>
+        </Field>
+        <Field Name="ObjectiveID_CommunicationPlanObjective">
+          <DataField>ObjectiveID_CommunicationPlanObjective</DataField>
+        </Field>
+        <Field Name="Description_CommunicationPlanObjective">
+          <DataField>Description_CommunicationPlanObjective</DataField>
+        </Field>
+        <Field Name="ReportForNavId_67">
+          <DataField>ReportForNavId_67</DataField>
+        </Field>
+        <Field Name="DocumentType_CommunicationPlanLine">
+          <DataField>DocumentType_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="DocumentNo_CommunicationPlanLine">
+          <DataField>DocumentNo_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="Category_CommunicationPlanLine">
+          <DataField>Category_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="LineNo_CommunicationPlanLine">
+          <DataField>LineNo_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="CommunicationType_CommunicationPlanLine">
+          <DataField>CommunicationType_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="Description_CommunicationPlanLine">
+          <DataField>Description_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="Frequency_CommunicationPlanLine">
+          <DataField>Frequency_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="DefaultMeetingMedium_CommunicationPlanLine">
+          <DataField>DefaultMeetingMedium_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="PrimaryOwner_CommunicationPlanLine">
+          <DataField>PrimaryOwner_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="FirstMeetingDate_CommunicationPlanLine">
+          <DataField>FirstMeetingDate_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="NoofTargetStakeholders_CommunicationPlanLine">
+          <DataField>NoofTargetStakeholders_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="NoofPlannedMeetings_CommunicationPlanLine">
+          <DataField>NoofPlannedMeetings_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="NoofMeetingsHeld_CommunicationPlanLine">
+          <DataField>NoofMeetingsHeld_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="DefaultReportMedium_CommunicationPlanLine">
+          <DataField>DefaultReportMedium_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="NoofProjectReports_CommunicationPlanLine">
+          <DataField>NoofProjectReports_CommunicationPlanLine</DataField>
+        </Field>
+        <Field Name="ReportForNavId_18">
+          <DataField>ReportForNavId_18</DataField>
+        </Field>
+        <Field Name="DocumentType_CommPlanMeetingSchedule">
+          <DataField>DocumentType_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="DocumentNo_CommPlanMeetingSchedule">
+          <DataField>DocumentNo_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="Category_CommPlanMeetingSchedule">
+          <DataField>Category_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="LineNo_CommPlanMeetingSchedule">
+          <DataField>LineNo_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="MeetingID_CommPlanMeetingSchedule">
+          <DataField>MeetingID_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="CommunicationType_CommPlanMeetingSchedule">
+          <DataField>CommunicationType_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="Description_CommPlanMeetingSchedule">
+          <DataField>Description_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="Frequency_CommPlanMeetingSchedule">
+          <DataField>Frequency_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="MeetingMedium_CommPlanMeetingSchedule">
+          <DataField>MeetingMedium_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="PrimaryOwner_CommPlanMeetingSchedule">
+          <DataField>PrimaryOwner_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="PlannedMeetingDate_CommPlanMeetingSchedule">
+          <DataField>PlannedMeetingDate_CommPlanMeetingSchedule</DataField>
+        </Field>
+        <Field Name="ReportForNavId_91">
+          <DataField>ReportForNavId_91</DataField>
+        </Field>
+        <Field Name="Category_Reports">
+          <DataField>Category_Reports</DataField>
+        </Field>
+        <Field Name="CommunicationType_Reports">
+          <DataField>CommunicationType_Reports</DataField>
+        </Field>
+        <Field Name="Description_Reports">
+          <DataField>Description_Reports</DataField>
+        </Field>
+        <Field Name="Frequency_Reports">
+          <DataField>Frequency_Reports</DataField>
+        </Field>
+        <Field Name="DefaultReportMedium_Reports">
+          <DataField>DefaultReportMedium_Reports</DataField>
+        </Field>
+        <Field Name="NoofProjectReports_Reports">
+          <DataField>NoofProjectReports_Reports</DataField>
+        </Field>
+        <Field Name="DefaultInitiatorCode_Reports">
+          <DataField>DefaultInitiatorCode_Reports</DataField>
+        </Field>
+        <Field Name="InitiatorDesignation_Reports">
+          <DataField>InitiatorDesignation_Reports</DataField>
+        </Field>
+        <Field Name="PlannedSubmissionDate_Reports">
+          <DataField>PlannedSubmissionDate_Reports</DataField>
+        </Field>
+        <Field Name="ActualSubmissionDate_Reports">
+          <DataField>ActualSubmissionDate_Reports</DataField>
+        </Field>
+        <Field Name="SubmissionPeriod_Reports">
+          <DataField>SubmissionPeriod_Reports</DataField>
+        </Field>
+        <Field Name="PrimaryOwner_Reports">
+          <DataField>PrimaryOwner_Reports</DataField>
+        </Field>
+        <Field Name="ReportForNavId_94">
+          <DataField>ReportForNavId_94</DataField>
+        </Field>
+        <Field Name="CommunicationType_Correspondences">
+          <DataField>CommunicationType_Correspondences</DataField>
+        </Field>
+        <Field Name="Description_Correspondences">
+          <DataField>Description_Correspondences</DataField>
+        </Field>
+        <Field Name="Frequency_Correspondences">
+          <DataField>Frequency_Correspondences</DataField>
+        </Field>
+        <Field Name="PrimaryOwner_Correspondences">
+          <DataField>PrimaryOwner_Correspondences</DataField>
+        </Field>
+        <Field Name="InitiatorDesignation_Correspondences">
+          <DataField>InitiatorDesignation_Correspondences</DataField>
+        </Field>
+        <Field Name="NoofCorrespondences_Correspondences">
+          <DataField>NoofCorrespondences_Correspondences</DataField>
+        </Field>
+        <Field Name="ReportForNavId_30">
+          <DataField>ReportForNavId_30</DataField>
+        </Field>
+        <Field Name="ProjectID_InternalProjectResource">
+          <DataField>ProjectID_InternalProjectResource</DataField>
+        </Field>
+        <Field Name="ResourceNo_InternalProjectResource">
+          <DataField>ResourceNo_InternalProjectResource</DataField>
+        </Field>
+        <Field Name="Name_InternalProjectResource">
+          <DataField>Name_InternalProjectResource</DataField>
+        </Field>
+        <Field Name="Email_InternalProjectResource">
+          <DataField>Email_InternalProjectResource</DataField>
+        </Field>
+        <Field Name="RoleCode_InternalProjectResource">
+          <DataField>RoleCode_InternalProjectResource</DataField>
+        </Field>
+        <Field Name="Designation_InternalProjectResource">
+          <DataField>Designation_InternalProjectResource</DataField>
+        </Field>
+        <Field Name="StaffCategory_InternalProjectResource">
+          <DataField>StaffCategory_InternalProjectResource</DataField>
+        </Field>
+        <Field Name="ReportForNavId_31">
+          <DataField>ReportForNavId_31</DataField>
+        </Field>
+        <Field Name="DocumentNo_WEPContractorTeam">
+          <DataField>DocumentNo_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="ContractorNo_WEPContractorTeam">
+          <DataField>ContractorNo_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="ContractorStaffNo_WEPContractorTeam">
+          <DataField>ContractorStaffNo_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="Name_WEPContractorTeam">
+          <DataField>Name_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="Email_WEPContractorTeam">
+          <DataField>Email_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="Telephone_WEPContractorTeam">
+          <DataField>Telephone_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="RoleCode_WEPContractorTeam">
+          <DataField>RoleCode_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="Designation_WEPContractorTeam">
+          <DataField>Designation_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="StaffCategory_WEPContractorTeam">
+          <DataField>StaffCategory_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="EffectiveDate_WEPContractorTeam">
+          <DataField>EffectiveDate_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="ExpiryDate_WEPContractorTeam">
+          <DataField>ExpiryDate_WEPContractorTeam</DataField>
+        </Field>
+        <Field Name="ReportForNavId_32">
+          <DataField>ReportForNavId_32</DataField>
+        </Field>
+        <Field Name="DocumentType_PurchaseContractSignatory">
+          <DataField>DocumentType_PurchaseContractSignatory</DataField>
+        </Field>
+        <Field Name="No_PurchaseContractSignatory">
+          <DataField>No_PurchaseContractSignatory</DataField>
+        </Field>
+        <Field Name="EntryNo_PurchaseContractSignatory">
+          <DataField>EntryNo_PurchaseContractSignatory</DataField>
+        </Field>
+        <Field Name="SignatoryType_PurchaseContractSignatory">
+          <DataField>SignatoryType_PurchaseContractSignatory</DataField>
+        </Field>
+        <Field Name="RepresentativeName_PurchaseContractSignatory">
+          <DataField>RepresentativeName_PurchaseContractSignatory</DataField>
+        </Field>
+        <Field Name="ContractSigningRole_PurchaseContractSignatory">
+          <DataField>ContractSigningRole_PurchaseContractSignatory</DataField>
+        </Field>
+        <Field Name="Executedonbehalfof_PurchaseContractSignatory">
+          <DataField>Executedonbehalfof_PurchaseContractSignatory</DataField>
+        </Field>
+        <Field Name="Email_PurchaseContractSignatory">
+          <DataField>Email_PurchaseContractSignatory</DataField>
+        </Field>
+        <Field Name="ExecutionDate_PurchaseContractSignatory">
+          <DataField>ExecutionDate_PurchaseContractSignatory</DataField>
+        </Field>
+        <Field Name="ReportForNavId_87">
+          <DataField>ReportForNavId_87</DataField>
+        </Field>
+        <Field Name="Category_CommPlanLineStakeholder">
+          <DataField>Category_CommPlanLineStakeholder</DataField>
+        </Field>
+        <Field Name="StakeholderID_CommPlanLineStakeholder">
+          <DataField>StakeholderID_CommPlanLineStakeholder</DataField>
+        </Field>
+        <Field Name="Description_CommPlanLineStakeholder">
+          <DataField>Description_CommPlanLineStakeholder</DataField>
+        </Field>
+        <Field Name="Name_CommPlanLineStakeholder">
+          <DataField>Name_CommPlanLineStakeholder</DataField>
+        </Field>
+        <Field Name="EmailAddress_CommPlanLineStakeholder">
+          <DataField>EmailAddress_CommPlanLineStakeholder</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

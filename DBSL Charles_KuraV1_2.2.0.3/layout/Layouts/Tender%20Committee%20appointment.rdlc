@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="logo">
+          <DataField>logo</DataField>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+        </Field>
+        <Field Name="acT">
+          <DataField>acT</DataField>
+        </Field>
+        <Field Name="DocumentNo_IFSTenderCommittee">
+          <DataField>DocumentNo_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="CommitteeType_IFSTenderCommittee">
+          <DataField>CommitteeType_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="Description_IFSTenderCommittee">
+          <DataField>Description_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="AppointmentEffectiveDate_IFSTenderCommittee">
+          <DataField>AppointmentEffectiveDate_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="AppointingAuthority_IFSTenderCommittee">
+          <DataField>AppointingAuthority_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="Location_IFSTenderCommittee">
+          <DataField>Location_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="OpeningTime_IFSTenderCommittee">
+          <DataField>OpeningTime_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="TenderName_IFSTenderCommittee">
+          <DataField>TenderName_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="ApprovalStatus_IFSTenderCommittee">
+          <DataField>ApprovalStatus_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="PrimaryRegion_IFSTenderCommittee">
+          <DataField>PrimaryRegion_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="PrimaryDirectorate_IFSTenderCommittee">
+          <DataField>PrimaryDirectorate_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="PrimaryDepartment_IFSTenderCommittee">
+          <DataField>PrimaryDepartment_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="Blocked_IFSTenderCommittee">
+          <DataField>Blocked_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="NoSeries_IFSTenderCommittee">
+          <DataField>NoSeries_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="CreatedBy_IFSTenderCommittee">
+          <DataField>CreatedBy_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="CreatedDate_IFSTenderCommittee">
+          <DataField>CreatedDate_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="CreatedTime_IFSTenderCommittee">
+          <DataField>CreatedTime_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="IFSCode_IFSTenderCommittee">
+          <DataField>IFSCode_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="DocumentDate_IFSTenderCommittee">
+          <DataField>DocumentDate_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="DocumentStatus_IFSTenderCommittee">
+          <DataField>DocumentStatus_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="ContractNo_IFSTenderCommittee">
+          <DataField>ContractNo_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="ExternalDocumentNo_IFSTenderCommittee">
+          <DataField>ExternalDocumentNo_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="RaisedBy_IFSTenderCommittee">
+          <DataField>RaisedBy_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="Name_IFSTenderCommittee">
+          <DataField>Name_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="StaffId_IFSTenderCommittee">
+          <DataField>StaffId_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="Designation_IFSTenderCommittee">
+          <DataField>Designation_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="MinRequiredNoofMembers_IFSTenderCommittee">
+          <DataField>MinRequiredNoofMembers_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="MinRequiredNoofMembers_IFSTenderCommitteeFormat">
+          <DataField>MinRequiredNoofMembers_IFSTenderCommitteeFormat</DataField>
+        </Field>
+        <Field Name="ActualNoofCommitteeMemb_IFSTenderCommittee">
+          <DataField>ActualNoofCommitteeMemb_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="ReferenceNumber_IFSTenderCommittee">
+          <DataField>ReferenceNumber_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="IFSDates">
+          <DataField>IFSDates</DataField>
+        </Field>
+        <Field Name="IFSTime">
+          <DataField>IFSTime</DataField>
+        </Field>
+        <Field Name="PreparedBy">
+          <DataField>PreparedBy</DataField>
+        </Field>
+        <Field Name="DatePrepared">
+          <DataField>DatePrepared</DataField>
+        </Field>
+        <Field Name="PreparedBy_Signature">
+          <DataField>PreparedBy_Signature</DataField>
+        </Field>
+        <Field Name="ExaminedBy">
+          <DataField>ExaminedBy</DataField>
+        </Field>
+        <Field Name="DateExamined">
+          <DataField>DateExamined</DataField>
+        </Field>
+        <Field Name="ExaminedBy_Signature">
+          <DataField>ExaminedBy_Signature</DataField>
+        </Field>
+        <Field Name="VBC">
+          <DataField>VBC</DataField>
+        </Field>
+        <Field Name="VBCDate">
+          <DataField>VBCDate</DataField>
+        </Field>
+        <Field Name="VBC_Signature">
+          <DataField>VBC_Signature</DataField>
+        </Field>
+        <Field Name="Authorizer">
+          <DataField>Authorizer</DataField>
+        </Field>
+        <Field Name="DateAuthorized">
+          <DataField>DateAuthorized</DataField>
+        </Field>
+        <Field Name="Authorizer_Signature">
+          <DataField>Authorizer_Signature</DataField>
+        </Field>
+        <Field Name="Chairman">
+          <DataField>Chairman</DataField>
+        </Field>
+        <Field Name="ReportForNavId_28">
+          <DataField>ReportForNavId_28</DataField>
+        </Field>
+        <Field Name="DocumentNo_IFSTenderCommitteeMember">
+          <DataField>DocumentNo_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="CommitteeType_IFSTenderCommitteeMember">
+          <DataField>CommitteeType_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="LineNo_IFSTenderCommitteeMember">
+          <DataField>LineNo_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="Role_IFSTenderCommitteeMember">
+          <DataField>Role_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="MemberNo_IFSTenderCommitteeMember">
+          <DataField>MemberNo_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="MemberName_IFSTenderCommitteeMember">
+          <DataField>MemberName_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="Designation_IFSTenderCommitteeMember">
+          <DataField>Designation_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="IDPassportNo_IFSTenderCommitteeMember">
+          <DataField>IDPassportNo_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="TaxRegistrationPINNo_IFSTenderCommitteeMember">
+          <DataField>TaxRegistrationPINNo_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="MemberEmail_IFSTenderCommitteeMember">
+          <DataField>MemberEmail_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="TelephoneNo_IFSTenderCommitteeMember">
+          <DataField>TelephoneNo_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="StaffNo_IFSTenderCommitteeMember">
+          <DataField>StaffNo_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="IFSCode_IFSTenderCommitteeMember">
+          <DataField>IFSCode_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="NotifiedonEmail_IFSTenderCommitteeMember">
+          <DataField>NotifiedonEmail_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="DateTimeNotified_IFSTenderCommitteeMember">
+          <DataField>DateTimeNotified_IFSTenderCommitteeMember</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

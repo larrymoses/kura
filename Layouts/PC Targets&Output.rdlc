@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_31">
+          <DataField>ReportForNavId_31</DataField>
+        </Field>
+        <Field Name="CName">
+          <DataField>CName</DataField>
+        </Field>
+        <Field Name="CAddres">
+          <DataField>CAddres</DataField>
+        </Field>
+        <Field Name="CAddress2">
+          <DataField>CAddress2</DataField>
+        </Field>
+        <Field Name="CCity">
+          <DataField>CCity</DataField>
+        </Field>
+        <Field Name="CPic">
+          <DataField>CPic</DataField>
+        </Field>
+        <Field Name="CPhoneNo">
+          <DataField>CPhoneNo</DataField>
+        </Field>
+        <Field Name="CEmail">
+          <DataField>CEmail</DataField>
+        </Field>
+        <Field Name="CWebsite">
+          <DataField>CWebsite</DataField>
+        </Field>
+        <Field Name="CurrentDate">
+          <DataField>CurrentDate</DataField>
+        </Field>
+        <Field Name="DocumentNo_RMSPCTargetHeader">
+          <DataField>DocumentNo_RMSPCTargetHeader</DataField>
+        </Field>
+        <Field Name="DocumentDate_RMSPCTargetHeader">
+          <DataField>DocumentDate_RMSPCTargetHeader</DataField>
+        </Field>
+        <Field Name="FinancialYearCode_RMSPCTargetHeader">
+          <DataField>FinancialYearCode_RMSPCTargetHeader</DataField>
+        </Field>
+        <Field Name="ProjectType_RMSPCTargetHeader">
+          <DataField>ProjectType_RMSPCTargetHeader</DataField>
+        </Field>
+        <Field Name="CreatedDateTime_RMSPCTargetHeader">
+          <DataField>CreatedDateTime_RMSPCTargetHeader</DataField>
+        </Field>
+        <Field Name="CreatedBy_RMSPCTargetHeader">
+          <DataField>CreatedBy_RMSPCTargetHeader</DataField>
+        </Field>
+        <Field Name="Blocked_RMSPCTargetHeader">
+          <DataField>Blocked_RMSPCTargetHeader</DataField>
+        </Field>
+        <Field Name="NoSeries_RMSPCTargetHeader">
+          <DataField>NoSeries_RMSPCTargetHeader</DataField>
+        </Field>
+        <Field Name="ReportForNavId_14">
+          <DataField>ReportForNavId_14</DataField>
+        </Field>
+        <Field Name="RegionName">
+          <DataField>RegionName</DataField>
+        </Field>
+        <Field Name="ConstituencyName">
+          <DataField>ConstituencyName</DataField>
+        </Field>
+        <Field Name="DocumentNo_RMSPCTargetLine">
+          <DataField>DocumentNo_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="ProjectType_RMSPCTargetLine">
+          <DataField>ProjectType_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="LineNo_RMSPCTargetLine">
+          <DataField>LineNo_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="ProjectCode_RMSPCTargetLine">
+          <DataField>ProjectCode_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="ProjectName_RMSPCTargetLine">
+          <DataField>ProjectName_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="WorkplannedLength_RMSPCTargetLine">
+          <DataField>WorkplannedLength_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="WorkplannedLength_RMSPCTargetLineFormat">
+          <DataField>WorkplannedLength_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="Progress_RMSPCTargetLine">
+          <DataField>Progress_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="Progress_RMSPCTargetLineFormat">
+          <DataField>Progress_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="FinancialYearTarget_RMSPCTargetLine">
+          <DataField>FinancialYearTarget_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="FinancialYearTarget_RMSPCTargetLineFormat">
+          <DataField>FinancialYearTarget_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="Q1Target_RMSPCTargetLine">
+          <DataField>Q1Target_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="Q1Target_RMSPCTargetLineFormat">
+          <DataField>Q1Target_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="Q2Target_RMSPCTargetLine">
+          <DataField>Q2Target_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="Q2Target_RMSPCTargetLineFormat">
+          <DataField>Q2Target_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="Q3Target_RMSPCTargetLine">
+          <DataField>Q3Target_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="Q3Target_RMSPCTargetLineFormat">
+          <DataField>Q3Target_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="Q4Target_RMSPCTargetLine">
+          <DataField>Q4Target_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="Q4Target_RMSPCTargetLineFormat">
+          <DataField>Q4Target_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="Q1Output_RMSPCTargetLine">
+          <DataField>Q1Output_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="Q1Output_RMSPCTargetLineFormat">
+          <DataField>Q1Output_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="Q2Output_RMSPCTargetLine">
+          <DataField>Q2Output_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="Q2Output_RMSPCTargetLineFormat">
+          <DataField>Q2Output_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="Q3Output_RMSPCTargetLine">
+          <DataField>Q3Output_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="Q3Output_RMSPCTargetLineFormat">
+          <DataField>Q3Output_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="Q4Output_RMSPCTargetLine">
+          <DataField>Q4Output_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="Q4Output_RMSPCTargetLineFormat">
+          <DataField>Q4Output_RMSPCTargetLineFormat</DataField>
+        </Field>
+        <Field Name="FinancialYearOutput_RMSPCTargetLine">
+          <DataField>FinancialYearOutput_RMSPCTargetLine</DataField>
+        </Field>
+        <Field Name="FinancialYearOutput_RMSPCTargetLineFormat">
+          <DataField>FinancialYearOutput_RMSPCTargetLineFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

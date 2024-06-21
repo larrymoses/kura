@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition"
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>eab3e3d0-fc47-4812-b901-70ae40a8d4bb</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="CName">
+          <DataField>CName</DataField>
+        </Field>
+        <Field Name="CAddres">
+          <DataField>CAddres</DataField>
+        </Field>
+        <Field Name="CAddress2">
+          <DataField>CAddress2</DataField>
+        </Field>
+        <Field Name="CCity">
+          <DataField>CCity</DataField>
+        </Field>
+        <Field Name="CPic">
+          <DataField>CPic</DataField>
+        </Field>
+        <Field Name="PreparedBy">
+          <DataField>PreparedBy</DataField>
+        </Field>
+        <Field Name="DatePrepared">
+          <DataField>DatePrepared</DataField>
+        </Field>
+        <Field Name="PreparedBy_Signature">
+          <DataField>PreparedBy_Signature</DataField>
+        </Field>
+        <Field Name="ExaminedBy">
+          <DataField>ExaminedBy</DataField>
+        </Field>
+        <Field Name="DateApproved">
+          <DataField>DateApproved</DataField>
+        </Field>
+        <Field Name="ExaminedBy_Signature">
+          <DataField>ExaminedBy_Signature</DataField>
+        </Field>
+        <Field Name="VBC">
+          <DataField>VBC</DataField>
+        </Field>
+        <Field Name="VBCDate">
+          <DataField>VBCDate</DataField>
+        </Field>
+        <Field Name="VBC_Signature">
+          <DataField>VBC_Signature</DataField>
+        </Field>
+        <Field Name="Authorizer">
+          <DataField>Authorizer</DataField>
+        </Field>
+        <Field Name="DateAuthorized">
+          <DataField>DateAuthorized</DataField>
+        </Field>
+        <Field Name="Authorizer_Signature">
+          <DataField>Authorizer_Signature</DataField>
+        </Field>
+        <Field Name="DocumentType_MeasurementPaymentHeader">
+          <DataField>DocumentType_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="AdvanceRequestNo_MeasurementPaymentHeader">
+          <DataField>AdvanceRequestNo_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="DocumentNo_MeasurementPaymentHeader">
+          <DataField>DocumentNo_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="PaymentCertificateType_MeasurementPaymentHeader">
+          <DataField>PaymentCertificateType_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="DocumentDate_MeasurementPaymentHeader">
+          <DataField>DocumentDate_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ProjectID_MeasurementPaymentHeader">
+          <DataField>ProjectID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="Description_MeasurementPaymentHeader">
+          <DataField>Description_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="WorksStartChainage_MeasurementPaymentHeader">
+          <DataField>WorksStartChainage_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="WorksStartChainage_MeasurementPaymentHeaderFormat">
+          <DataField>WorksStartChainage_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="WorksEndChainage_MeasurementPaymentHeader">
+          <DataField>WorksEndChainage_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="WorksEndChainage_MeasurementPaymentHeaderFormat">
+          <DataField>WorksEndChainage_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="ContractorName_MeasurementPaymentHeader">
+          <DataField>ContractorName_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="Status_MeasurementPaymentHeader">
+          <DataField>Status_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="Posted_MeasurementPaymentHeader">
+          <DataField>Posted_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="PostedBy_MeasurementPaymentHeader">
+          <DataField>PostedBy_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="Reversed_MeasurementPaymentHeader">
+          <DataField>Reversed_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ReasonForReversal_MeasurementPaymentHeader">
+          <DataField>ReasonForReversal_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ReversedBy_MeasurementPaymentHeader">
+          <DataField>ReversedBy_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="CreatedBy_MeasurementPaymentHeader">
+          <DataField>CreatedBy_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="CreatedDateTime_MeasurementPaymentHeader">
+          <DataField>CreatedDateTime_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ProjectName_MeasurementPaymentHeader">
+          <DataField>ProjectName_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ProjectStartDate_MeasurementPaymentHeader">
+          <DataField>ProjectStartDate_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ProjectEndDate_MeasurementPaymentHeader">
+          <DataField>ProjectEndDate_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ProjectEngineerNo_MeasurementPaymentHeader">
+          <DataField>ProjectEngineerNo_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ProjectManager_MeasurementPaymentHeader">
+          <DataField>ProjectManager_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ProjectEngineerName_MeasurementPaymentHeader">
+          <DataField>ProjectEngineerName_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="EngineerRepresentativeNo_MeasurementPaymentHeader">
+          <DataField>EngineerRepresentativeNo_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="EngineerRepresentativeName_MeasurementPaymentHeader">
+          <DataField>EngineerRepresentativeName_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="RegionID_MeasurementPaymentHeader">
+          <DataField>RegionID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="DirectorateID_MeasurementPaymentHeader">
+          <DataField>DirectorateID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="DepartmentID_MeasurementPaymentHeader">
+          <DataField>DepartmentID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ConstituencyID_MeasurementPaymentHeader">
+          <DataField>ConstituencyID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="CountyID_MeasurementPaymentHeader">
+          <DataField>CountyID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="FundingAgencyID_MeasurementPaymentHeader">
+          <DataField>FundingAgencyID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="FunderName_MeasurementPaymentHeader">
+          <DataField>FunderName_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="RoadCode_MeasurementPaymentHeader">
+          <DataField>RoadCode_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="RoadSectionNo_MeasurementPaymentHeader">
+          <DataField>RoadSectionNo_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="SectionName_MeasurementPaymentHeader">
+          <DataField>SectionName_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="SectionStartChainage_MeasurementPaymentHeader">
+          <DataField>SectionStartChainage_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="SectionStartChainage_MeasurementPaymentHeaderFormat">
+          <DataField>SectionStartChainage_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="SectionEndChainage_MeasurementPaymentHeader">
+          <DataField>SectionEndChainage_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="SectionEndChainage_MeasurementPaymentHeaderFormat">
+          <DataField>SectionEndChainage_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="TotalSectionLengthKMs_MeasurementPaymentHeader">
+          <DataField>TotalSectionLengthKMs_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="TotalSectionLengthKMs_MeasurementPaymentHeaderFormat">
+          <DataField>TotalSectionLengthKMs_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="ContractorNo_MeasurementPaymentHeader">
+          <DataField>ContractorNo_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="FromDate_MeasurementPaymentHeader">
+          <DataField>FromDate_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ToDate_MeasurementPaymentHeader">
+          <DataField>ToDate_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ContractID_MeasurementPaymentHeader">
+          <DataField>ContractID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ContractPaymentPlan_MeasurementPaymentHeader">
+          <DataField>ContractPaymentPlan_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="TotalContractSum_MeasurementPaymentHeader">
+          <DataField>TotalContractSum_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="TotalContractSum_MeasurementPaymentHeaderFormat">
+          <DataField>TotalContractSum_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="AdvancePaymentSecurityID_MeasurementPaymentHeader">
+          <DataField>AdvancePaymentSecurityID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="AdvancePmtGuaExpiryDate_MeasurementPaymentHeader">
+          <DataField>AdvancePmtGuaExpiryDate_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="PerformanceSecurityID_MeasurementPaymentHeader">
+          <DataField>PerformanceSecurityID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="PerformanceSecExpiryDate_MeasurementPaymentHeader">
+          <DataField>PerformanceSecExpiryDate_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="AdvancePaymentAmountLCY_MeasurementPaymentHeader">
+          <DataField>AdvancePaymentAmountLCY_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="AdvancePaymentAmountLCY_MeasurementPaymentHeaderFormat">
+          <DataField>AdvancePaymentAmountLCY_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="AdvancePaymentSettledLCY_MeasurementPaymentHeader">
+          <DataField>AdvancePaymentSettledLCY_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="AdvancePaymentSettledLCY_MeasurementPaymentHeaderFormat">
+          <DataField>AdvancePaymentSettledLCY_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="RequestedAdvancePaymentLCY_MeasurementPaymentHeader">
+          <DataField>RequestedAdvancePaymentLCY_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="RequestedAdvancePaymentLCY_MeasurementPaymentHeaderFormat">
+          <DataField>RequestedAdvancePaymentLCY_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="AdvancePaymentGLAccount_MeasurementPaymentHeader">
+          <DataField>AdvancePaymentGLAccount_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="GrossWorksValuation_MeasurementPaymentHeader">
+          <DataField>GrossWorksValuation_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="GrossWorksValuation_MeasurementPaymentHeaderFormat">
+          <DataField>GrossWorksValuation_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="Retention_MeasurementPaymentHeader">
+          <DataField>Retention_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="Retention_MeasurementPaymentHeaderFormat">
+          <DataField>Retention_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="LessRetentionAmount_MeasurementPaymentHeader">
+          <DataField>LessRetentionAmount_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="LessRetentionAmount_MeasurementPaymentHeaderFormat">
+          <DataField>LessRetentionAmount_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="LessAdvancePayment_MeasurementPaymentHeader">
+          <DataField>LessAdvancePayment_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="LessAdvancePayment_MeasurementPaymentHeaderFormat">
+          <DataField>LessAdvancePayment_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="ContractSum_MeasurementPaymentHeader">
+          <DataField>ContractSum_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ContractSum_MeasurementPaymentHeaderFormat">
+          <DataField>ContractSum_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="ThisCertificateAmount_MeasurementPaymentHeader">
+          <DataField>ThisCertificateAmount_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ThisCertificateAmount_MeasurementPaymentHeaderFormat">
+          <DataField>ThisCertificateAmount_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="PreviousCertificateAmount_MeasurementPaymentHeader">
+          <DataField>PreviousCertificateAmount_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="PreviousCertificateAmount_MeasurementPaymentHeaderFormat">
+          <DataField>PreviousCertificateAmount_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="AdvanceCustomerNo_MeasurementPaymentHeader">
+          <DataField>AdvanceCustomerNo_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="AdvanceCustomerName_MeasurementPaymentHeader">
+          <DataField>AdvanceCustomerName_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ProjectNo_MeasurementPaymentHeader">
+          <DataField>ProjectNo_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="FundingSourceID_MeasurementPaymentHeader">
+          <DataField>FundingSourceID_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ContractorRequestCertAmount_MeasurementPaymentHeader">
+          <DataField>ContractorRequestCertAmount_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ContractorRequestCertAmount_MeasurementPaymentHeaderFormat">
+          <DataField>ContractorRequestCertAmount_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="ProjectLocation_MeasurementPaymentHeader">
+          <DataField>ProjectLocation_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="CloseOutJustification_MeasurementPaymentHeader">
+          <DataField>CloseOutJustification_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="PrimaryContractorRep_MeasurementPaymentHeader">
+          <DataField>PrimaryContractorRep_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ContractorRepresentativeRole_MeasurementPaymentHeader">
+          <DataField>ContractorRepresentativeRole_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ContractorRepEmail_MeasurementPaymentHeader">
+          <DataField>ContractorRepEmail_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="WorkExecutionPlan1D_MeasurementPaymentHeader">
+          <DataField>WorkExecutionPlan1D_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="CommencementOrderNo_MeasurementPaymentHeader">
+          <DataField>CommencementOrderNo_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="PaymentsToDate_MeasurementPaymentHeader">
+          <DataField>PaymentsToDate_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="PaymentsToDate_MeasurementPaymentHeaderFormat">
+          <DataField>PaymentsToDate_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="GlobalDimension1Code_MeasurementPaymentHeader">
+          <DataField>GlobalDimension1Code_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="GlobalDimension2Code_MeasurementPaymentHeader">
+          <DataField>GlobalDimension2Code_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ApprovedAdvanceAmount_MeasurementPaymentHeader">
+          <DataField>ApprovedAdvanceAmount_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="ApprovedAdvanceAmount_MeasurementPaymentHeaderFormat">
+          <DataField>ApprovedAdvanceAmount_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+        <Field Name="OutstandingBalancetoDate_MeasurementPaymentHeader">
+          <DataField>OutstandingBalancetoDate_MeasurementPaymentHeader</DataField>
+        </Field>
+        <Field Name="OutstandingBalancetoDate_MeasurementPaymentHeaderFormat">
+          <DataField>OutstandingBalancetoDate_MeasurementPaymentHeaderFormat</DataField>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet</rd:DataSetName>
+        <rd:SchemaPath>Report.xsd</rd:SchemaPath>
+        <rd:TableName>Result</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+ 
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+</Report>

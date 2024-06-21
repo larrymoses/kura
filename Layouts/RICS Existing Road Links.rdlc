@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>3c80ebc6-7364-4f2a-bc01-95d54c99affe</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="RICSNo_RICSExistingRoadLink">
+          <DataField>RICSNo_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="RoadCode_RICSExistingRoadLink">
+          <DataField>RoadCode_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="LinkName_RICSExistingRoadLink">
+          <DataField>LinkName_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="RoadClassID_RICSExistingRoadLink">
+          <DataField>RoadClassID_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="NewRoadClassID_RICSExistingRoadLink">
+          <DataField>NewRoadClassID_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="GeneralRoadSurfaceCondition_RICSExistingRoadLink">
+          <DataField>GeneralRoadSurfaceCondition_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="NewGenRoadSurfCondition_RICSExistingRoadLink">
+          <DataField>NewGenRoadSurfCondition_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="PrimaryCountyID_RICSExistingRoadLink">
+          <DataField>PrimaryCountyID_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="PrimaryRegionID_RICSExistingRoadLink">
+          <DataField>PrimaryRegionID_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="StartChainageKM_RICSExistingRoadLink">
+          <DataField>StartChainageKM_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="StartChainageKM_RICSExistingRoadLinkFormat">
+          <DataField>StartChainageKM_RICSExistingRoadLinkFormat</DataField>
+        </Field>
+        <Field Name="EndChainageKM_RICSExistingRoadLink">
+          <DataField>EndChainageKM_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="EndChainageKM_RICSExistingRoadLinkFormat">
+          <DataField>EndChainageKM_RICSExistingRoadLinkFormat</DataField>
+        </Field>
+        <Field Name="TotalRoadLengthKMs_RICSExistingRoadLink">
+          <DataField>TotalRoadLengthKMs_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="TotalRoadLengthKMs_RICSExistingRoadLinkFormat">
+          <DataField>TotalRoadLengthKMs_RICSExistingRoadLinkFormat</DataField>
+        </Field>
+        <Field Name="NoofRoadSections_RICSExistingRoadLink">
+          <DataField>NoofRoadSections_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="PavedRoadLengthKm_RICSExistingRoadLink">
+          <DataField>PavedRoadLengthKm_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="PavedRoadLengthKm_RICSExistingRoadLinkFormat">
+          <DataField>PavedRoadLengthKm_RICSExistingRoadLinkFormat</DataField>
+        </Field>
+        <Field Name="PavedRoadLength_RICSExistingRoadLink">
+          <DataField>PavedRoadLength_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="PavedRoadLength_RICSExistingRoadLinkFormat">
+          <DataField>PavedRoadLength_RICSExistingRoadLinkFormat</DataField>
+        </Field>
+        <Field Name="UnpavedRoadLength_RICSExistingRoadLink">
+          <DataField>UnpavedRoadLength_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="UnpavedRoadLength_RICSExistingRoadLinkFormat">
+          <DataField>UnpavedRoadLength_RICSExistingRoadLinkFormat</DataField>
+        </Field>
+        <Field Name="Blocked_RICSExistingRoadLink">
+          <DataField>Blocked_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="Description_RICSExistingRoadLink">
+          <DataField>Description_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="StartDate_RICSExistingRoadLink">
+          <DataField>StartDate_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="EndDate_RICSExistingRoadLink">
+          <DataField>EndDate_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="ServiceType_RICSExistingRoadLink">
+          <DataField>ServiceType_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="ProjectID_RICSExistingRoadLink">
+          <DataField>ProjectID_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="ContractNo_RICSExistingRoadLink">
+          <DataField>ContractNo_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="ContractorNo_RICSExistingRoadLink">
+          <DataField>ContractorNo_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="ContractorName_RICSExistingRoadLink">
+          <DataField>ContractorName_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="NoOfExistingRoadLinks_RICSExistingRoadLink">
+          <DataField>NoOfExistingRoadLinks_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="RegionCode_RICSExistingRoadLink">
+          <DataField>RegionCode_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="DirectorateCode_RICSExistingRoadLink">
+          <DataField>DirectorateCode_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="DepartmentCode_RICSExistingRoadLink">
+          <DataField>DepartmentCode_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="ApprovalStatus_RICSExistingRoadLink">
+          <DataField>ApprovalStatus_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="CreatedBy_RICSExistingRoadLink">
+          <DataField>CreatedBy_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="CreatedDateTime_RICSExistingRoadLink">
+          <DataField>CreatedDateTime_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="NoSeries_RICSExistingRoadLink">
+          <DataField>NoSeries_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="Posted_RICSExistingRoadLink">
+          <DataField>Posted_RICSExistingRoadLink</DataField>
+        </Field>
+        <Field Name="RICSNo_RICSExistingRoadLinkLine">
+          <DataField>RICSNo_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="RoadCode_RICSExistingRoadLinkLine">
+          <DataField>RoadCode_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="LinkName_RICSExistingRoadLinkLine">
+          <DataField>LinkName_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="RoadClassID_RICSExistingRoadLinkLine">
+          <DataField>RoadClassID_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="NewRoadClassID_RICSExistingRoadLinkLine">
+          <DataField>NewRoadClassID_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="GeneralRoadSurfaceCondition_RICSExistingRoadLinkLine">
+          <DataField>GeneralRoadSurfaceCondition_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="NewGenRoadSurfCondition_RICSExistingRoadLinkLine">
+          <DataField>NewGenRoadSurfCondition_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="PrimaryCountyID_RICSExistingRoadLinkLine">
+          <DataField>PrimaryCountyID_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="PrimaryRegionID_RICSExistingRoadLinkLine">
+          <DataField>PrimaryRegionID_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="StartChainageKM_RICSExistingRoadLinkLine">
+          <DataField>StartChainageKM_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="StartChainageKM_RICSExistingRoadLinkLineFormat">
+          <DataField>StartChainageKM_RICSExistingRoadLinkLineFormat</DataField>
+        </Field>
+        <Field Name="EndChainageKM_RICSExistingRoadLinkLine">
+          <DataField>EndChainageKM_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="EndChainageKM_RICSExistingRoadLinkLineFormat">
+          <DataField>EndChainageKM_RICSExistingRoadLinkLineFormat</DataField>
+        </Field>
+        <Field Name="TotalRoadLengthKMs_RICSExistingRoadLinkLine">
+          <DataField>TotalRoadLengthKMs_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="TotalRoadLengthKMs_RICSExistingRoadLinkLineFormat">
+          <DataField>TotalRoadLengthKMs_RICSExistingRoadLinkLineFormat</DataField>
+        </Field>
+        <Field Name="NoofRoadSections_RICSExistingRoadLinkLine">
+          <DataField>NoofRoadSections_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="PavedRoadLengthKm_RICSExistingRoadLinkLine">
+          <DataField>PavedRoadLengthKm_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="PavedRoadLengthKm_RICSExistingRoadLinkLineFormat">
+          <DataField>PavedRoadLengthKm_RICSExistingRoadLinkLineFormat</DataField>
+        </Field>
+        <Field Name="PavedRoadLength_RICSExistingRoadLinkLine">
+          <DataField>PavedRoadLength_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="PavedRoadLength_RICSExistingRoadLinkLineFormat">
+          <DataField>PavedRoadLength_RICSExistingRoadLinkLineFormat</DataField>
+        </Field>
+        <Field Name="UnpavedRoadLength_RICSExistingRoadLinkLine">
+          <DataField>UnpavedRoadLength_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="UnpavedRoadLength_RICSExistingRoadLinkLineFormat">
+          <DataField>UnpavedRoadLength_RICSExistingRoadLinkLineFormat</DataField>
+        </Field>
+        <Field Name="Blocked_RICSExistingRoadLinkLine">
+          <DataField>Blocked_RICSExistingRoadLinkLine</DataField>
+        </Field>
+        <Field Name="EntryNo_RICSExistingRoadLinkLine">
+          <DataField>EntryNo_RICSExistingRoadLinkLine</DataField>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet</rd:DataSetName>
+        <rd:SchemaPath>Report.xsd</rd:SchemaPath>
+        <rd:TableName>Result</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Road Code RICSExisting Road Link Line</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Link Name RICSExisting Road Link Line</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">New Road Class ID RICSExisting Road Link Line</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox7">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">New Gen Road Surf Condition RICSExisting Road Link Line</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox7</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox9">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Start Chainage KM RICSExisting Road Link Line</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">End Chainage KM RICSExisting Road Link Line</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox11">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Total Road Length KMs RICSExisting Road Link Line</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="RoadCode_RICSExistingRoadLinkLine">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!RoadCode_RICSExistingRoadLinkLine.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>RoadCode_RICSExistingRoadLinkLine</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="LinkName_RICSExistingRoadLinkLine">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!LinkName_RICSExistingRoadLinkLine.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>LinkName_RICSExistingRoadLinkLine</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="NewRoadClassID_RICSExistingRoadLinkLine">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!NewRoadClassID_RICSExistingRoadLinkLine.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>NewRoadClassID_RICSExistingRoadLinkLine</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="NewGenRoadSurfCondition_RICSExistingRoadLinkLine">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!NewGenRoadSurfCondition_RICSExistingRoadLinkLine.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>NewGenRoadSurfCondition_RICSExistingRoadLinkLine</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="StartChainageKM_RICSExistingRoadLinkLine">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!StartChainageKM_RICSExistingRoadLinkLine.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>StartChainageKM_RICSExistingRoadLinkLine</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="EndChainageKM_RICSExistingRoadLinkLine">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!EndChainageKM_RICSExistingRoadLinkLine.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>EndChainageKM_RICSExistingRoadLinkLine</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TotalRoadLengthKMs_RICSExistingRoadLinkLine">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!TotalRoadLengthKMs_RICSExistingRoadLinkLine.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>TotalRoadLengthKMs_RICSExistingRoadLinkLine</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Top>1.22444in</Top>
+            <Left>0.20361in</Left>
+            <Height>0.5in</Height>
+            <Width>7in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>7.20361in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+</Report>

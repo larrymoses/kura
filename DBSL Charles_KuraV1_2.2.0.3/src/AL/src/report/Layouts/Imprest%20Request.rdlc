@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="PurposeLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PurposeLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PurposeLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PayeeLbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PayeeLbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PayeeLbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocDate">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocDate</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocDate</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ProjectsCode">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ProjectsCode</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ProjectsCode</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PayingBank">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PayingBank</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PayingBank</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Currencylbl">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Currencylbl</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Currencylbl</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ChequeNo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ChequeNo</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ChequeNo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PayMode">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PayMode</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PayMode</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TravelDate">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TravelDate</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TravelDate</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="JobTitle">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>JobTitle</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>JobTitle</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="JobGroup">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>JobGroup</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>JobGroup</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BankCode">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BankCode</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BankCode</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BankName">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BankName</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BankName</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ApplicantNo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ApplicantNo</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ApplicantNo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amount">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amount</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amount</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Total">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Total</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Total</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmountInWords">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmountInWords</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmountInWords</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PreparedBy">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PreparedBy</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PreparedBy</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Expenditure">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Expenditure</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Expenditure</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Budget">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Budget</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Budget</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AuthorizedBy">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AuthorizedBy</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AuthorizedBy</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Recipient">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Recipient</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Recipient</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PrintedBy">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PrintedBy</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PrintedBy</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TimePrinted">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TimePrinted</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TimePrinted</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1000000000">
+          <DataField>ReportForNavId_1000000000</DataField>
+        </Field>
+        <Field Name="No_Payments">
+          <DataField>No_Payments</DataField>
+        </Field>
+        <Field Name="Date_Payments">
+          <DataField>Date_Payments</DataField>
+        </Field>
+        <Field Name="ChequeDate_Payments">
+          <DataField>ChequeDate_Payments</DataField>
+        </Field>
+        <Field Name="ChequeNo_Payments">
+          <DataField>ChequeNo_Payments</DataField>
+        </Field>
+        <Field Name="Payee_Payments">
+          <DataField>Payee_Payments</DataField>
+        </Field>
+        <Field Name="TravelDate_Payments">
+          <DataField>TravelDate_Payments</DataField>
+        </Field>
+        <Field Name="DestinationName_Payments">
+          <DataField>DestinationName_Payments</DataField>
+        </Field>
+        <Field Name="AccountNo_Payments">
+          <DataField>AccountNo_Payments</DataField>
+        </Field>
+        <Field Name="AccountName_Payments">
+          <DataField>AccountName_Payments</DataField>
+        </Field>
+        <Field Name="ImprestAmount_Payments">
+          <DataField>ImprestAmount_Payments</DataField>
+        </Field>
+        <Field Name="ImprestAmount_PaymentsFormat">
+          <DataField>ImprestAmount_PaymentsFormat</DataField>
+        </Field>
+        <Field Name="Project_Payments">
+          <DataField>Project_Payments</DataField>
+        </Field>
+        <Field Name="CurrencyCodeText">
+          <DataField>CurrencyCodeText</DataField>
+        </Field>
+        <Field Name="PayingBankAccount_Payments">
+          <DataField>PayingBankAccount_Payments</DataField>
+        </Field>
+        <Field Name="PayMode_Payments">
+          <DataField>PayMode_Payments</DataField>
+        </Field>
+        <Field Name="GlobalDimension2Code_Payments">
+          <DataField>GlobalDimension2Code_Payments</DataField>
+        </Field>
+        <Field Name="NumberText_1">
+          <DataField>NumberText_1</DataField>
+        </Field>
+        <Field Name="Emp_JobTitle">
+          <DataField>Emp_JobTitle</DataField>
+        </Field>
+        <Field Name="Emp_BankName">
+          <DataField>Emp_BankName</DataField>
+        </Field>
+        <Field Name="Emp_JobGroup">
+          <DataField>Emp_JobGroup</DataField>
+        </Field>
+        <Field Name="Emp_BankCode">
+          <DataField>Emp_BankCode</DataField>
+        </Field>
+        <Field Name="Project_Desc">
+          <DataField>Project_Desc</DataField>
+        </Field>
+        <Field Name="ReportForNavId_1000000013">
+          <DataField>ReportForNavId_1000000013</DataField>
+        </Field>
+        <Field Name="AccountNo_ImprestLines">
+          <DataField>AccountNo_ImprestLines</DataField>
+        </Field>
+        <Field Name="AccountName_ImprestLines">
+          <DataField>AccountName_ImprestLines</DataField>
+        </Field>
+        <Field Name="Description_ImprestLines">
+          <DataField>Description_ImprestLines</DataField>
+        </Field>
+        <Field Name="Amount_ImprestLines">
+          <DataField>Amount_ImprestLines</DataField>
+        </Field>
+        <Field Name="Amount_ImprestLinesFormat">
+          <DataField>Amount_ImprestLinesFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

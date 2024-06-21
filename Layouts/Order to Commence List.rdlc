@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="PossessionofSiteDate_ProjectMobilizationHeader">
+          <DataField>PossessionofSiteDate_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="DocumentNo_ProjectMobilizationHeader">
+          <DataField>DocumentNo_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="DocumentDate_ProjectMobilizationHeader">
+          <DataField>DocumentDate_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="PurchaseContractID_ProjectMobilizationHeader">
+          <DataField>PurchaseContractID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectID_ProjectMobilizationHeader">
+          <DataField>ProjectID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="Description_ProjectMobilizationHeader">
+          <DataField>Description_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ContractorNo_ProjectMobilizationHeader">
+          <DataField>ContractorNo_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ContractorName_ProjectMobilizationHeader">
+          <DataField>ContractorName_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="AwardDate_ProjectMobilizationHeader">
+          <DataField>AwardDate_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="AwardTendSumIncTaxesLCY_ProjectMobilizationHeader">
+          <DataField>AwardTendSumIncTaxesLCY_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="AwardTendSumIncTaxesLCY_ProjectMobilizationHeaderFormat">
+          <DataField>AwardTendSumIncTaxesLCY_ProjectMobilizationHeaderFormat</DataField>
+        </Field>
+        <Field Name="ProjectName_ProjectMobilizationHeader">
+          <DataField>ProjectName_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectEngineerName_ProjectMobilizationHeader">
+          <DataField>ProjectEngineerName_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="RegionID_ProjectMobilizationHeader">
+          <DataField>RegionID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="DirectorateID_ProjectMobilizationHeader">
+          <DataField>DirectorateID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="DepartmentID_ProjectMobilizationHeader">
+          <DataField>DepartmentID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="AcknowledgementStatus_ProjectMobilizationHeader">
+          <DataField>AcknowledgementStatus_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="OrdertoCommenceReference_ProjectMobilizationHeader">
+          <DataField>OrdertoCommenceReference_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="PossessionofSiteReference_ProjectMobilizationHeader">
+          <DataField>PossessionofSiteReference_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="PossessionofSiteIssued_ProjectMobilizationHeader">
+          <DataField>PossessionofSiteIssued_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="CName">
+          <DataField>CName</DataField>
+        </Field>
+        <Field Name="CAddress">
+          <DataField>CAddress</DataField>
+        </Field>
+        <Field Name="CAddress2">
+          <DataField>CAddress2</DataField>
+        </Field>
+        <Field Name="CCity">
+          <DataField>CCity</DataField>
+        </Field>
+        <Field Name="CPhoneNo">
+          <DataField>CPhoneNo</DataField>
+        </Field>
+        <Field Name="CPic">
+          <DataField>CPic</DataField>
+        </Field>
+        <Field Name="CEmail">
+          <DataField>CEmail</DataField>
+        </Field>
+        <Field Name="CWebsite">
+          <DataField>CWebsite</DataField>
+        </Field>
+        <Field Name="CurrentDate">
+          <DataField>CurrentDate</DataField>
+        </Field>
+        <Field Name="PossessionofSiteStatus">
+          <DataField>PossessionofSiteStatus</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

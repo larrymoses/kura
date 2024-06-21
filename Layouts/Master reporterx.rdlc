@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1000000000">
+          <DataField>ReportForNavId_1000000000</DataField>
+        </Field>
+        <Field Name="EmployeeNo_AssignmentMatrixX">
+          <DataField>EmployeeNo_AssignmentMatrixX</DataField>
+        </Field>
+        <Field Name="Code_AssignmentMatrixX">
+          <DataField>Code_AssignmentMatrixX</DataField>
+        </Field>
+        <Field Name="Description_AssignmentMatrixX">
+          <DataField>Description_AssignmentMatrixX</DataField>
+        </Field>
+        <Field Name="Amount_AssignmentMatrixX">
+          <DataField>Amount_AssignmentMatrixX</DataField>
+        </Field>
+        <Field Name="Amount_AssignmentMatrixXFormat">
+          <DataField>Amount_AssignmentMatrixXFormat</DataField>
+        </Field>
+        <Field Name="EmployerAmount_AssignmentMatrixX">
+          <DataField>EmployerAmount_AssignmentMatrixX</DataField>
+        </Field>
+        <Field Name="EmployerAmount_AssignmentMatrixXFormat">
+          <DataField>EmployerAmount_AssignmentMatrixXFormat</DataField>
+        </Field>
+        <Field Name="EmployeeName_AssignmentMatrixX">
+          <DataField>EmployeeName_AssignmentMatrixX</DataField>
+        </Field>
+        <Field Name="PayrollPeriod_AssignmentMatrixX">
+          <DataField>PayrollPeriod_AssignmentMatrixX</DataField>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="ClosingBalance_AssignmentMatrixX">
+          <DataField>ClosingBalance_AssignmentMatrixX</DataField>
+        </Field>
+        <Field Name="ClosingBalance_AssignmentMatrixXFormat">
+          <DataField>ClosingBalance_AssignmentMatrixXFormat</DataField>
+        </Field>
+        <Field Name="ReferenceNo_AssignmentMatrixX">
+          <DataField>ReferenceNo_AssignmentMatrixX</DataField>
+        </Field>
+        <Field Name="ReportForNavId_1000000008">
+          <DataField>ReportForNavId_1000000008</DataField>
+        </Field>
+        <Field Name="Name_CompanyInformation">
+          <DataField>Name_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Picture_CompanyInformation">
+          <DataField>Picture_CompanyInformation</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

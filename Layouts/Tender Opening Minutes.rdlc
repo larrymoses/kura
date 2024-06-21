@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="logo">
+          <DataField>logo</DataField>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+        </Field>
+        <Field Name="CIAddress">
+          <DataField>CIAddress</DataField>
+        </Field>
+        <Field Name="CIAddress2">
+          <DataField>CIAddress2</DataField>
+        </Field>
+        <Field Name="CICity">
+          <DataField>CICity</DataField>
+        </Field>
+        <Field Name="CIPhoneNo">
+          <DataField>CIPhoneNo</DataField>
+        </Field>
+        <Field Name="CIEmail">
+          <DataField>CIEmail</DataField>
+        </Field>
+        <Field Name="CIWebsite">
+          <DataField>CIWebsite</DataField>
+        </Field>
+        <Field Name="Code_BidOpeningRegister">
+          <DataField>Code_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="IFSCode_BidOpeningRegister">
+          <DataField>IFSCode_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="Description_BidOpeningRegister">
+          <DataField>Description_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="TenderName_BidOpeningRegister">
+          <DataField>TenderName_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="BidOpeningDate_BidOpeningRegister">
+          <DataField>BidOpeningDate_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="BidOpeningStartTime_BidOpeningRegister">
+          <DataField>BidOpeningStartTime_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="BidOpeningEndDate_BidOpeningRegister">
+          <DataField>BidOpeningEndDate_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="BidOpeningEndTime_BidOpeningRegister">
+          <DataField>BidOpeningEndTime_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="PrebidPurchaserCode_BidOpeningRegister">
+          <DataField>PrebidPurchaserCode_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="NoofIntentionToBidVendor_BidOpeningRegister">
+          <DataField>NoofIntentionToBidVendor_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="NoofSubmittedBids_BidOpeningRegister">
+          <DataField>NoofSubmittedBids_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="NoofSubmittedBids_BidOpeningRegisterFormat">
+          <DataField>NoofSubmittedBids_BidOpeningRegisterFormat</DataField>
+        </Field>
+        <Field Name="NoSeries_BidOpeningRegister">
+          <DataField>NoSeries_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="CreatedBy_BidOpeningRegister">
+          <DataField>CreatedBy_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="CreatedDate_BidOpeningRegister">
+          <DataField>CreatedDate_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="CreatedTime_BidOpeningRegister">
+          <DataField>CreatedTime_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="PrimaryRegion_BidOpeningRegister">
+          <DataField>PrimaryRegion_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="AppointedBidOpeningCom_BidOpeningRegister">
+          <DataField>AppointedBidOpeningCom_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="BidEnvelopType_BidOpeningRegister">
+          <DataField>BidEnvelopType_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="BidUnsealingType_BidOpeningRegister">
+          <DataField>BidUnsealingType_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="FinalOpeningDone_BidOpeningRegister">
+          <DataField>FinalOpeningDone_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="TenderEvaluationDeadline_BidOpeningRegister">
+          <DataField>TenderEvaluationDeadline_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="BidRegisterNo_BidOpeningRegister">
+          <DataField>BidRegisterNo_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="RequiredBidSecurityAmount_BidOpeningRegister">
+          <DataField>RequiredBidSecurityAmount_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="RequiredBidSecurityAmount_BidOpeningRegisterFormat">
+          <DataField>RequiredBidSecurityAmount_BidOpeningRegisterFormat</DataField>
+        </Field>
+        <Field Name="BidOpeningVenue_BidOpeningRegister">
+          <DataField>BidOpeningVenue_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="DocumentStatus_BidOpeningRegister">
+          <DataField>DocumentStatus_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="ReportForNavId_50">
+          <DataField>ReportForNavId_50</DataField>
+        </Field>
+        <Field Name="Code_BidOpeningBidderAttendance">
+          <DataField>Code_BidOpeningBidderAttendance</DataField>
+        </Field>
+        <Field Name="IFSCode_BidOpeningBidderAttendance">
+          <DataField>IFSCode_BidOpeningBidderAttendance</DataField>
+        </Field>
+        <Field Name="VendorNo_BidOpeningBidderAttendance">
+          <DataField>VendorNo_BidOpeningBidderAttendance</DataField>
+        </Field>
+        <Field Name="BidderRepresentativeName_BidOpeningBidderAttendance">
+          <DataField>BidderRepresentativeName_BidOpeningBidderAttendance</DataField>
+        </Field>
+        <Field Name="RepresentativeEmail_BidOpeningBidderAttendance">
+          <DataField>RepresentativeEmail_BidOpeningBidderAttendance</DataField>
+        </Field>
+        <Field Name="RepresentativeTelNo_BidOpeningBidderAttendance">
+          <DataField>RepresentativeTelNo_BidOpeningBidderAttendance</DataField>
+        </Field>
+        <Field Name="DateTimeNotified_BidOpeningBidderAttendance">
+          <DataField>DateTimeNotified_BidOpeningBidderAttendance</DataField>
+        </Field>
+        <Field Name="EntryNo_BidOpeningBidderAttendance">
+          <DataField>EntryNo_BidOpeningBidderAttendance</DataField>
+        </Field>
+        <Field Name="Designation_BidOpeningBidderAttendance">
+          <DataField>Designation_BidOpeningBidderAttendance</DataField>
+        </Field>
+        <Field Name="VendorName_BidOpeningBidderAttendance">
+          <DataField>VendorName_BidOpeningBidderAttendance</DataField>
+        </Field>
+        <Field Name="ReportForNavId_27">
+          <DataField>ReportForNavId_27</DataField>
+        </Field>
+        <Field Name="Code_BidOpeningRegisterLine">
+          <DataField>Code_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="VendorNo_BidOpeningRegisterLine">
+          <DataField>VendorNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="IFSCode_BidOpeningRegisterLine">
+          <DataField>IFSCode_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidderName_BidOpeningRegisterLine">
+          <DataField>BidderName_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidNo_BidOpeningRegisterLine">
+          <DataField>BidNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="ExternalBidReferenceNo_BidOpeningRegisterLine">
+          <DataField>ExternalBidReferenceNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="ValidBidSecurityProvided_BidOpeningRegisterLine">
+          <DataField>ValidBidSecurityProvided_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidSecurityIssuer_BidOpeningRegisterLine">
+          <DataField>BidSecurityIssuer_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidSecurityAmountLCY_BidOpeningRegisterLine">
+          <DataField>BidSecurityAmountLCY_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidSecurityAmountLCY_BidOpeningRegisterLineFormat">
+          <DataField>BidSecurityAmountLCY_BidOpeningRegisterLineFormat</DataField>
+        </Field>
+        <Field Name="BidSecurityAmountPass_BidOpeningRegisterLine">
+          <DataField>BidSecurityAmountPass_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="TotalTenderPriceLCY_BidOpeningRegisterLine">
+          <DataField>TotalTenderPriceLCY_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="TotalTenderPriceLCY_BidOpeningRegisterLineFormat">
+          <DataField>TotalTenderPriceLCY_BidOpeningRegisterLineFormat</DataField>
+        </Field>
+        <Field Name="CompleteBidDocSubmitted_BidOpeningRegisterLine">
+          <DataField>CompleteBidDocSubmitted_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="LateBid_BidOpeningRegisterLine">
+          <DataField>LateBid_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="LateBidSubmissionTime_BidOpeningRegisterLine">
+          <DataField>LateBidSubmissionTime_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidWithdrawalNoticeNo_BidOpeningRegisterLine">
+          <DataField>BidWithdrawalNoticeNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidModificationNoticeNo_BidOpeningRegisterLine">
+          <DataField>BidModificationNoticeNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidWithdrawalExists_BidOpeningRegisterLine">
+          <DataField>BidWithdrawalExists_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidModificationExists_BidOpeningRegisterLine">
+          <DataField>BidModificationExists_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="FinalBidOpeningResult_BidOpeningRegisterLine">
+          <DataField>FinalBidOpeningResult_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="TenderOpeningComRemarks_BidOpeningRegisterLine">
+          <DataField>TenderOpeningComRemarks_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="NoofRepresentatives_BidOpeningRegisterLine">
+          <DataField>NoofRepresentatives_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="Notified_BidOpeningRegisterLine">
+          <DataField>Notified_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="Rank_BidOpeningRegisterLine">
+          <DataField>Rank_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="AssignedBidNo_BidOpeningRegisterLine">
+          <DataField>AssignedBidNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidSum1">
+          <DataField>BidSum1</DataField>
+        </Field>
+        <Field Name="BidSum1Format">
+          <DataField>BidSum1Format</DataField>
+        </Field>
+        <Field Name="BidSum2">
+          <DataField>BidSum2</DataField>
+        </Field>
+        <Field Name="BidSum2Format">
+          <DataField>BidSum2Format</DataField>
+        </Field>
+        <Field Name="AutoAssignedNo">
+          <DataField>AutoAssignedNo</DataField>
+        </Field>
+        <Field Name="ReportForNavId_60">
+          <DataField>ReportForNavId_60</DataField>
+        </Field>
+        <Field Name="RegisterID_TenderOpeningSummaryNote">
+          <DataField>RegisterID_TenderOpeningSummaryNote</DataField>
+        </Field>
+        <Field Name="AgendaCode_TenderOpeningSummaryNote">
+          <DataField>AgendaCode_TenderOpeningSummaryNote</DataField>
+        </Field>
+        <Field Name="LineNo_TenderOpeningSummaryNote">
+          <DataField>LineNo_TenderOpeningSummaryNote</DataField>
+        </Field>
+        <Field Name="ItemDiscussed_TenderOpeningSummaryNote">
+          <DataField>ItemDiscussed_TenderOpeningSummaryNote</DataField>
+        </Field>
+        <Field Name="SummaryNotes_TenderOpeningSummaryNote">
+          <DataField>SummaryNotes_TenderOpeningSummaryNote</DataField>
+        </Field>
+        <Field Name="ReferencedSectionofTender_TenderOpeningSummaryNote">
+          <DataField>ReferencedSectionofTender_TenderOpeningSummaryNote</DataField>
+        </Field>
+        <Field Name="ReferencedClauseofTender_TenderOpeningSummaryNote">
+          <DataField>ReferencedClauseofTender_TenderOpeningSummaryNote</DataField>
+        </Field>
+        <Field Name="ReportForNavId_68">
+          <DataField>ReportForNavId_68</DataField>
+        </Field>
+        <Field Name="Picture_CompanyInformation">
+          <DataField>Picture_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Name_CompanyInformation">
+          <DataField>Name_CompanyInformation</DataField>
+        </Field>
+        <Field Name="ReportForNavId_72">
+          <DataField>ReportForNavId_72</DataField>
+        </Field>
+        <Field Name="DocumentNo_BidOpeningTenderCommittee">
+          <DataField>DocumentNo_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="LineNo_BidOpeningTenderCommittee">
+          <DataField>LineNo_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="AppointedBidOpeningCom_BidOpeningTenderCommittee">
+          <DataField>AppointedBidOpeningCom_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="RoleType_BidOpeningTenderCommittee">
+          <DataField>RoleType_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="MemberNo_BidOpeningTenderCommittee">
+          <DataField>MemberNo_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="MemberName_BidOpeningTenderCommittee">
+          <DataField>MemberName_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="Designation_BidOpeningTenderCommittee">
+          <DataField>Designation_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="IDPassportNo_BidOpeningTenderCommittee">
+          <DataField>IDPassportNo_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="TaxRegistrationPINNo_BidOpeningTenderCommittee">
+          <DataField>TaxRegistrationPINNo_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="Email_BidOpeningTenderCommittee">
+          <DataField>Email_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="TelephoneNo_BidOpeningTenderCommittee">
+          <DataField>TelephoneNo_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="StaffNo_BidOpeningTenderCommittee">
+          <DataField>StaffNo_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="IFSCode_BidOpeningTenderCommittee">
+          <DataField>IFSCode_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="OpeningPerson1_BidOpeningTenderCommittee">
+          <DataField>OpeningPerson1_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="OpeningPerson2_BidOpeningTenderCommittee">
+          <DataField>OpeningPerson2_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="OpeningPerson3_BidOpeningTenderCommittee">
+          <DataField>OpeningPerson3_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="NominatedBidOpening_BidOpeningTenderCommittee">
+          <DataField>NominatedBidOpening_BidOpeningTenderCommittee</DataField>
+        </Field>
+        <Field Name="OpeningPerson4_BidOpeningTenderCommittee">
+          <DataField>OpeningPerson4_BidOpeningTenderCommittee</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="CName">
+          <DataField>CName</DataField>
+        </Field>
+        <Field Name="CPic">
+          <DataField>CPic</DataField>
+        </Field>
+        <Field Name="CAddress2">
+          <DataField>CAddress2</DataField>
+        </Field>
+        <Field Name="CAddress">
+          <DataField>CAddress</DataField>
+        </Field>
+        <Field Name="CCity">
+          <DataField>CCity</DataField>
+        </Field>
+        <Field Name="CPhoneNo">
+          <DataField>CPhoneNo</DataField>
+        </Field>
+        <Field Name="CEmail">
+          <DataField>CEmail</DataField>
+        </Field>
+        <Field Name="CHomepage">
+          <DataField>CHomepage</DataField>
+        </Field>
+        <Field Name="RegionName">
+          <DataField>RegionName</DataField>
+        </Field>
+        <Field Name="YearName">
+          <DataField>YearName</DataField>
+        </Field>
+        <Field Name="Code_RoadWorkProgram">
+          <DataField>Code_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="DocumentType_RoadWorkProgram">
+          <DataField>DocumentType_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="Description_RoadWorkProgram">
+          <DataField>Description_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="Authority_RoadWorkProgram">
+          <DataField>Authority_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="RegionID_RoadWorkProgram">
+          <DataField>RegionID_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="DocumentDate_RoadWorkProgram">
+          <DataField>DocumentDate_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="FinancialBudgetID_RoadWorkProgram">
+          <DataField>FinancialBudgetID_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="FinancialYearCode_RoadWorkProgram">
+          <DataField>FinancialYearCode_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="StartDate_RoadWorkProgram">
+          <DataField>StartDate_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="EndDate_RoadWorkProgram">
+          <DataField>EndDate_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="TotalWorkplannedLengthKm_RoadWorkProgram">
+          <DataField>TotalWorkplannedLengthKm_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="TotalWorkplannedLengthKm_RoadWorkProgramFormat">
+          <DataField>TotalWorkplannedLengthKm_RoadWorkProgramFormat</DataField>
+        </Field>
+        <Field Name="TotalBudgetCeiling_RoadWorkProgram">
+          <DataField>TotalBudgetCeiling_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="TotalBudgetCeiling_RoadWorkProgramFormat">
+          <DataField>TotalBudgetCeiling_RoadWorkProgramFormat</DataField>
+        </Field>
+        <Field Name="TotalActualCosts_RoadWorkProgram">
+          <DataField>TotalActualCosts_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="CreatedBy_RoadWorkProgram">
+          <DataField>CreatedBy_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="CreatedDate_RoadWorkProgram">
+          <DataField>CreatedDate_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="CreatedTime_RoadWorkProgram">
+          <DataField>CreatedTime_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="PlanningType_RoadWorkProgram">
+          <DataField>PlanningType_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="RoadProjectCategory_RoadWorkProgram">
+          <DataField>RoadProjectCategory_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="GlobalDimension1Code_RoadWorkProgram">
+          <DataField>GlobalDimension1Code_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="GlobalDimension2Code_RoadWorkProgram">
+          <DataField>GlobalDimension2Code_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="GlobalBudgetBookId_RoadWorkProgram">
+          <DataField>GlobalBudgetBookId_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="FundingSource_RoadWorkProgram">
+          <DataField>FundingSource_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="TotalMultiYearPlanCost_RoadWorkProgram">
+          <DataField>TotalMultiYearPlanCost_RoadWorkProgram</DataField>
+        </Field>
+        <Field Name="TotalMultiYearPlanCost_RoadWorkProgramFormat">
+          <DataField>TotalMultiYearPlanCost_RoadWorkProgramFormat</DataField>
+        </Field>
+        <Field Name="ReportForNavId_83">
+          <DataField>ReportForNavId_83</DataField>
+        </Field>
+        <Field Name="KeRRABudgetCodeName">
+          <DataField>KeRRABudgetCodeName</DataField>
+        </Field>
+        <Field Name="RoadWorkProgramID_DetailedMultiYearLine">
+          <DataField>RoadWorkProgramID_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="PackageNo_DetailedMultiYearLine">
+          <DataField>PackageNo_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="YearCode_DetailedMultiYearLine">
+          <DataField>YearCode_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="PackageName_DetailedMultiYearLine">
+          <DataField>PackageName_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="SectionName_DetailedMultiYearLine">
+          <DataField>SectionName_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="FundingSourceID_DetailedMultiYearLine">
+          <DataField>FundingSourceID_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="FinancialYearCode_DetailedMultiYearLine">
+          <DataField>FinancialYearCode_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="ActualAmountAllocated_DetailedMultiYearLine">
+          <DataField>ActualAmountAllocated_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="ActualAmountAllocated_DetailedMultiYearLineFormat">
+          <DataField>ActualAmountAllocated_DetailedMultiYearLineFormat</DataField>
+        </Field>
+        <Field Name="ActualAmountSpent_DetailedMultiYearLine">
+          <DataField>ActualAmountSpent_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="ActualAmountSpent_DetailedMultiYearLineFormat">
+          <DataField>ActualAmountSpent_DetailedMultiYearLineFormat</DataField>
+        </Field>
+        <Field Name="FinancialBudgetName_DetailedMultiYearLine">
+          <DataField>FinancialBudgetName_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="AnnualProjection_DetailedMultiYearLine">
+          <DataField>AnnualProjection_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="AnnualProjection_DetailedMultiYearLineFormat">
+          <DataField>AnnualProjection_DetailedMultiYearLineFormat</DataField>
+        </Field>
+        <Field Name="AmountCertified_DetailedMultiYearLine">
+          <DataField>AmountCertified_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="AmountCertified_DetailedMultiYearLineFormat">
+          <DataField>AmountCertified_DetailedMultiYearLineFormat</DataField>
+        </Field>
+        <Field Name="KeRRABudgetCode_DetailedMultiYearLine">
+          <DataField>KeRRABudgetCode_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="Closed_DetailedMultiYearLine">
+          <DataField>Closed_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="SupplementaryBudget_DetailedMultiYearLine">
+          <DataField>SupplementaryBudget_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="SupplementaryBudget_DetailedMultiYearLineFormat">
+          <DataField>SupplementaryBudget_DetailedMultiYearLineFormat</DataField>
+        </Field>
+        <Field Name="RevisedBudget_DetailedMultiYearLine">
+          <DataField>RevisedBudget_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="RevisedBudget_DetailedMultiYearLineFormat">
+          <DataField>RevisedBudget_DetailedMultiYearLineFormat</DataField>
+        </Field>
+        <Field Name="CurrentBudgetAmount_DetailedMultiYearLine">
+          <DataField>CurrentBudgetAmount_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="CurrentBudgetAmount_DetailedMultiYearLineFormat">
+          <DataField>CurrentBudgetAmount_DetailedMultiYearLineFormat</DataField>
+        </Field>
+        <Field Name="ApprovalStatus_DetailedMultiYearLine">
+          <DataField>ApprovalStatus_DetailedMultiYearLine</DataField>
+        </Field>
+        <Field Name="RevisionType_DetailedMultiYearLine">
+          <DataField>RevisionType_DetailedMultiYearLine</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

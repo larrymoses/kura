@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="TenderQuotationNo_TenderCommiteeAppointment1">
+          <DataField>TenderQuotationNo_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="CommitteeID_TenderCommiteeAppointment1">
+          <DataField>CommitteeID_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="CommitteeName_TenderCommiteeAppointment1">
+          <DataField>CommitteeName_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="CreationDate_TenderCommiteeAppointment1">
+          <DataField>CreationDate_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="UserID_TenderCommiteeAppointment1">
+          <DataField>UserID_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="Title_TenderCommiteeAppointment1">
+          <DataField>Title_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="AppointmentNo_TenderCommiteeAppointment1">
+          <DataField>AppointmentNo_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="NoSeries_TenderCommiteeAppointment1">
+          <DataField>NoSeries_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="Status_TenderCommiteeAppointment1">
+          <DataField>Status_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="NoofMembers_TenderCommiteeAppointment1">
+          <DataField>NoofMembers_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="DeadlineForReportSubmission_TenderCommiteeAppointment1">
+          <DataField>DeadlineForReportSubmission_TenderCommiteeAppointment1</DataField>
+        </Field>
+        <Field Name="Email">
+          <DataField>Email</DataField>
+        </Field>
+        <Field Name="Tel">
+          <DataField>Tel</DataField>
+        </Field>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+        </Field>
+        <Field Name="PersonalNo">
+          <DataField>PersonalNo</DataField>
+        </Field>
+        <Field Name="ReportForNavId_13">
+          <DataField>ReportForNavId_13</DataField>
+        </Field>
+        <Field Name="RefNo_CommiteeMembers">
+          <DataField>RefNo_CommiteeMembers</DataField>
+        </Field>
+        <Field Name="Commitee_CommiteeMembers">
+          <DataField>Commitee_CommiteeMembers</DataField>
+        </Field>
+        <Field Name="EmployeeNo_CommiteeMembers">
+          <DataField>EmployeeNo_CommiteeMembers</DataField>
+        </Field>
+        <Field Name="Name_CommiteeMembers">
+          <DataField>Name_CommiteeMembers</DataField>
+        </Field>
+        <Field Name="AppointmentNo_CommiteeMembers">
+          <DataField>AppointmentNo_CommiteeMembers</DataField>
+        </Field>
+        <Field Name="Chair_CommiteeMembers">
+          <DataField>Chair_CommiteeMembers</DataField>
+        </Field>
+        <Field Name="Secretary_CommiteeMembers">
+          <DataField>Secretary_CommiteeMembers</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

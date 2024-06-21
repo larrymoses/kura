@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="Company">
+          <DataField>Company</DataField>
+        </Field>
+        <Field Name="logo">
+          <DataField>logo</DataField>
+        </Field>
+        <Field Name="PostCode">
+          <DataField>PostCode</DataField>
+        </Field>
+        <Field Name="City">
+          <DataField>City</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="Address2">
+          <DataField>Address2</DataField>
+        </Field>
+        <Field Name="DocumentType_RiskManagementPlan">
+          <DataField>DocumentType_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="DocumentNo_RiskManagementPlan">
+          <DataField>DocumentNo_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="DocumentDate_RiskManagementPlan">
+          <DataField>DocumentDate_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="ProjectID_RiskManagementPlan">
+          <DataField>ProjectID_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="WorkExecutionPlanID_RiskManagementPlan">
+          <DataField>WorkExecutionPlanID_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="CorporateStrategicPlanID_RiskManagementPlan">
+          <DataField>CorporateStrategicPlanID_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="YearCode_RiskManagementPlan">
+          <DataField>YearCode_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="DirectorateID_RiskManagementPlan">
+          <DataField>DirectorateID_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="DepartmentID_RiskManagementPlan">
+          <DataField>DepartmentID_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="RegionID_RiskManagementPlan">
+          <DataField>RegionID_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="Description_RiskManagementPlan">
+          <DataField>Description_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="PrimaryMIssion_RiskManagementPlan">
+          <DataField>PrimaryMIssion_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="ResponsibleOfficerNo_RiskManagementPlan">
+          <DataField>ResponsibleOfficerNo_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="RiskLikelihoodRateScaleID_RiskManagementPlan">
+          <DataField>RiskLikelihoodRateScaleID_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="RiskImpactRatingScaleID_RiskManagementPlan">
+          <DataField>RiskImpactRatingScaleID_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="OverallRiskRatingScaleID_RiskManagementPlan">
+          <DataField>OverallRiskRatingScaleID_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="RiskAppetiteRatingScaleID_RiskManagementPlan">
+          <DataField>RiskAppetiteRatingScaleID_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="ProjectName_RiskManagementPlan">
+          <DataField>ProjectName_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="PlanningStartDate_RiskManagementPlan">
+          <DataField>PlanningStartDate_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="PlanningEndDate_RiskManagementPlan">
+          <DataField>PlanningEndDate_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="Blocked_RiskManagementPlan">
+          <DataField>Blocked_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="Status_RiskManagementPlan">
+          <DataField>Status_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="CreatedBy_RiskManagementPlan">
+          <DataField>CreatedBy_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="CreatedDateTime_RiskManagementPlan">
+          <DataField>CreatedDateTime_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="NoofNegRisksThreats_RiskManagementPlan">
+          <DataField>NoofNegRisksThreats_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="NoofPositivRisksOpports_RiskManagementPlan">
+          <DataField>NoofPositivRisksOpports_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="NoofRisksRed_RiskManagementPlan">
+          <DataField>NoofRisksRed_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="NoofRisksYellow_RiskManagementPlan">
+          <DataField>NoofRisksYellow_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="NoofRisksGreen_RiskManagementPlan">
+          <DataField>NoofRisksGreen_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="NoofRiskIncidents_RiskManagementPlan">
+          <DataField>NoofRiskIncidents_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="EstFinancialImpactLCY_RiskManagementPlan">
+          <DataField>EstFinancialImpactLCY_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="EstFinancialImpactLCY_RiskManagementPlanFormat">
+          <DataField>EstFinancialImpactLCY_RiskManagementPlanFormat</DataField>
+        </Field>
+        <Field Name="EstimateDelayImpactDays_RiskManagementPlan">
+          <DataField>EstimateDelayImpactDays_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="ActualFinancialImpactLCY_RiskManagementPlan">
+          <DataField>ActualFinancialImpactLCY_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="ActualFinancialImpactLCY_RiskManagementPlanFormat">
+          <DataField>ActualFinancialImpactLCY_RiskManagementPlanFormat</DataField>
+        </Field>
+        <Field Name="ActualScheduleDelayDays_RiskManagementPlan">
+          <DataField>ActualScheduleDelayDays_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="ActualNoInjuredPersons_RiskManagementPlan">
+          <DataField>ActualNoInjuredPersons_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="ActualNoofFatalities_RiskManagementPlan">
+          <DataField>ActualNoofFatalities_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="NoofNewRiskVouchers_RiskManagementPlan">
+          <DataField>NoofNewRiskVouchers_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="NoofRiskStatusReports_RiskManagementPlan">
+          <DataField>NoofRiskStatusReports_RiskManagementPlan</DataField>
+        </Field>
+        <Field Name="ReportForNavId_42">
+          <DataField>ReportForNavId_42</DataField>
+        </Field>
+        <Field Name="DocumentType_RiskManagementPlanLine">
+          <DataField>DocumentType_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="DocumentNo_RiskManagementPlanLine">
+          <DataField>DocumentNo_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskCategory_RiskManagementPlanLine">
+          <DataField>RiskCategory_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskTitle_RiskManagementPlanLine">
+          <DataField>RiskTitle_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskSourceID_RiskManagementPlanLine">
+          <DataField>RiskSourceID_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskLikelihoodCode_RiskManagementPlanLine">
+          <DataField>RiskLikelihoodCode_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskImpactCode_RiskManagementPlanLine">
+          <DataField>RiskImpactCode_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskImpactType_RiskManagementPlanLine">
+          <DataField>RiskImpactType_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="EstimateFinImpactLCY_RiskManagementPlanLine">
+          <DataField>EstimateFinImpactLCY_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="EstimateFinImpactLCY_RiskManagementPlanLineFormat">
+          <DataField>EstimateFinImpactLCY_RiskManagementPlanLineFormat</DataField>
+        </Field>
+        <Field Name="EstimateDelayImpactDays_RiskManagementPlanLine">
+          <DataField>EstimateDelayImpactDays_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="GenRiskResponseStrategy_RiskManagementPlanLine">
+          <DataField>GenRiskResponseStrategy_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="DateRaised_RiskManagementPlanLine">
+          <DataField>DateRaised_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskStatus_RiskManagementPlanLine">
+          <DataField>RiskStatus_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="DateClosed_RiskManagementPlanLine">
+          <DataField>DateClosed_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskLikelihoodRateScaleID_RiskManagementPlanLine">
+          <DataField>RiskLikelihoodRateScaleID_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskImpactRatingScaleID_RiskManagementPlanLine">
+          <DataField>RiskImpactRatingScaleID_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="OverallRiskRatingScaleID_RiskManagementPlanLine">
+          <DataField>OverallRiskRatingScaleID_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskAppetiteRatingScaleID_RiskManagementPlanLine">
+          <DataField>RiskAppetiteRatingScaleID_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskLikelihoodRating_RiskManagementPlanLine">
+          <DataField>RiskLikelihoodRating_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskLikelihoodRating_RiskManagementPlanLineFormat">
+          <DataField>RiskLikelihoodRating_RiskManagementPlanLineFormat</DataField>
+        </Field>
+        <Field Name="RiskImpactRating_RiskManagementPlanLine">
+          <DataField>RiskImpactRating_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskImpactRating_RiskManagementPlanLineFormat">
+          <DataField>RiskImpactRating_RiskManagementPlanLineFormat</DataField>
+        </Field>
+        <Field Name="OveralRiskRating_RiskManagementPlanLine">
+          <DataField>OveralRiskRating_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="OveralRiskRating_RiskManagementPlanLineFormat">
+          <DataField>OveralRiskRating_RiskManagementPlanLineFormat</DataField>
+        </Field>
+        <Field Name="OverallRiskLevelCode_RiskManagementPlanLine">
+          <DataField>OverallRiskLevelCode_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="RiskHeatZone_RiskManagementPlanLine">
+          <DataField>RiskHeatZone_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="NoofPlanedRiskRespActns_RiskManagementPlanLine">
+          <DataField>NoofPlanedRiskRespActns_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="NoofActualRiskRespActns_RiskManagementPlanLine">
+          <DataField>NoofActualRiskRespActns_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="NoofImpactedProjectTasks_RiskManagementPlanLine">
+          <DataField>NoofImpactedProjectTasks_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="NoofPosRiskIncidences_RiskManagementPlanLine">
+          <DataField>NoofPosRiskIncidences_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="NoofNegRiskIncidences_RiskManagementPlanLine">
+          <DataField>NoofNegRiskIncidences_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="ActualFinancialImpactLCY_RiskManagementPlanLine">
+          <DataField>ActualFinancialImpactLCY_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="ActualFinancialImpactLCY_RiskManagementPlanLineFormat">
+          <DataField>ActualFinancialImpactLCY_RiskManagementPlanLineFormat</DataField>
+        </Field>
+        <Field Name="ActualDelayImpactDays_RiskManagementPlanLine">
+          <DataField>ActualDelayImpactDays_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="NewRiskVoucherID_RiskManagementPlanLine">
+          <DataField>NewRiskVoucherID_RiskManagementPlanLine</DataField>
+        </Field>
+        <Field Name="ReportForNavId_80">
+          <DataField>ReportForNavId_80</DataField>
+        </Field>
+        <Field Name="ActivityDescription_RMPLineResponseAction">
+          <DataField>ActivityDescription_RMPLineResponseAction</DataField>
+        </Field>
+        <Field Name="DocumentType_RMPLineResponseAction">
+          <DataField>DocumentType_RMPLineResponseAction</DataField>
+        </Field>
+        <Field Name="DocumentNo_RMPLineResponseAction">
+          <DataField>DocumentNo_RMPLineResponseAction</DataField>
+        </Field>
+        <Field Name="ActionID_RMPLineResponseAction">
+          <DataField>ActionID_RMPLineResponseAction</DataField>
+        </Field>
+        <Field Name="ReportForNavId_83">
+          <DataField>ReportForNavId_83</DataField>
+        </Field>
+        <Field Name="DocumentType_RMPObjective">
+          <DataField>DocumentType_RMPObjective</DataField>
+        </Field>
+        <Field Name="DocumentNo_RMPObjective">
+          <DataField>DocumentNo_RMPObjective</DataField>
+        </Field>
+        <Field Name="Description_RMPObjective">
+          <DataField>Description_RMPObjective</DataField>
+        </Field>
+        <Field Name="ObjectiveID_RMPObjective">
+          <DataField>ObjectiveID_RMPObjective</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

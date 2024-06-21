@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_6">
+          <DataField>ReportForNavId_6</DataField>
+        </Field>
+        <Field Name="Code_BidTabulationHeader">
+          <DataField>Code_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="DocumentType_BidTabulationHeader">
+          <DataField>DocumentType_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="IFSCode_BidTabulationHeader">
+          <DataField>IFSCode_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="DocumentDate_BidTabulationHeader">
+          <DataField>DocumentDate_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="FinalEvaluationReportID_BidTabulationHeader">
+          <DataField>FinalEvaluationReportID_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="Description_BidTabulationHeader">
+          <DataField>Description_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="TenderName_BidTabulationHeader">
+          <DataField>TenderName_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="AwardedBidNo_BidTabulationHeader">
+          <DataField>AwardedBidNo_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="AwardedBidderNo_BidTabulationHeader">
+          <DataField>AwardedBidderNo_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="AwardedBidderName_BidTabulationHeader">
+          <DataField>AwardedBidderName_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="AwardTenderSumIncTaxes_BidTabulationHeader">
+          <DataField>AwardTenderSumIncTaxes_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="AwardTenderSumIncTaxes_BidTabulationHeaderFormat">
+          <DataField>AwardTenderSumIncTaxes_BidTabulationHeaderFormat</DataField>
+        </Field>
+        <Field Name="AwardAcceptanceDeadline_BidTabulationHeader">
+          <DataField>AwardAcceptanceDeadline_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="AwardAcceptanceResponse_BidTabulationHeader">
+          <DataField>AwardAcceptanceResponse_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="Noofsubmittedbids_BidTabulationHeader">
+          <DataField>Noofsubmittedbids_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="NoofOpenedBidsTech_BidTabulationHeader">
+          <DataField>NoofOpenedBidsTech_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="NoofOpenedBidsFinance_BidTabulationHeader">
+          <DataField>NoofOpenedBidsFinance_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="NoofResponsiveTech_BidTabulationHeader">
+          <DataField>NoofResponsiveTech_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="NoofnonResponsiveTech_BidTabulationHeader">
+          <DataField>NoofnonResponsiveTech_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="NoofResponsiveFinance_BidTabulationHeader">
+          <DataField>NoofResponsiveFinance_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="NoofnonResponsiveFinance_BidTabulationHeader">
+          <DataField>NoofnonResponsiveFinance_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="NoofResponsivePreliminary_BidTabulationHeader">
+          <DataField>NoofResponsivePreliminary_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="NoofnonResponsivePrelim_BidTabulationHeader">
+          <DataField>NoofnonResponsivePrelim_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="BidEvaluationCriteria_BidTabulationHeader">
+          <DataField>BidEvaluationCriteria_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="ReportForNavId_16">
+          <DataField>ReportForNavId_16</DataField>
+        </Field>
+        <Field Name="Code_StandardPurchaseCode">
+          <DataField>Code_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="Description_StandardPurchaseCode">
+          <DataField>Description_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="ExternalDocumentNo_StandardPurchaseCode">
+          <DataField>ExternalDocumentNo_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="ProjectID_StandardPurchaseCode">
+          <DataField>ProjectID_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="SubmissionEndTime_StandardPurchaseCode">
+          <DataField>SubmissionEndTime_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="SubmissionEndDate_StandardPurchaseCode">
+          <DataField>SubmissionEndDate_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="NoofSubmission_StandardPurchaseCode">
+          <DataField>NoofSubmission_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="BidOpeningDate_StandardPurchaseCode">
+          <DataField>BidOpeningDate_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="BidOpeningTime_StandardPurchaseCode">
+          <DataField>BidOpeningTime_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="BidOpeningVenue_StandardPurchaseCode">
+          <DataField>BidOpeningVenue_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="TenderValidityDuration_StandardPurchaseCode">
+          <DataField>TenderValidityDuration_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="MandatoryPrebidVisitDate_StandardPurchaseCode">
+          <DataField>MandatoryPrebidVisitDate_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="Job_StandardPurchaseCode">
+          <DataField>Job_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="PrebidMeetingAddress_StandardPurchaseCode">
+          <DataField>PrebidMeetingAddress_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="PrebidMeetingRegisterID_StandardPurchaseCode">
+          <DataField>PrebidMeetingRegisterID_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="RequestingRegion_StandardPurchaseCode">
+          <DataField>RequestingRegion_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="RequestingDirectorate_StandardPurchaseCode">
+          <DataField>RequestingDirectorate_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="RequestingDepartment_StandardPurchaseCode">
+          <DataField>RequestingDepartment_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="TenderName_StandardPurchaseCode">
+          <DataField>TenderName_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="TenderSummary_StandardPurchaseCode">
+          <DataField>TenderSummary_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="ReportForNavId_37">
+          <DataField>ReportForNavId_37</DataField>
+        </Field>
+        <Field Name="Role_IFSOpeningCommittee">
+          <DataField>Role_IFSOpeningCommittee</DataField>
+        </Field>
+        <Field Name="MemberNo_IFSOpeningCommittee">
+          <DataField>MemberNo_IFSOpeningCommittee</DataField>
+        </Field>
+        <Field Name="MemberName_IFSOpeningCommittee">
+          <DataField>MemberName_IFSOpeningCommittee</DataField>
+        </Field>
+        <Field Name="Designation_IFSOpeningCommittee">
+          <DataField>Designation_IFSOpeningCommittee</DataField>
+        </Field>
+        <Field Name="IFSCode_IFSOpeningCommittee">
+          <DataField>IFSCode_IFSOpeningCommittee</DataField>
+        </Field>
+        <Field Name="ReportForNavId_52">
+          <DataField>ReportForNavId_52</DataField>
+        </Field>
+        <Field Name="Role_IFSEvaluationCommittee">
+          <DataField>Role_IFSEvaluationCommittee</DataField>
+        </Field>
+        <Field Name="MemberNo_IFSEvaluationCommittee">
+          <DataField>MemberNo_IFSEvaluationCommittee</DataField>
+        </Field>
+        <Field Name="MemberName_IFSEvaluationCommittee">
+          <DataField>MemberName_IFSEvaluationCommittee</DataField>
+        </Field>
+        <Field Name="Designation_IFSEvaluationCommittee">
+          <DataField>Designation_IFSEvaluationCommittee</DataField>
+        </Field>
+        <Field Name="IFSCode_IFSEvaluationCommittee">
+          <DataField>IFSCode_IFSEvaluationCommittee</DataField>
+        </Field>
+        <Field Name="ReportForNavId_58">
+          <DataField>ReportForNavId_58</DataField>
+        </Field>
+        <Field Name="Code_BidOpeningRegister">
+          <DataField>Code_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="IFSCode_BidOpeningRegister">
+          <DataField>IFSCode_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="BidOpeningDate_BidOpeningRegister">
+          <DataField>BidOpeningDate_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="BidOpeningStartTime_BidOpeningRegister">
+          <DataField>BidOpeningStartTime_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="TotalEngineerEstimates_BidOpeningRegister">
+          <DataField>TotalEngineerEstimates_BidOpeningRegister</DataField>
+        </Field>
+        <Field Name="TotalEngineerEstimates_BidOpeningRegisterFormat">
+          <DataField>TotalEngineerEstimates_BidOpeningRegisterFormat</DataField>
+        </Field>
+        <Field Name="ReportForNavId_59">
+          <DataField>ReportForNavId_59</DataField>
+        </Field>
+        <Field Name="Code_BidOpeningRegisterLine">
+          <DataField>Code_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="VendorNo_BidOpeningRegisterLine">
+          <DataField>VendorNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="IFSCode_BidOpeningRegisterLine">
+          <DataField>IFSCode_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidderName_BidOpeningRegisterLine">
+          <DataField>BidderName_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidNo_BidOpeningRegisterLine">
+          <DataField>BidNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="ExternalBidReferenceNo_BidOpeningRegisterLine">
+          <DataField>ExternalBidReferenceNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="ValidBidSecurityProvided_BidOpeningRegisterLine">
+          <DataField>ValidBidSecurityProvided_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidSecurityIssuer_BidOpeningRegisterLine">
+          <DataField>BidSecurityIssuer_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidSecurityAmountLCY_BidOpeningRegisterLine">
+          <DataField>BidSecurityAmountLCY_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidSecurityAmountLCY_BidOpeningRegisterLineFormat">
+          <DataField>BidSecurityAmountLCY_BidOpeningRegisterLineFormat</DataField>
+        </Field>
+        <Field Name="BidSecurityAmountPass_BidOpeningRegisterLine">
+          <DataField>BidSecurityAmountPass_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="TotalTenderPriceLCY_BidOpeningRegisterLine">
+          <DataField>TotalTenderPriceLCY_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="TotalTenderPriceLCY_BidOpeningRegisterLineFormat">
+          <DataField>TotalTenderPriceLCY_BidOpeningRegisterLineFormat</DataField>
+        </Field>
+        <Field Name="CompleteBidDocSubmitted_BidOpeningRegisterLine">
+          <DataField>CompleteBidDocSubmitted_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="Rank_BidOpeningRegisterLine">
+          <DataField>Rank_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="AssignedBidNo_BidOpeningRegisterLine">
+          <DataField>AssignedBidNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="AutoAssignedNo_BidOpeningRegisterLine">
+          <DataField>AutoAssignedNo_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidSum1LCY_BidOpeningRegisterLine">
+          <DataField>BidSum1LCY_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidSum1LCY_BidOpeningRegisterLineFormat">
+          <DataField>BidSum1LCY_BidOpeningRegisterLineFormat</DataField>
+        </Field>
+        <Field Name="BidSum2LCY_BidOpeningRegisterLine">
+          <DataField>BidSum2LCY_BidOpeningRegisterLine</DataField>
+        </Field>
+        <Field Name="BidSum2LCY_BidOpeningRegisterLineFormat">
+          <DataField>BidSum2LCY_BidOpeningRegisterLineFormat</DataField>
+        </Field>
+        <Field Name="ReportForNavId_82">
+          <DataField>ReportForNavId_82</DataField>
+        </Field>
+        <Field Name="BidNo_PrelimEvaluationRegister">
+          <DataField>BidNo_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="VendorNo_PrelimEvaluationRegister">
+          <DataField>VendorNo_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="BidderName_PrelimEvaluationRegister">
+          <DataField>BidderName_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="EvaluationDate_PrelimEvaluationRegister">
+          <DataField>EvaluationDate_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="EvaluationVenue_PrelimEvaluationRegister">
+          <DataField>EvaluationVenue_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="IFSCode_PrelimEvaluationRegister">
+          <DataField>IFSCode_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="AppointedBidEvaluationCommi_PrelimEvaluationRegister">
+          <DataField>AppointedBidEvaluationCommi_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="PreliminaryEvaluationScore_PrelimEvaluationRegister">
+          <DataField>PreliminaryEvaluationScore_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="WeightedTechnicalEvalScore_PrelimEvaluationRegister">
+          <DataField>WeightedTechnicalEvalScore_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="WeightedTechnicalEvalScore_PrelimEvaluationRegisterFormat">
+          <DataField>WeightedTechnicalEvalScore_PrelimEvaluationRegisterFormat</DataField>
+        </Field>
+        <Field Name="TechnicalEvaluationDecision_PrelimEvaluationRegister">
+          <DataField>TechnicalEvaluationDecision_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="WeightedFinancialEvalScore_PrelimEvaluationRegister">
+          <DataField>WeightedFinancialEvalScore_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="WeightedFinancialEvalScore_PrelimEvaluationRegisterFormat">
+          <DataField>WeightedFinancialEvalScore_PrelimEvaluationRegisterFormat</DataField>
+        </Field>
+        <Field Name="AwardDecision_PrelimEvaluationRegister">
+          <DataField>AwardDecision_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="TenderEvaluationCommRemarks_PrelimEvaluationRegister">
+          <DataField>TenderEvaluationCommRemarks_PrelimEvaluationRegister</DataField>
+        </Field>
+        <Field Name="ReportForNavId_86">
+          <DataField>ReportForNavId_86</DataField>
+        </Field>
+        <Field Name="BidNo_PrelimEvalRegLines">
+          <DataField>BidNo_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="VendorNo_PrelimEvalRegLines">
+          <DataField>VendorNo_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="RequirementID_PrelimEvalRegLines">
+          <DataField>RequirementID_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="EvaluationRequirement_PrelimEvalRegLines">
+          <DataField>EvaluationRequirement_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="RatingType_PrelimEvalRegLines">
+          <DataField>RatingType_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="UnitofMeasure_PrelimEvalRegLines">
+          <DataField>UnitofMeasure_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="TargetQty_PrelimEvalRegLines">
+          <DataField>TargetQty_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="TargetQty_PrelimEvalRegLinesFormat">
+          <DataField>TargetQty_PrelimEvalRegLinesFormat</DataField>
+        </Field>
+        <Field Name="ResponseValue_PrelimEvalRegLines">
+          <DataField>ResponseValue_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="BidResponseActualQty_PrelimEvalRegLines">
+          <DataField>BidResponseActualQty_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="BidResponseActualQty_PrelimEvalRegLinesFormat">
+          <DataField>BidResponseActualQty_PrelimEvalRegLinesFormat</DataField>
+        </Field>
+        <Field Name="Score_PrelimEvalRegLines">
+          <DataField>Score_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="Score_PrelimEvalRegLinesFormat">
+          <DataField>Score_PrelimEvalRegLinesFormat</DataField>
+        </Field>
+        <Field Name="AssignedWeight_PrelimEvalRegLines">
+          <DataField>AssignedWeight_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="AssignedWeight_PrelimEvalRegLinesFormat">
+          <DataField>AssignedWeight_PrelimEvalRegLinesFormat</DataField>
+        </Field>
+        <Field Name="WeightedLineScore_PrelimEvalRegLines">
+          <DataField>WeightedLineScore_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="WeightedLineScore_PrelimEvalRegLinesFormat">
+          <DataField>WeightedLineScore_PrelimEvalRegLinesFormat</DataField>
+        </Field>
+        <Field Name="EvaluationResults_PrelimEvalRegLines">
+          <DataField>EvaluationResults_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="Remarks_PrelimEvalRegLines">
+          <DataField>Remarks_PrelimEvalRegLines</DataField>
+        </Field>
+        <Field Name="ReportForNavId_83">
+          <DataField>ReportForNavId_83</DataField>
+        </Field>
+        <Field Name="BidNo_TechicalEvaluationRegister">
+          <DataField>BidNo_TechicalEvaluationRegister</DataField>
+        </Field>
+        <Field Name="VendorNo_TechicalEvaluationRegister">
+          <DataField>VendorNo_TechicalEvaluationRegister</DataField>
+        </Field>
+        <Field Name="BidderName_TechicalEvaluationRegister">
+          <DataField>BidderName_TechicalEvaluationRegister</DataField>
+        </Field>
+        <Field Name="EvaluationDate_TechicalEvaluationRegister">
+          <DataField>EvaluationDate_TechicalEvaluationRegister</DataField>
+        </Field>
+        <Field Name="EvaluationVenue_TechicalEvaluationRegister">
+          <DataField>EvaluationVenue_TechicalEvaluationRegister</DataField>
+        </Field>
+        <Field Name="IFSCode_TechicalEvaluationRegister">
+          <DataField>IFSCode_TechicalEvaluationRegister</DataField>
+        </Field>
+        <Field Name="AppointedBidEvaluationCommi_TechicalEvaluationRegister">
+          <DataField>AppointedBidEvaluationCommi_TechicalEvaluationRegister</DataField>
+        </Field>
+        <Field Name="TechnicalEvaluationDecision_TechicalEvaluationRegister">
+          <DataField>TechnicalEvaluationDecision_TechicalEvaluationRegister</DataField>
+        </Field>
+        <Field Name="AwardDecision_TechicalEvaluationRegister">
+          <DataField>AwardDecision_TechicalEvaluationRegister</DataField>
+        </Field>
+        <Field Name="TenderEvaluationCommRemarks_TechicalEvaluationRegister">
+          <DataField>TenderEvaluationCommRemarks_TechicalEvaluationRegister</DataField>
+        </Field>
+        <Field Name="ReportForNavId_87">
+          <DataField>ReportForNavId_87</DataField>
+        </Field>
+        <Field Name="BidNo_TechnicalEvalRegLines">
+          <DataField>BidNo_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="VendorNo_TechnicalEvalRegLines">
+          <DataField>VendorNo_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="CriteriaGroup_TechnicalEvalRegLines">
+          <DataField>CriteriaGroup_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="RequirementID_TechnicalEvalRegLines">
+          <DataField>RequirementID_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="EvaluationRequirement_TechnicalEvalRegLines">
+          <DataField>EvaluationRequirement_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="RatingType_TechnicalEvalRegLines">
+          <DataField>RatingType_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="TargetValueKPI_TechnicalEvalRegLines">
+          <DataField>TargetValueKPI_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="TargetQty_TechnicalEvalRegLines">
+          <DataField>TargetQty_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="TargetQty_TechnicalEvalRegLinesFormat">
+          <DataField>TargetQty_TechnicalEvalRegLinesFormat</DataField>
+        </Field>
+        <Field Name="ResponseValue_TechnicalEvalRegLines">
+          <DataField>ResponseValue_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="BidResponseActualQty_TechnicalEvalRegLines">
+          <DataField>BidResponseActualQty_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="BidResponseActualQty_TechnicalEvalRegLinesFormat">
+          <DataField>BidResponseActualQty_TechnicalEvalRegLinesFormat</DataField>
+        </Field>
+        <Field Name="Score_TechnicalEvalRegLines">
+          <DataField>Score_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="Score_TechnicalEvalRegLinesFormat">
+          <DataField>Score_TechnicalEvalRegLinesFormat</DataField>
+        </Field>
+        <Field Name="AssignedWeight_TechnicalEvalRegLines">
+          <DataField>AssignedWeight_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="AssignedWeight_TechnicalEvalRegLinesFormat">
+          <DataField>AssignedWeight_TechnicalEvalRegLinesFormat</DataField>
+        </Field>
+        <Field Name="WeightedLineScore_TechnicalEvalRegLines">
+          <DataField>WeightedLineScore_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="WeightedLineScore_TechnicalEvalRegLinesFormat">
+          <DataField>WeightedLineScore_TechnicalEvalRegLinesFormat</DataField>
+        </Field>
+        <Field Name="EquipmentType_TechnicalEvalRegLines">
+          <DataField>EquipmentType_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="DesiredPerfomanceDirection_TechnicalEvalRegLines">
+          <DataField>DesiredPerfomanceDirection_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="EvaluationResults_TechnicalEvalRegLines">
+          <DataField>EvaluationResults_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="Remarks_TechnicalEvalRegLines">
+          <DataField>Remarks_TechnicalEvalRegLines</DataField>
+        </Field>
+        <Field Name="ReportForNavId_84">
+          <DataField>ReportForNavId_84</DataField>
+        </Field>
+        <Field Name="ReportForNavId_88">
+          <DataField>ReportForNavId_88</DataField>
+        </Field>
+        <Field Name="ReportForNavId_85">
+          <DataField>ReportForNavId_85</DataField>
+        </Field>
+        <Field Name="BidNo_PostQualEvaluationRegister">
+          <DataField>BidNo_PostQualEvaluationRegister</DataField>
+        </Field>
+        <Field Name="VendorNo_PostQualEvaluationRegister">
+          <DataField>VendorNo_PostQualEvaluationRegister</DataField>
+        </Field>
+        <Field Name="BidderName_PostQualEvaluationRegister">
+          <DataField>BidderName_PostQualEvaluationRegister</DataField>
+        </Field>
+        <Field Name="EvaluationDate_PostQualEvaluationRegister">
+          <DataField>EvaluationDate_PostQualEvaluationRegister</DataField>
+        </Field>
+        <Field Name="EvaluationVenue_PostQualEvaluationRegister">
+          <DataField>EvaluationVenue_PostQualEvaluationRegister</DataField>
+        </Field>
+        <Field Name="IFSCode_PostQualEvaluationRegister">
+          <DataField>IFSCode_PostQualEvaluationRegister</DataField>
+        </Field>
+        <Field Name="AppointedBidEvaluationCommi_PostQualEvaluationRegister">
+          <DataField>AppointedBidEvaluationCommi_PostQualEvaluationRegister</DataField>
+        </Field>
+        <Field Name="ReportForNavId_89">
+          <DataField>ReportForNavId_89</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

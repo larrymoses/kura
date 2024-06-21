@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="Logo">
+          <DataField>Logo</DataField>
+        </Field>
+        <Field Name="Int">
+          <DataField>Int</DataField>
+        </Field>
+        <Field Name="No_PerfomanceContractHeader">
+          <DataField>No_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="DocumentType_PerfomanceContractHeader">
+          <DataField>DocumentType_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="Description_PerfomanceContractHeader">
+          <DataField>Description_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="DocumentDate_PerfomanceContractHeader">
+          <DataField>DocumentDate_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ObjectiveSettingDueDate_PerfomanceContractHeader">
+          <DataField>ObjectiveSettingDueDate_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="StrategyPlanID_PerfomanceContractHeader">
+          <DataField>StrategyPlanID_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="AnnualReportingCode_PerfomanceContractHeader">
+          <DataField>AnnualReportingCode_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="StartDate_PerfomanceContractHeader">
+          <DataField>StartDate_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="EndDate_PerfomanceContractHeader">
+          <DataField>EndDate_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ResponsibleEmployeeNo_PerfomanceContractHeader">
+          <DataField>ResponsibleEmployeeNo_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="Designation_PerfomanceContractHeader">
+          <DataField>Designation_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="Grade_PerfomanceContractHeader">
+          <DataField>Grade_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="EmployeeName_PerfomanceContractHeader">
+          <DataField>EmployeeName_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ResponsibilityCenter_PerfomanceContractHeader">
+          <DataField>ResponsibilityCenter_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ResponsibilityCenterName_PerfomanceContractHeader">
+          <DataField>ResponsibilityCenterName_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="EvaluationType_PerfomanceContractHeader">
+          <DataField>EvaluationType_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ApprovalStatus_PerfomanceContractHeader">
+          <DataField>ApprovalStatus_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="Blocked_PerfomanceContractHeader">
+          <DataField>Blocked_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="CreatedBy_PerfomanceContractHeader">
+          <DataField>CreatedBy_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="CreatedOn_PerfomanceContractHeader">
+          <DataField>CreatedOn_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="LastEvaluationDate_PerfomanceContractHeader">
+          <DataField>LastEvaluationDate_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="NoSeries_PerfomanceContractHeader">
+          <DataField>NoSeries_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="GoalTemplateID_PerfomanceContractHeader">
+          <DataField>GoalTemplateID_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="AnnualWorkplan_PerfomanceContractHeader">
+          <DataField>AnnualWorkplan_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="CEOWorkPlan_PerfomanceContractHeader">
+          <DataField>CEOWorkPlan_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="FunctionalWorkPlan_PerfomanceContractHeader">
+          <DataField>FunctionalWorkPlan_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="Status_PerfomanceContractHeader">
+          <DataField>Status_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ChangeStatus_PerfomanceContractHeader">
+          <DataField>ChangeStatus_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ShortcutDimension1Code_PerfomanceContractHeader">
+          <DataField>ShortcutDimension1Code_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ShortcutDimension2Code_PerfomanceContractHeader">
+          <DataField>ShortcutDimension2Code_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="DimensionSetID_PerfomanceContractHeader">
+          <DataField>DimensionSetID_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="Directorate_PerfomanceContractHeader">
+          <DataField>Directorate_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="DirectorateName_PerfomanceContractHeader">
+          <DataField>DirectorateName_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="Position_PerfomanceContractHeader">
+          <DataField>Position_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="TotalAssignedWeight_PerfomanceContractHeader">
+          <DataField>TotalAssignedWeight_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="TotalAssignedWeight_PerfomanceContractHeaderFormat">
+          <DataField>TotalAssignedWeight_PerfomanceContractHeaderFormat</DataField>
+        </Field>
+        <Field Name="SecondaryAssignedWeight_PerfomanceContractHeader">
+          <DataField>SecondaryAssignedWeight_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="SecondaryAssignedWeight_PerfomanceContractHeaderFormat">
+          <DataField>SecondaryAssignedWeight_PerfomanceContractHeaderFormat</DataField>
+        </Field>
+        <Field Name="JDAssignedWeight_PerfomanceContractHeader">
+          <DataField>JDAssignedWeight_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="JDAssignedWeight_PerfomanceContractHeaderFormat">
+          <DataField>JDAssignedWeight_PerfomanceContractHeaderFormat</DataField>
+        </Field>
+        <Field Name="StrategyFramework_PerfomanceContractHeader">
+          <DataField>StrategyFramework_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="VisionStatement_PerfomanceContractHeader">
+          <DataField>VisionStatement_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="MissionStatement_PerfomanceContractHeader">
+          <DataField>MissionStatement_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ScoreCardType_PerfomanceContractHeader">
+          <DataField>ScoreCardType_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="DirectorsPCID_PerfomanceContractHeader">
+          <DataField>DirectorsPCID_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="DepartmentCenterPCID_PerfomanceContractHeader">
+          <DataField>DepartmentCenterPCID_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ActivityType_PerfomanceContractHeader">
+          <DataField>ActivityType_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="HOD_PerfomanceContractHeader">
+          <DataField>HOD_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ActingJobID_PerfomanceContractHeader">
+          <DataField>ActingJobID_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="NoofCEOsPCs_PerfomanceContractHeader">
+          <DataField>NoofCEOsPCs_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="NoofDirectorsPCs_PerfomanceContractHeader">
+          <DataField>NoofDirectorsPCs_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="NoofDepartmentsPCs_PerfomanceContractHeader">
+          <DataField>NoofDepartmentsPCs_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="NoofStaffPCs_PerfomanceContractHeader">
+          <DataField>NoofStaffPCs_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="NoofDptStaffPCs_PerfomanceContractHeader">
+          <DataField>NoofDptStaffPCs_PerfomanceContractHeader</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

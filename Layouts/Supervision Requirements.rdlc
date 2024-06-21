@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>925c97b3-2511-4f98-8189-35ab73f60fad</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="CName">
+          <DataField>CName</DataField>
+        </Field>
+        <Field Name="CAddress2">
+          <DataField>CAddress2</DataField>
+        </Field>
+        <Field Name="CAddress">
+          <DataField>CAddress</DataField>
+        </Field>
+        <Field Name="CCity">
+          <DataField>CCity</DataField>
+        </Field>
+        <Field Name="CPic">
+          <DataField>CPic</DataField>
+        </Field>
+        <Field Name="DocumentNo_TemporarySupervisionRequirem">
+          <DataField>DocumentNo_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="DocumentType_TemporarySupervisionRequirem">
+          <DataField>DocumentType_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="ContractID_TemporarySupervisionRequirem">
+          <DataField>ContractID_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="ProjectNo_TemporarySupervisionRequirem">
+          <DataField>ProjectNo_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="ContractorNo_TemporarySupervisionRequirem">
+          <DataField>ContractorNo_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="ContractorName_TemporarySupervisionRequirem">
+          <DataField>ContractorName_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="ProjectName_TemporarySupervisionRequirem">
+          <DataField>ProjectName_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="WorkExecutionPlan_TemporarySupervisionRequirem">
+          <DataField>WorkExecutionPlan_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="CreatedBy_TemporarySupervisionRequirem">
+          <DataField>CreatedBy_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="CreatedDateTime_TemporarySupervisionRequirem">
+          <DataField>CreatedDateTime_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="DocumentDate_TemporarySupervisionRequirem">
+          <DataField>DocumentDate_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="Status_TemporarySupervisionRequirem">
+          <DataField>Status_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="NoSeries_TemporarySupervisionRequirem">
+          <DataField>NoSeries_TemporarySupervisionRequirem</DataField>
+        </Field>
+        <Field Name="DocumentNo_TemporarySupervisionLine">
+          <DataField>DocumentNo_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="DocumentType_TemporarySupervisionLine">
+          <DataField>DocumentType_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="LineNo_TemporarySupervisionLine">
+          <DataField>LineNo_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="Type_TemporarySupervisionLine">
+          <DataField>Type_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="ProjectID_TemporarySupervisionLine">
+          <DataField>ProjectID_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="No_TemporarySupervisionLine">
+          <DataField>No_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="Description_TemporarySupervisionLine">
+          <DataField>Description_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="UnitofMeasure_TemporarySupervisionLine">
+          <DataField>UnitofMeasure_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="Quantity_TemporarySupervisionLine">
+          <DataField>Quantity_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="Quantity_TemporarySupervisionLineFormat">
+          <DataField>Quantity_TemporarySupervisionLineFormat</DataField>
+        </Field>
+        <Field Name="Comments_TemporarySupervisionLine">
+          <DataField>Comments_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="ProvisionType_TemporarySupervisionLine">
+          <DataField>ProvisionType_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="TaskNo_TemporarySupervisionLine">
+          <DataField>TaskNo_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="BillItemNo_TemporarySupervisionLine">
+          <DataField>BillItemNo_TemporarySupervisionLine</DataField>
+        </Field>
+        <Field Name="PlanLineNo_TemporarySupervisionLine">
+          <DataField>PlanLineNo_TemporarySupervisionLine</DataField>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet</rd:DataSetName>
+        <rd:SchemaPath>Report.xsd</rd:SchemaPath>
+        <rd:TableName>Result</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <PageHeader>
+          <Height>1.00917in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Image Name="Image1">
+              <Source>Database</Source>
+              <Value>=First(Fields!CPic.Value, "DataSet_Result")</Value>
+              <MIMEType>image/jpeg</MIMEType>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.09944in</Top>
+              <Left>2.27306in</Left>
+              <Height>0.76389in</Height>
+              <Width>1.40972in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Textbox Name="Textbox1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CName.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.07861in</Top>
+              <Left>4.39806in</Left>
+              <Height>0.14583in</Height>
+              <Width>1.88194in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox2">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CAddress.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.22444in</Top>
+              <Left>4.39806in</Left>
+              <Height>0.14583in</Height>
+              <Width>1.88194in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox3">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CAddress2.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox3</rd:DefaultName>
+              <Top>0.38416in</Top>
+              <Left>4.39806in</Left>
+              <Height>0.16667in</Height>
+              <Width>1.88194in</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox4">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!CCity.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.55083in</Top>
+              <Left>4.39806in</Left>
+              <Height>0.14583in</Height>
+              <Width>1.88194in</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+</Report>

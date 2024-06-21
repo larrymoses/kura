@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="image1">
+          <DataField>image1</DataField>
+        </Field>
+        <Field Name="name">
+          <DataField>name</DataField>
+        </Field>
+        <Field Name="Code_RequestForInformation">
+          <DataField>Code_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Description_RequestForInformation">
+          <DataField>Description_RequestForInformation</DataField>
+        </Field>
+        <Field Name="PeriodStartDate_RequestForInformation">
+          <DataField>PeriodStartDate_RequestForInformation</DataField>
+        </Field>
+        <Field Name="PeriodEndDate_RequestForInformation">
+          <DataField>PeriodEndDate_RequestForInformation</DataField>
+        </Field>
+        <Field Name="ReportForNavId_7">
+          <DataField>ReportForNavId_7</DataField>
+        </Field>
+        <Field Name="DocumentType_IFPResponseLine">
+          <DataField>DocumentType_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="DocumentNo_IFPResponseLine">
+          <DataField>DocumentNo_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="ProcurementCategory_IFPResponseLine">
+          <DataField>ProcurementCategory_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="CategoryDescription_IFPResponseLine">
+          <DataField>CategoryDescription_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="RFIDocumentNo_IFPResponseLine">
+          <DataField>RFIDocumentNo_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="VendorNo_IFPResponseLine">
+          <DataField>VendorNo_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="SpecialGroupReservation_IFPResponseLine">
+          <DataField>SpecialGroupReservation_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="UniqueCategoryRequirements_IFPResponseLine">
+          <DataField>UniqueCategoryRequirements_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="GlobalRCPrequalification_IFPResponseLine">
+          <DataField>GlobalRCPrequalification_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="RestrictedResponsbilityCente_IFPResponseLine">
+          <DataField>RestrictedResponsbilityCente_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="RestrictedRCID_IFPResponseLine">
+          <DataField>RestrictedRCID_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="PrequalificationStartDate_IFPResponseLine">
+          <DataField>PrequalificationStartDate_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="PrequalificationEndDate_IFPResponseLine">
+          <DataField>PrequalificationEndDate_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="EvaluationDecision_IFPResponseLine">
+          <DataField>EvaluationDecision_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="EvaluationScore_IFPResponseLine">
+          <DataField>EvaluationScore_IFPResponseLine</DataField>
+        </Field>
+        <Field Name="EvaluationScore_IFPResponseLineFormat">
+          <DataField>EvaluationScore_IFPResponseLineFormat</DataField>
+        </Field>
+        <Field Name="vendorname">
+          <DataField>vendorname</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

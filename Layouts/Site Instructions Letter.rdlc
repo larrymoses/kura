@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="DocumentNo_SiteInstructionsHeader">
+          <DataField>DocumentNo_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="DocumentDate_SiteInstructionsHeader">
+          <DataField>DocumentDate_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="ProjectID_SiteInstructionsHeader">
+          <DataField>ProjectID_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="ProjectName_SiteInstructionsHeader">
+          <DataField>ProjectName_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="ContractNo_SiteInstructionsHeader">
+          <DataField>ContractNo_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="ContractorNo_SiteInstructionsHeader">
+          <DataField>ContractorNo_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="ContractorName_SiteInstructionsHeader">
+          <DataField>ContractorName_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="StartChainage_SiteInstructionsHeader">
+          <DataField>StartChainage_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="StartChainage_SiteInstructionsHeaderFormat">
+          <DataField>StartChainage_SiteInstructionsHeaderFormat</DataField>
+        </Field>
+        <Field Name="EndChainage_SiteInstructionsHeader">
+          <DataField>EndChainage_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="EndChainage_SiteInstructionsHeaderFormat">
+          <DataField>EndChainage_SiteInstructionsHeaderFormat</DataField>
+        </Field>
+        <Field Name="ChainageDescription_SiteInstructionsHeader">
+          <DataField>ChainageDescription_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="WorksInstructionsDescriptio_SiteInstructionsHeader">
+          <DataField>WorksInstructionsDescriptio_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="RegionID_SiteInstructionsHeader">
+          <DataField>RegionID_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="RegionName_SiteInstructionsHeader">
+          <DataField>RegionName_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="DirectorateID_SiteInstructionsHeader">
+          <DataField>DirectorateID_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="DirectorateName_SiteInstructionsHeader">
+          <DataField>DirectorateName_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="DepartmentID_SiteInstructionsHeader">
+          <DataField>DepartmentID_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="DepartmentName_SiteInstructionsHeader">
+          <DataField>DepartmentName_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="CreatedBy_SiteInstructionsHeader">
+          <DataField>CreatedBy_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="CreatedDateTime_SiteInstructionsHeader">
+          <DataField>CreatedDateTime_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="Posted_SiteInstructionsHeader">
+          <DataField>Posted_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="SiteAgentNo_SiteInstructionsHeader">
+          <DataField>SiteAgentNo_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="SiteAgentName_SiteInstructionsHeader">
+          <DataField>SiteAgentName_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="Status_SiteInstructionsHeader">
+          <DataField>Status_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="PortalStatus_SiteInstructionsHeader">
+          <DataField>PortalStatus_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="NoSeries_SiteInstructionsHeader">
+          <DataField>NoSeries_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="TotalAmountExclusiveVAT_SiteInstructionsHeader">
+          <DataField>TotalAmountExclusiveVAT_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="TotalAmountExclusiveVAT_SiteInstructionsHeaderFormat">
+          <DataField>TotalAmountExclusiveVAT_SiteInstructionsHeaderFormat</DataField>
+        </Field>
+        <Field Name="TotalAmountInclusiveVAT_SiteInstructionsHeader">
+          <DataField>TotalAmountInclusiveVAT_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="TotalAmountInclusiveVAT_SiteInstructionsHeaderFormat">
+          <DataField>TotalAmountInclusiveVAT_SiteInstructionsHeaderFormat</DataField>
+        </Field>
+        <Field Name="KeRRAReferenceNo_SiteInstructionsHeader">
+          <DataField>KeRRAReferenceNo_SiteInstructionsHeader</DataField>
+        </Field>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="CompanyAddress1">
+          <DataField>CompanyAddress1</DataField>
+        </Field>
+        <Field Name="CompanyAddress2">
+          <DataField>CompanyAddress2</DataField>
+        </Field>
+        <Field Name="CompanyAddress3">
+          <DataField>CompanyAddress3</DataField>
+        </Field>
+        <Field Name="CompanyAddress4">
+          <DataField>CompanyAddress4</DataField>
+        </Field>
+        <Field Name="CompanyAddress5">
+          <DataField>CompanyAddress5</DataField>
+        </Field>
+        <Field Name="CompanyAddress6">
+          <DataField>CompanyAddress6</DataField>
+        </Field>
+        <Field Name="CompanyMotto">
+          <DataField>CompanyMotto</DataField>
+        </Field>
+        <Field Name="Road_Code">
+          <DataField>Road_Code</DataField>
+        </Field>
+        <Field Name="Road_Name">
+          <DataField>Road_Name</DataField>
+        </Field>
+        <Field Name="Site_Instruction_No">
+          <DataField>Site_Instruction_No</DataField>
+        </Field>
+        <Field Name="ReportForNavId_30">
+          <DataField>ReportForNavId_30</DataField>
+        </Field>
+        <Field Name="DocumentNo_SiteInstructionsLine">
+          <DataField>DocumentNo_SiteInstructionsLine</DataField>
+        </Field>
+        <Field Name="LineNo_SiteInstructionsLine">
+          <DataField>LineNo_SiteInstructionsLine</DataField>
+        </Field>
+        <Field Name="BoQCategoryCode_SiteInstructionsLine">
+          <DataField>BoQCategoryCode_SiteInstructionsLine</DataField>
+        </Field>
+        <Field Name="BoQItemLineNo_SiteInstructionsLine">
+          <DataField>BoQItemLineNo_SiteInstructionsLine</DataField>
+        </Field>
+        <Field Name="Description_SiteInstructionsLine">
+          <DataField>Description_SiteInstructionsLine</DataField>
+        </Field>
+        <Field Name="Quantity_SiteInstructionsLine">
+          <DataField>Quantity_SiteInstructionsLine</DataField>
+        </Field>
+        <Field Name="Quantity_SiteInstructionsLineFormat">
+          <DataField>Quantity_SiteInstructionsLineFormat</DataField>
+        </Field>
+        <Field Name="Amount_SiteInstructionsLine">
+          <DataField>Amount_SiteInstructionsLine</DataField>
+        </Field>
+        <Field Name="Amount_SiteInstructionsLineFormat">
+          <DataField>Amount_SiteInstructionsLineFormat</DataField>
+        </Field>
+        <Field Name="TotalAmount_SiteInstructionsLine">
+          <DataField>TotalAmount_SiteInstructionsLine</DataField>
+        </Field>
+        <Field Name="TotalAmount_SiteInstructionsLineFormat">
+          <DataField>TotalAmount_SiteInstructionsLineFormat</DataField>
+        </Field>
+        <Field Name="BoQCategoryDescription_SiteInstructionsLine">
+          <DataField>BoQCategoryDescription_SiteInstructionsLine</DataField>
+        </Field>
+        <Field Name="BoQItemNo_SiteInstructionsLine">
+          <DataField>BoQItemNo_SiteInstructionsLine</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

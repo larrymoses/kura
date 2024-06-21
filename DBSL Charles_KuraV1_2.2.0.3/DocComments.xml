@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<doc>
+    <application>
+        <id>a425e893-8c07-41fb-8240-d15edc5aac8b</id>
+        <name>KuraV1</name>
+        <publisher>DBSL Charles</publisher>
+        <version>2.2.0.3</version>
+    </application>
+    <members>
+        <member name="O:Table::Procurement Plan1">
+            <summary>
+            Table Procurement Plan1 (ID 70008).
+            </summary>
+        </member>
+        <member name="O:Table::Procurement Plan Entry1">
+            <summary>
+            Table Procurement Plan Entry1 (ID 70038).
+            </summary>
+        </member>
+        <member name="O:Table::Research Output Register">
+            <summary>
+            Table Research Output Register (ID 65009).
+            </summary>
+        </member>
+        <member name="O:Table::Research Program">
+            <summary>
+            Table Research Program (ID 65005).
+            </summary>
+        </member>
+        <member name="O:Table::RICS Existing Road Environ">
+            <summary>
+            Table RICS Existing Road Environ (ID 72122).
+            </summary>
+        </member>
+        <member name="V:Table::Road Facility Item.RoadsManagementSetup">
+            RoadSection: Record "Road Section";
+        </member>
+        <member name="O:Table::Works Progress Headers">
+            <summary>
+            Table Works Progress Headers (ID 72093).
+            </summary>
+        </member>
+        <member name="M:Codeunit::Purchase Requisition MGT.RequisitionLineTOPurchaseLine(Quotations Evaluation@,Quotations Evaluation,Integer,Boolean)">
+            <summary>
+            RequisitionLineTOPurchaseLine.
+            </summary>
+            <param name="PurchaseLine">VAR Record "Quotations Evaluation".</param>
+            <param name="RequisitionLine">Record "Quotations Evaluation".</param>
+            <param name="LineNo">Integer.</param>
+            <param name="AppendToOrder">Boolean.</param>
+        </member>
+        <member name="O:Page::A-Payment Voucher">
+            <summary>
+            Page A-Payment Voucher (ID 57094).
+            </summary>
+        </member>
+        <member name="">
+            AutoFormatExpression = "Currency Code";
+        </member>
+        <member name="V:Page::Copyright Application Card.Accounts">
+            ApprovalsMgmt: Codeunit "Approvals Mgmt.";
+        </member>
+        <member name="">
+            /////////////////////////////////////////////////////////////////////////////////////////
+        </member>
+        <member name="">
+            
+        </member>
+        <member name="">
+            
+        </member>
+        <member name="">
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        </member>
+        <member name="">
+            
+            cccccccccccccccccccccccc////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        </member>
+        <member name="V:Page::Financial Bid Evaluation Card.OpenApprovalEntriesExistCurrUser">
+             ApprovalsMgmt: Codeunit "Approvals Mgmt.";
+        </member>
+        <member name="V:Page::Functional Work Program(T-D).RoadWorkProgram">
+             ApprovalsMgmt: Codeunit "Approvals Mgmt.";
+        </member>
+        <member name="">
+            RunObject = Page "Purchase Requisition";
+        </member>
+        <member name="O:Page::Procurement  Role Center">
+            <summary>
+            Page Procurement  Role Center (ID 65136).
+            </summary>
+        </member>
+        <member name="O:Page::Proffesion Opinion Card">
+            <summary>
+            Page Proffesion Opinion Card (ID 75278).
+            </summary>
+        </member>
+        <member name="O:Page::Purchase Requisition card">
+            <summary>
+            Page Purchase Requisition (ID 50071).
+            </summary>
+        </member>
+        <member name="M:Page::Purchase Requisition card.OnOpenPage">
+            
+            //////////////////////
+        </member>
+        <member name="O:Page::Research Center List">
+            <summary>
+            Page Research Center List (ID 65001).
+            </summary>
+        </member>
+        <member name="O:Page::Researcher Card">
+            <summary>
+            Page Researcher Card (ID 65034).
+            </summary>
+        </member>
+        <member name="O:Page::Researcher List">
+            <summary>
+            Page Researcher List (ID 65035).
+            </summary>
+        </member>
+        <member name="O:Page::Resolved Complaints Card">
+            <summary>
+            Page Resolved Complaints Card (ID 56095).
+            </summary>
+        </member>
+        <member name="O:Page::Retention Payment Request">
+            <summary>
+            Page Retention Payment Request (ID 72778).
+            </summary>
+        </member>
+        <member name="O:Page::Returned File Requsition card">
+            <summary>
+            Page Returned File Requsition card (ID 59104).
+            </summary>
+        </member>
+        <member name="O:Page::RFI Response Card">
+            <summary>
+            Page RFI Response Card (ID 75172).
+            </summary>
+        </member>
+        <member name="O:Page::RFP Award Card">
+            <summary>
+            Page RFP Award Card (ID 70089).
+            </summary>
+        </member>
+        <member name="O:Page::RFP Award Card_">
+            <summary>
+            Page RFP Award Card_ (ID 70091).
+            </summary>
+        </member>
+        <member name="O:Page::Standard Purchase Requisition">
+            <summary>
+            Page Standard Purchase Requisition (ID 75237).
+            </summary>
+        </member>
+        <member name="O:Page::Taking Over inspection">
+            <summary>
+            Page Taking Over inspection (ID 72570).
+            </summary>
+        </member>
+        <member name="O:Page::Tender Award Card_">
+            <summary>
+            Page Tender Award Card_ (ID 70101).
+            </summary>
+        </member>
+        <member name="O:Page::Tender Evaluation Card">
+            <summary>
+            Page Tender Evaluation Card (ID 70097).
+            </summary>
+        </member>
+        <member name="O:TableExtension::tableextension50013">
+            <summary>
+            TableExtension "tableextension50013" (ID 50013) extends Record Purchase Line.
+            </summary>
+        </member>
+        <member name="O:TableExtension::tableextension50028">
+            <summary>
+            TableExtension "tableextension50028" (ID 50028) extends Record Resource.
+            </summary>
+        </member>
+        <member name="O:TableExtension::tableextension50134">
+            <summary>
+            TableExtension "tableextension50134" (ID 50134) extends Record Responsibility Center.
+            </summary>
+        </member>
+        <member name="O:Enum::Responsibility Center Operating unit types">
+            <summary>
+            Enum Responsibility Center Operating unit types (ID 50000).
+            </summary>
+        </member>
+        <member name="O:EnumExtension::Approval DocType Enum Ext">
+            <summary>
+            EnumExtension Approval Entry Document Type Enum Ext (ID 50001) extends Record Approval Document Type.
+            </summary>
+        </member>
+    </members>
+</doc>

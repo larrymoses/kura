@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="CIName">
+          <DataField>CIName</DataField>
+        </Field>
+        <Field Name="CIAddress">
+          <DataField>CIAddress</DataField>
+        </Field>
+        <Field Name="CIAddress2">
+          <DataField>CIAddress2</DataField>
+        </Field>
+        <Field Name="CICity">
+          <DataField>CICity</DataField>
+        </Field>
+        <Field Name="CIPhone">
+          <DataField>CIPhone</DataField>
+        </Field>
+        <Field Name="CIPic">
+          <DataField>CIPic</DataField>
+        </Field>
+        <Field Name="CIEmail">
+          <DataField>CIEmail</DataField>
+        </Field>
+        <Field Name="CIWebsite">
+          <DataField>CIWebsite</DataField>
+        </Field>
+        <Field Name="CIMotto">
+          <DataField>CIMotto</DataField>
+        </Field>
+        <Field Name="TenderNo">
+          <DataField>TenderNo</DataField>
+        </Field>
+        <Field Name="TenderName">
+          <DataField>TenderName</DataField>
+        </Field>
+        <Field Name="Code_BidEvaluationRegister">
+          <DataField>Code_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="EvaluationType_BidEvaluationRegister">
+          <DataField>EvaluationType_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="IFSCode_BidEvaluationRegister">
+          <DataField>IFSCode_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="FinalOpeningDone_BidEvaluationRegister">
+          <DataField>FinalOpeningDone_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="PreliminaryEvaluationScore_BidEvaluationRegister">
+          <DataField>PreliminaryEvaluationScore_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="WeightedTechnicalEvalScore_BidEvaluationRegister">
+          <DataField>WeightedTechnicalEvalScore_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="WeightedTechnicalEvalScore_BidEvaluationRegisterFormat">
+          <DataField>WeightedTechnicalEvalScore_BidEvaluationRegisterFormat</DataField>
+        </Field>
+        <Field Name="FinanceOpeningRegisterNo_BidEvaluationRegister">
+          <DataField>FinanceOpeningRegisterNo_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="FinanceOpeningDate_BidEvaluationRegister">
+          <DataField>FinanceOpeningDate_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="SensitivityAnalysisRemarks_BidEvaluationRegister">
+          <DataField>SensitivityAnalysisRemarks_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="PreferenceReservationRemarks_BidEvaluationRegister">
+          <DataField>PreferenceReservationRemarks_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="HasPostQualification_BidEvaluationRegister">
+          <DataField>HasPostQualification_BidEvaluationRegister</DataField>
+        </Field>
+        <Field Name="ReportForNavId_76">
+          <DataField>ReportForNavId_76</DataField>
+        </Field>
+        <Field Name="ItemCatecory_EPercentage">
+          <DataField>ItemCatecory_EPercentage</DataField>
+        </Field>
+        <Field Name="EscalationPercentage_EPercentage">
+          <DataField>EscalationPercentage_EPercentage</DataField>
+        </Field>
+        <Field Name="EscalationPercentage_EPercentageFormat">
+          <DataField>EscalationPercentage_EPercentageFormat</DataField>
+        </Field>
+        <Field Name="EscalationAmount_EPercentage">
+          <DataField>EscalationAmount_EPercentage</DataField>
+        </Field>
+        <Field Name="EscalationAmount_EPercentageFormat">
+          <DataField>EscalationAmount_EPercentageFormat</DataField>
+        </Field>
+        <Field Name="ItemCategoryDescription_EPercentage">
+          <DataField>ItemCategoryDescription_EPercentage</DataField>
+        </Field>
+        <Field Name="Amount_EPercentage">
+          <DataField>Amount_EPercentage</DataField>
+        </Field>
+        <Field Name="Amount_EPercentageFormat">
+          <DataField>Amount_EPercentageFormat</DataField>
+        </Field>
+        <Field Name="BidRegisterNo_EPercentage">
+          <DataField>BidRegisterNo_EPercentage</DataField>
+        </Field>
+        <Field Name="IFSCode_EPercentage">
+          <DataField>IFSCode_EPercentage</DataField>
+        </Field>
+        <Field Name="ReportForNavId_12">
+          <DataField>ReportForNavId_12</DataField>
+        </Field>
+        <Field Name="AutoBidNo3">
+          <DataField>AutoBidNo3</DataField>
+        </Field>
+        <Field Name="DocumentID_FinanceEvaluationLine">
+          <DataField>DocumentID_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="DocumentType_FinanceEvaluationLine">
+          <DataField>DocumentType_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="No_FinanceEvaluationLine">
+          <DataField>No_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="BidderNo_FinanceEvaluationLine">
+          <DataField>BidderNo_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="BidderName_FinanceEvaluationLine">
+          <DataField>BidderName_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="InvitationForSupplyNo_FinanceEvaluationLine">
+          <DataField>InvitationForSupplyNo_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="FinalEvaluatedBidPrice_FinanceEvaluationLine">
+          <DataField>FinalEvaluatedBidPrice_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="FinalEvaluatedBidPrice_FinanceEvaluationLineFormat">
+          <DataField>FinalEvaluatedBidPrice_FinanceEvaluationLineFormat</DataField>
+        </Field>
+        <Field Name="ReadoutBidPriceA_FinanceEvaluationLine">
+          <DataField>ReadoutBidPriceA_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="ReadoutBidPriceA_FinanceEvaluationLineFormat">
+          <DataField>ReadoutBidPriceA_FinanceEvaluationLineFormat</DataField>
+        </Field>
+        <Field Name="FinalTenderOutcome_FinanceEvaluationLine">
+          <DataField>FinalTenderOutcome_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="CorrectedDiscBidPrice_FinanceEvaluationLine">
+          <DataField>CorrectedDiscBidPrice_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="CorrectedDiscBidPrice_FinanceEvaluationLineFormat">
+          <DataField>CorrectedDiscBidPrice_FinanceEvaluationLineFormat</DataField>
+        </Field>
+        <Field Name="FinacialAutoRanking_FinanceEvaluationLine">
+          <DataField>FinacialAutoRanking_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="CorrectedBidPrice_FinanceEvaluationLine">
+          <DataField>CorrectedBidPrice_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="CorrectedBidPrice_FinanceEvaluationLineFormat">
+          <DataField>CorrectedBidPrice_FinanceEvaluationLineFormat</DataField>
+        </Field>
+        <Field Name="EvaluationCommitteeRemarks_FinanceEvaluationLine">
+          <DataField>EvaluationCommitteeRemarks_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="EvaluationCommitteeRecomm_FinanceEvaluationLine">
+          <DataField>EvaluationCommitteeRecomm_FinanceEvaluationLine</DataField>
+        </Field>
+        <Field Name="BidSum1">
+          <DataField>BidSum1</DataField>
+        </Field>
+        <Field Name="BidSum1Format">
+          <DataField>BidSum1Format</DataField>
+        </Field>
+        <Field Name="BidSum2">
+          <DataField>BidSum2</DataField>
+        </Field>
+        <Field Name="BidSum2Format">
+          <DataField>BidSum2Format</DataField>
+        </Field>
+        <Field Name="ReportForNavId_68">
+          <DataField>ReportForNavId_68</DataField>
+        </Field>
+        <Field Name="DocumentID_FLINES">
+          <DataField>DocumentID_FLINES</DataField>
+        </Field>
+        <Field Name="DocumentType_FLINES">
+          <DataField>DocumentType_FLINES</DataField>
+        </Field>
+        <Field Name="No_FLINES">
+          <DataField>No_FLINES</DataField>
+        </Field>
+        <Field Name="BidderNo_FLINES">
+          <DataField>BidderNo_FLINES</DataField>
+        </Field>
+        <Field Name="BidderName_FLINES">
+          <DataField>BidderName_FLINES</DataField>
+        </Field>
+        <Field Name="ReportForNavId_34">
+          <DataField>ReportForNavId_34</DataField>
+        </Field>
+        <Field Name="AutoBidNo1">
+          <DataField>AutoBidNo1</DataField>
+        </Field>
+        <Field Name="EntryNo_SensitivityAnalysis">
+          <DataField>EntryNo_SensitivityAnalysis</DataField>
+        </Field>
+        <Field Name="DocumentNo_SensitivityAnalysis">
+          <DataField>DocumentNo_SensitivityAnalysis</DataField>
+        </Field>
+        <Field Name="BidNo_SensitivityAnalysis">
+          <DataField>BidNo_SensitivityAnalysis</DataField>
+        </Field>
+        <Field Name="BidderName_SensitivityAnalysis">
+          <DataField>BidderName_SensitivityAnalysis</DataField>
+        </Field>
+        <Field Name="EvaluatedTenderSum_SensitivityAnalysis">
+          <DataField>EvaluatedTenderSum_SensitivityAnalysis</DataField>
+        </Field>
+        <Field Name="EvaluatedTenderSum_SensitivityAnalysisFormat">
+          <DataField>EvaluatedTenderSum_SensitivityAnalysisFormat</DataField>
+        </Field>
+        <Field Name="EscalatedTenderSum_SensitivityAnalysis">
+          <DataField>EscalatedTenderSum_SensitivityAnalysis</DataField>
+        </Field>
+        <Field Name="EscalatedTenderSum_SensitivityAnalysisFormat">
+          <DataField>EscalatedTenderSum_SensitivityAnalysisFormat</DataField>
+        </Field>
+        <Field Name="Escalation_SensitivityAnalysis">
+          <DataField>Escalation_SensitivityAnalysis</DataField>
+        </Field>
+        <Field Name="Escalation_SensitivityAnalysisFormat">
+          <DataField>Escalation_SensitivityAnalysisFormat</DataField>
+        </Field>
+        <Field Name="Remarks_SensitivityAnalysis">
+          <DataField>Remarks_SensitivityAnalysis</DataField>
+        </Field>
+        <Field Name="Type_SensitivityAnalysis">
+          <DataField>Type_SensitivityAnalysis</DataField>
+        </Field>
+        <Field Name="BidderNo_SensitivityAnalysis">
+          <DataField>BidderNo_SensitivityAnalysis</DataField>
+        </Field>
+        <Field Name="ReportForNavId_45">
+          <DataField>ReportForNavId_45</DataField>
+        </Field>
+        <Field Name="AutoBidNo2">
+          <DataField>AutoBidNo2</DataField>
+        </Field>
+        <Field Name="EntryNo_Rates">
+          <DataField>EntryNo_Rates</DataField>
+        </Field>
+        <Field Name="DocumentNo_Rates">
+          <DataField>DocumentNo_Rates</DataField>
+        </Field>
+        <Field Name="BidNo_Rates">
+          <DataField>BidNo_Rates</DataField>
+        </Field>
+        <Field Name="BidderName_Rates">
+          <DataField>BidderName_Rates</DataField>
+        </Field>
+        <Field Name="EvaluatedTenderSum_Rates">
+          <DataField>EvaluatedTenderSum_Rates</DataField>
+        </Field>
+        <Field Name="EvaluatedTenderSum_RatesFormat">
+          <DataField>EvaluatedTenderSum_RatesFormat</DataField>
+        </Field>
+        <Field Name="EscalatedTenderSum_Rates">
+          <DataField>EscalatedTenderSum_Rates</DataField>
+        </Field>
+        <Field Name="EscalatedTenderSum_RatesFormat">
+          <DataField>EscalatedTenderSum_RatesFormat</DataField>
+        </Field>
+        <Field Name="Escalation_Rates">
+          <DataField>Escalation_Rates</DataField>
+        </Field>
+        <Field Name="Escalation_RatesFormat">
+          <DataField>Escalation_RatesFormat</DataField>
+        </Field>
+        <Field Name="Remarks_Rates">
+          <DataField>Remarks_Rates</DataField>
+        </Field>
+        <Field Name="Type_Rates">
+          <DataField>Type_Rates</DataField>
+        </Field>
+        <Field Name="BidderNo_Rates">
+          <DataField>BidderNo_Rates</DataField>
+        </Field>
+        <Field Name="BillItemMarketRate_Rates">
+          <DataField>BillItemMarketRate_Rates</DataField>
+        </Field>
+        <Field Name="BillItemMarketRate_RatesFormat">
+          <DataField>BillItemMarketRate_RatesFormat</DataField>
+        </Field>
+        <Field Name="BidderBillItemRate_Rates">
+          <DataField>BidderBillItemRate_Rates</DataField>
+        </Field>
+        <Field Name="BidderBillItemRate_RatesFormat">
+          <DataField>BidderBillItemRate_RatesFormat</DataField>
+        </Field>
+        <Field Name="ReportForNavId_56">
+          <DataField>ReportForNavId_56</DataField>
+        </Field>
+        <Field Name="CertifcateNo_VendorSpecialGroupEntry">
+          <DataField>CertifcateNo_VendorSpecialGroupEntry</DataField>
+        </Field>
+        <Field Name="VendorNo_VendorSpecialGroupEntry">
+          <DataField>VendorNo_VendorSpecialGroupEntry</DataField>
+        </Field>
+        <Field Name="RegisteredSpecialGroup_VendorSpecialGroupEntry">
+          <DataField>RegisteredSpecialGroup_VendorSpecialGroupEntry</DataField>
+        </Field>
+        <Field Name="VendorName">
+          <DataField>VendorName</DataField>
+        </Field>
+        <Field Name="ReportForNavId_97">
+          <DataField>ReportForNavId_97</DataField>
+        </Field>
+        <Field Name="DocumentNo_IFSTenderCommittee">
+          <DataField>DocumentNo_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="CommitteeType_IFSTenderCommittee">
+          <DataField>CommitteeType_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="AppointmentEffectiveDate_IFSTenderCommittee">
+          <DataField>AppointmentEffectiveDate_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="AppointingAuthority_IFSTenderCommittee">
+          <DataField>AppointingAuthority_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="IFSCode_IFSTenderCommittee">
+          <DataField>IFSCode_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="ExternalDocumentNo_IFSTenderCommittee">
+          <DataField>ExternalDocumentNo_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="Location_IFSTenderCommittee">
+          <DataField>Location_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="Duration_IFSTenderCommittee">
+          <DataField>Duration_IFSTenderCommittee</DataField>
+        </Field>
+        <Field Name="Duration_IFSTenderCommitteeFormat">
+          <DataField>Duration_IFSTenderCommitteeFormat</DataField>
+        </Field>
+        <Field Name="ReportForNavId_87">
+          <DataField>ReportForNavId_87</DataField>
+        </Field>
+        <Field Name="Role_IFSTenderCommitteeMember">
+          <DataField>Role_IFSTenderCommitteeMember</DataField>
+        </Field>
+        <Field Name="MemberName_IFSTenderCommitteeMember">
+          <DataField>MemberName_IFSTenderCommitteeMember</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

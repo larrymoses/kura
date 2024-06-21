@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="DocumentNo_ConsolidatedProjectFundingR">
+          <DataField>DocumentNo_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="LineNo_ConsolidatedProjectFundingR">
+          <DataField>LineNo_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="WorksCategory_ConsolidatedProjectFundingR">
+          <DataField>WorksCategory_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="Region_ConsolidatedProjectFundingR">
+          <DataField>Region_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="Directorate_ConsolidatedProjectFundingR">
+          <DataField>Directorate_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="Department_ConsolidatedProjectFundingR">
+          <DataField>Department_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="FundingSource_ConsolidatedProjectFundingR">
+          <DataField>FundingSource_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="YearCode_ConsolidatedProjectFundingR">
+          <DataField>YearCode_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="StartDate_ConsolidatedProjectFundingR">
+          <DataField>StartDate_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="EndDate_ConsolidatedProjectFundingR">
+          <DataField>EndDate_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="ConstituencyCode_ConsolidatedProjectFundingR">
+          <DataField>ConstituencyCode_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="RoadCode_ConsolidatedProjectFundingR">
+          <DataField>RoadCode_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="RoadLinkName_ConsolidatedProjectFundingR">
+          <DataField>RoadLinkName_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="CurrencyCode_ConsolidatedProjectFundingR">
+          <DataField>CurrencyCode_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="FundingAmount_ConsolidatedProjectFundingR">
+          <DataField>FundingAmount_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="FundingAmount_ConsolidatedProjectFundingRFormat">
+          <DataField>FundingAmount_ConsolidatedProjectFundingRFormat</DataField>
+        </Field>
+        <Field Name="FundingAmountLCY_ConsolidatedProjectFundingR">
+          <DataField>FundingAmountLCY_ConsolidatedProjectFundingR</DataField>
+        </Field>
+        <Field Name="FundingAmountLCY_ConsolidatedProjectFundingRFormat">
+          <DataField>FundingAmountLCY_ConsolidatedProjectFundingRFormat</DataField>
+        </Field>
+        <Field Name="EntryType_ConsolidatedProjectFundingR">
+          <DataField>EntryType_ConsolidatedProjectFundingR</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

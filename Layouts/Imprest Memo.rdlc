@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1000000000">
+          <DataField>ReportForNavId_1000000000</DataField>
+        </Field>
+        <Field Name="Job_ImprestMemo">
+          <DataField>Job_ImprestMemo</DataField>
+        </Field>
+        <Field Name="JobTask_ImprestMemo">
+          <DataField>JobTask_ImprestMemo</DataField>
+        </Field>
+        <Field Name="JobName_ImprestMemo">
+          <DataField>JobName_ImprestMemo</DataField>
+        </Field>
+        <Field Name="JobTaskName_ImprestMemo">
+          <DataField>JobTaskName_ImprestMemo</DataField>
+        </Field>
+        <Field Name="JobTaskBudget_ImprestMemo">
+          <DataField>JobTaskBudget_ImprestMemo</DataField>
+        </Field>
+        <Field Name="JobTaskBudget_ImprestMemoFormat">
+          <DataField>JobTaskBudget_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="JobTaskRemainingAmount_ImprestMemo">
+          <DataField>JobTaskRemainingAmount_ImprestMemo</DataField>
+        </Field>
+        <Field Name="JobTaskRemainingAmount_ImprestMemoFormat">
+          <DataField>JobTaskRemainingAmount_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="No_ImprestMemo">
+          <DataField>No_ImprestMemo</DataField>
+        </Field>
+        <Field Name="Date_ImprestMemo">
+          <DataField>Date_ImprestMemo</DataField>
+        </Field>
+        <Field Name="Project_ImprestMemo">
+          <DataField>Project_ImprestMemo</DataField>
+        </Field>
+        <Field Name="ProjectDescription_ImprestMemo">
+          <DataField>ProjectDescription_ImprestMemo</DataField>
+        </Field>
+        <Field Name="Objective_ImprestMemo">
+          <DataField>Objective_ImprestMemo</DataField>
+        </Field>
+        <Field Name="TermsofReference_ImprestMemo">
+          <DataField>TermsofReference_ImprestMemo</DataField>
+        </Field>
+        <Field Name="Requestor_ImprestMemo">
+          <DataField>Requestor_ImprestMemo</DataField>
+        </Field>
+        <Field Name="RequestorName_ImprestMemo">
+          <DataField>RequestorName_ImprestMemo</DataField>
+        </Field>
+        <Field Name="TotalSubsistenceAllowance_ImprestMemo">
+          <DataField>TotalSubsistenceAllowance_ImprestMemo</DataField>
+        </Field>
+        <Field Name="TotalSubsistenceAllowance_ImprestMemoFormat">
+          <DataField>TotalSubsistenceAllowance_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="VoteItem_ImprestMemo">
+          <DataField>VoteItem_ImprestMemo</DataField>
+        </Field>
+        <Field Name="VoteAmount_ImprestMemo">
+          <DataField>VoteAmount_ImprestMemo</DataField>
+        </Field>
+        <Field Name="VoteAmount_ImprestMemoFormat">
+          <DataField>VoteAmount_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="ActualtoDate_ImprestMemo">
+          <DataField>ActualtoDate_ImprestMemo</DataField>
+        </Field>
+        <Field Name="ActualtoDate_ImprestMemoFormat">
+          <DataField>ActualtoDate_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="Commitments_ImprestMemo">
+          <DataField>Commitments_ImprestMemo</DataField>
+        </Field>
+        <Field Name="Commitments_ImprestMemoFormat">
+          <DataField>Commitments_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="VoteItemDesc_ImprestMemo">
+          <DataField>VoteItemDesc_ImprestMemo</DataField>
+        </Field>
+        <Field Name="TotalFuelCost_ImprestMemo">
+          <DataField>TotalFuelCost_ImprestMemo</DataField>
+        </Field>
+        <Field Name="TotalFuelCost_ImprestMemoFormat">
+          <DataField>TotalFuelCost_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="TotalMaintenanceCost_ImprestMemo">
+          <DataField>TotalMaintenanceCost_ImprestMemo</DataField>
+        </Field>
+        <Field Name="TotalMaintenanceCost_ImprestMemoFormat">
+          <DataField>TotalMaintenanceCost_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="TotalCasualsCost_ImprestMemo">
+          <DataField>TotalCasualsCost_ImprestMemo</DataField>
+        </Field>
+        <Field Name="TotalCasualsCost_ImprestMemoFormat">
+          <DataField>TotalCasualsCost_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="TotalOtherCosts_ImprestMemo">
+          <DataField>TotalOtherCosts_ImprestMemo</DataField>
+        </Field>
+        <Field Name="TotalOtherCosts_ImprestMemoFormat">
+          <DataField>TotalOtherCosts_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="Subject_ImprestMemo">
+          <DataField>Subject_ImprestMemo</DataField>
+        </Field>
+        <Field Name="Status_ImprestMemo">
+          <DataField>Status_ImprestMemo</DataField>
+        </Field>
+        <Field Name="Posted_ImprestMemo">
+          <DataField>Posted_ImprestMemo</DataField>
+        </Field>
+        <Field Name="GlobalDimension1Code_ImprestMemo">
+          <DataField>GlobalDimension1Code_ImprestMemo</DataField>
+        </Field>
+        <Field Name="GlobalDimension2Code_ImprestMemo">
+          <DataField>GlobalDimension2Code_ImprestMemo</DataField>
+        </Field>
+        <Field Name="DatetimePosted_ImprestMemo">
+          <DataField>DatetimePosted_ImprestMemo</DataField>
+        </Field>
+        <Field Name="PostedBy_ImprestMemo">
+          <DataField>PostedBy_ImprestMemo</DataField>
+        </Field>
+        <Field Name="NoSeries_ImprestMemo">
+          <DataField>NoSeries_ImprestMemo</DataField>
+        </Field>
+        <Field Name="Currency_ImprestMemo">
+          <DataField>Currency_ImprestMemo</DataField>
+        </Field>
+        <Field Name="DateFilter_ImprestMemo">
+          <DataField>DateFilter_ImprestMemo</DataField>
+        </Field>
+        <Field Name="WorkTypeFilter_ImprestMemo">
+          <DataField>WorkTypeFilter_ImprestMemo</DataField>
+        </Field>
+        <Field Name="ProjectTask_ImprestMemo">
+          <DataField>ProjectTask_ImprestMemo</DataField>
+        </Field>
+        <Field Name="ProjectTaskDescription_ImprestMemo">
+          <DataField>ProjectTaskDescription_ImprestMemo</DataField>
+        </Field>
+        <Field Name="ProjectMaintenanceCosts_ImprestMemo">
+          <DataField>ProjectMaintenanceCosts_ImprestMemo</DataField>
+        </Field>
+        <Field Name="ProjectMaintenanceCosts_ImprestMemoFormat">
+          <DataField>ProjectMaintenanceCosts_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="ProjectLeadCosts_ImprestMemo">
+          <DataField>ProjectLeadCosts_ImprestMemo</DataField>
+        </Field>
+        <Field Name="ProjectLeadCosts_ImprestMemoFormat">
+          <DataField>ProjectLeadCosts_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="ProjectBudget_ImprestMemo">
+          <DataField>ProjectBudget_ImprestMemo</DataField>
+        </Field>
+        <Field Name="ProjectBudget_ImprestMemoFormat">
+          <DataField>ProjectBudget_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="CompanyLogo">
+          <DataField>CompanyLogo</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyAddress">
+          <DataField>CompanyAddress</DataField>
+        </Field>
+        <Field Name="CompanyAddress2">
+          <DataField>CompanyAddress2</DataField>
+        </Field>
+        <Field Name="CompanyPostCode">
+          <DataField>CompanyPostCode</DataField>
+        </Field>
+        <Field Name="CompanyCity">
+          <DataField>CompanyCity</DataField>
+        </Field>
+        <Field Name="CompanyPhone">
+          <DataField>CompanyPhone</DataField>
+        </Field>
+        <Field Name="TotalProjectBudget_ImprestMemo">
+          <DataField>TotalProjectBudget_ImprestMemo</DataField>
+        </Field>
+        <Field Name="TotalProjectBudget_ImprestMemoFormat">
+          <DataField>TotalProjectBudget_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="TotalUsageCosts_ImprestMemo">
+          <DataField>TotalUsageCosts_ImprestMemo</DataField>
+        </Field>
+        <Field Name="TotalUsageCosts_ImprestMemoFormat">
+          <DataField>TotalUsageCosts_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="BudgetCommitments_ImprestMemo">
+          <DataField>BudgetCommitments_ImprestMemo</DataField>
+        </Field>
+        <Field Name="BudgetCommitments_ImprestMemoFormat">
+          <DataField>BudgetCommitments_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="AvailableFunds_ImprestMemo">
+          <DataField>AvailableFunds_ImprestMemo</DataField>
+        </Field>
+        <Field Name="AvailableFunds_ImprestMemoFormat">
+          <DataField>AvailableFunds_ImprestMemoFormat</DataField>
+        </Field>
+        <Field Name="PreparedBy">
+          <DataField>PreparedBy</DataField>
+        </Field>
+        <Field Name="DatePrepared">
+          <DataField>DatePrepared</DataField>
+        </Field>
+        <Field Name="PreparedBy_Signature">
+          <DataField>PreparedBy_Signature</DataField>
+        </Field>
+        <Field Name="ExaminedBy">
+          <DataField>ExaminedBy</DataField>
+        </Field>
+        <Field Name="DateApproved">
+          <DataField>DateApproved</DataField>
+        </Field>
+        <Field Name="ExaminedBy_Signature">
+          <DataField>ExaminedBy_Signature</DataField>
+        </Field>
+        <Field Name="VBC">
+          <DataField>VBC</DataField>
+        </Field>
+        <Field Name="VBCDate">
+          <DataField>VBCDate</DataField>
+        </Field>
+        <Field Name="VBC_Signature">
+          <DataField>VBC_Signature</DataField>
+        </Field>
+        <Field Name="Authorizer">
+          <DataField>Authorizer</DataField>
+        </Field>
+        <Field Name="DateAuthorized">
+          <DataField>DateAuthorized</DataField>
+        </Field>
+        <Field Name="Authorizer_Signature">
+          <DataField>Authorizer_Signature</DataField>
+        </Field>
+        <Field Name="ReportForNavId_1000000027">
+          <DataField>ReportForNavId_1000000027</DataField>
+        </Field>
+        <Field Name="No_ProjectTeam">
+          <DataField>No_ProjectTeam</DataField>
+        </Field>
+        <Field Name="Name_ProjectTeam">
+          <DataField>Name_ProjectTeam</DataField>
+        </Field>
+        <Field Name="JobGroup_ProjectTeam">
+          <DataField>JobGroup_ProjectTeam</DataField>
+        </Field>
+        <Field Name="JobTitle_ProjectTeam">
+          <DataField>JobTitle_ProjectTeam</DataField>
+        </Field>
+        <Field Name="Entitlement_ProjectTeam">
+          <DataField>Entitlement_ProjectTeam</DataField>
+        </Field>
+        <Field Name="Entitlement_ProjectTeamFormat">
+          <DataField>Entitlement_ProjectTeamFormat</DataField>
+        </Field>
+        <Field Name="OutstandingAmount_ProjectTeam">
+          <DataField>OutstandingAmount_ProjectTeam</DataField>
+        </Field>
+        <Field Name="OutstandingAmount_ProjectTeamFormat">
+          <DataField>OutstandingAmount_ProjectTeamFormat</DataField>
+        </Field>
+        <Field Name="TaskstoCarryOut_ProjectTeam">
+          <DataField>TaskstoCarryOut_ProjectTeam</DataField>
+        </Field>
+        <Field Name="ExpectedOutput_ProjectTeam">
+          <DataField>ExpectedOutput_ProjectTeam</DataField>
+        </Field>
+        <Field Name="UnitofMeasure_ProjectTeam">
+          <DataField>UnitofMeasure_ProjectTeam</DataField>
+        </Field>
+        <Field Name="Delivery_ProjectTeam">
+          <DataField>Delivery_ProjectTeam</DataField>
+        </Field>
+        <Field Name="Delivery_ProjectTeamFormat">
+          <DataField>Delivery_ProjectTeamFormat</DataField>
+        </Field>
+        <Field Name="WorkType_ProjectTeam">
+          <DataField>WorkType_ProjectTeam</DataField>
+        </Field>
+        <Field Name="TimePeriod_ProjectTeam">
+          <DataField>TimePeriod_ProjectTeam</DataField>
+        </Field>
+        <Field Name="TimePeriod_ProjectTeamFormat">
+          <DataField>TimePeriod_ProjectTeamFormat</DataField>
+        </Field>
+        <Field Name="Type_ProjectTeam">
+          <DataField>Type_ProjectTeam</DataField>
+        </Field>
+        <Field Name="LastMaintenanceCost_ProjectTeam">
+          <DataField>LastMaintenanceCost_ProjectTeam</DataField>
+        </Field>
+        <Field Name="LastMaintenanceCost_ProjectTeamFormat">
+          <DataField>LastMaintenanceCost_ProjectTeamFormat</DataField>
+        </Field>
+        <Field Name="ExpectedMaintenanceCost_ProjectTeam">
+          <DataField>ExpectedMaintenanceCost_ProjectTeam</DataField>
+        </Field>
+        <Field Name="ExpectedMaintenanceCost_ProjectTeamFormat">
+          <DataField>ExpectedMaintenanceCost_ProjectTeamFormat</DataField>
+        </Field>
+        <Field Name="BankName_ProjectTeam">
+          <DataField>BankName_ProjectTeam</DataField>
+        </Field>
+        <Field Name="BankBranchName_ProjectTeam">
+          <DataField>BankBranchName_ProjectTeam</DataField>
+        </Field>
+        <Field Name="BankAccountNumber_ProjectTeam">
+          <DataField>BankAccountNumber_ProjectTeam</DataField>
+        </Field>
+        <Field Name="ProjectLead_ProjectTeam">
+          <DataField>ProjectLead_ProjectTeam</DataField>
+        </Field>
+        <Field Name="ProjectLeadCosts_ProjectTeam">
+          <DataField>ProjectLeadCosts_ProjectTeam</DataField>
+        </Field>
+        <Field Name="ProjectLeadCosts_ProjectTeamFormat">
+          <DataField>ProjectLeadCosts_ProjectTeamFormat</DataField>
+        </Field>
+        <Field Name="Posted_ProjectTeam">
+          <DataField>Posted_ProjectTeam</DataField>
+        </Field>
+        <Field Name="Linked_ProjectTeam">
+          <DataField>Linked_ProjectTeam</DataField>
+        </Field>
+        <Field Name="Project_ProjectTeam">
+          <DataField>Project_ProjectTeam</DataField>
+        </Field>
+        <Field Name="Task_ProjectTeam">
+          <DataField>Task_ProjectTeam</DataField>
+        </Field>
+        <Field Name="ReportForNavId_1000000052">
+          <DataField>ReportForNavId_1000000052</DataField>
+        </Field>
+        <Field Name="No_Fuel">
+          <DataField>No_Fuel</DataField>
+        </Field>
+        <Field Name="Name_Fuel">
+          <DataField>Name_Fuel</DataField>
+        </Field>
+        <Field Name="JobGroup_Fuel">
+          <DataField>JobGroup_Fuel</DataField>
+        </Field>
+        <Field Name="JobTitle_Fuel">
+          <DataField>JobTitle_Fuel</DataField>
+        </Field>
+        <Field Name="Entitlement_Fuel">
+          <DataField>Entitlement_Fuel</DataField>
+        </Field>
+        <Field Name="Entitlement_FuelFormat">
+          <DataField>Entitlement_FuelFormat</DataField>
+        </Field>
+        <Field Name="OutstandingAmount_Fuel">
+          <DataField>OutstandingAmount_Fuel</DataField>
+        </Field>
+        <Field Name="OutstandingAmount_FuelFormat">
+          <DataField>OutstandingAmount_FuelFormat</DataField>
+        </Field>
+        <Field Name="TaskstoCarryOut_Fuel">
+          <DataField>TaskstoCarryOut_Fuel</DataField>
+        </Field>
+        <Field Name="ExpectedOutput_Fuel">
+          <DataField>ExpectedOutput_Fuel</DataField>
+        </Field>
+        <Field Name="UnitofMeasure_Fuel">
+          <DataField>UnitofMeasure_Fuel</DataField>
+        </Field>
+        <Field Name="Delivery_Fuel">
+          <DataField>Delivery_Fuel</DataField>
+        </Field>
+        <Field Name="Delivery_FuelFormat">
+          <DataField>Delivery_FuelFormat</DataField>
+        </Field>
+        <Field Name="Tcosts">
+          <DataField>Tcosts</DataField>
+        </Field>
+        <Field Name="TcostsFormat">
+          <DataField>TcostsFormat</DataField>
+        </Field>
+        <Field Name="WorkType_Fuel">
+          <DataField>WorkType_Fuel</DataField>
+        </Field>
+        <Field Name="Consumption_Rate">
+          <DataField>Consumption_Rate</DataField>
+        </Field>
+        <Field Name="Consumption_RateFormat">
+          <DataField>Consumption_RateFormat</DataField>
+        </Field>
+        <Field Name="TimePeriod_Fuel">
+          <DataField>TimePeriod_Fuel</DataField>
+        </Field>
+        <Field Name="TimePeriod_FuelFormat">
+          <DataField>TimePeriod_FuelFormat</DataField>
+        </Field>
+        <Field Name="Type_Fuel">
+          <DataField>Type_Fuel</DataField>
+        </Field>
+        <Field Name="LastMaintenanceCost_Fuel">
+          <DataField>LastMaintenanceCost_Fuel</DataField>
+        </Field>
+        <Field Name="LastMaintenanceCost_FuelFormat">
+          <DataField>LastMaintenanceCost_FuelFormat</DataField>
+        </Field>
+        <Field Name="ExpectedMaintenanceCost_Fuel">
+          <DataField>ExpectedMaintenanceCost_Fuel</DataField>
+        </Field>
+        <Field Name="ExpectedMaintenanceCost_FuelFormat">
+          <DataField>ExpectedMaintenanceCost_FuelFormat</DataField>
+        </Field>
+        <Field Name="BankCode_Fuel">
+          <DataField>BankCode_Fuel</DataField>
+        </Field>
+        <Field Name="BankBranchCode_Fuel">
+          <DataField>BankBranchCode_Fuel</DataField>
+        </Field>
+        <Field Name="BankAccountNumber_Fuel">
+          <DataField>BankAccountNumber_Fuel</DataField>
+        </Field>
+        <Field Name="ProjectLead_Fuel">
+          <DataField>ProjectLead_Fuel</DataField>
+        </Field>
+        <Field Name="ProjectLeadCosts_Fuel">
+          <DataField>ProjectLeadCosts_Fuel</DataField>
+        </Field>
+        <Field Name="ProjectLeadCosts_FuelFormat">
+          <DataField>ProjectLeadCosts_FuelFormat</DataField>
+        </Field>
+        <Field Name="Posted_Fuel">
+          <DataField>Posted_Fuel</DataField>
+        </Field>
+        <Field Name="Linked_Fuel">
+          <DataField>Linked_Fuel</DataField>
+        </Field>
+        <Field Name="Project_Fuel">
+          <DataField>Project_Fuel</DataField>
+        </Field>
+        <Field Name="Task_Fuel">
+          <DataField>Task_Fuel</DataField>
+        </Field>
+        <Field Name="ReportForNavId_1000000139">
+          <DataField>ReportForNavId_1000000139</DataField>
+        </Field>
+        <Field Name="No_Maintenance">
+          <DataField>No_Maintenance</DataField>
+        </Field>
+        <Field Name="Name_Maintenance">
+          <DataField>Name_Maintenance</DataField>
+        </Field>
+        <Field Name="WorkType_Maintenance">
+          <DataField>WorkType_Maintenance</DataField>
+        </Field>
+        <Field Name="TaskNo_Maintenance">
+          <DataField>TaskNo_Maintenance</DataField>
+        </Field>
+        <Field Name="LastMaintenanceCost">
+          <DataField>LastMaintenanceCost</DataField>
+        </Field>
+        <Field Name="LastMaintenanceCostFormat">
+          <DataField>LastMaintenanceCostFormat</DataField>
+        </Field>
+        <Field Name="QtyMileage_Maintenance">
+          <DataField>QtyMileage_Maintenance</DataField>
+        </Field>
+        <Field Name="QtyMileage_MaintenanceFormat">
+          <DataField>QtyMileage_MaintenanceFormat</DataField>
+        </Field>
+        <Field Name="ExpectedmaintenanceCost">
+          <DataField>ExpectedmaintenanceCost</DataField>
+        </Field>
+        <Field Name="ExpectedmaintenanceCostFormat">
+          <DataField>ExpectedmaintenanceCostFormat</DataField>
+        </Field>
+        <Field Name="ReportForNavId_1000000077">
+          <DataField>ReportForNavId_1000000077</DataField>
+        </Field>
+        <Field Name="Type_Casuals">
+          <DataField>Type_Casuals</DataField>
+        </Field>
+        <Field Name="NoRequired_Casuals">
+          <DataField>NoRequired_Casuals</DataField>
+        </Field>
+        <Field Name="WorkType_Casuals">
+          <DataField>WorkType_Casuals</DataField>
+        </Field>
+        <Field Name="NoofDays_Casuals">
+          <DataField>NoofDays_Casuals</DataField>
+        </Field>
+        <Field Name="NoofDays_CasualsFormat">
+          <DataField>NoofDays_CasualsFormat</DataField>
+        </Field>
+        <Field Name="Rate_Casuals">
+          <DataField>Rate_Casuals</DataField>
+        </Field>
+        <Field Name="Rate_CasualsFormat">
+          <DataField>Rate_CasualsFormat</DataField>
+        </Field>
+        <Field Name="Amount_Casuals">
+          <DataField>Amount_Casuals</DataField>
+        </Field>
+        <Field Name="Amount_CasualsFormat">
+          <DataField>Amount_CasualsFormat</DataField>
+        </Field>
+        <Field Name="Activity_Casuals">
+          <DataField>Activity_Casuals</DataField>
+        </Field>
+        <Field Name="ResourceNo_Casuals">
+          <DataField>ResourceNo_Casuals</DataField>
+        </Field>
+        <Field Name="Posted_Casuals">
+          <DataField>Posted_Casuals</DataField>
+        </Field>
+        <Field Name="Linked_Casuals">
+          <DataField>Linked_Casuals</DataField>
+        </Field>
+        <Field Name="Project_Casuals">
+          <DataField>Project_Casuals</DataField>
+        </Field>
+        <Field Name="Task_Casuals">
+          <DataField>Task_Casuals</DataField>
+        </Field>
+        <Field Name="ReportForNavId_1000000090">
+          <DataField>ReportForNavId_1000000090</DataField>
+        </Field>
+        <Field Name="Description_OtherCosts">
+          <DataField>Description_OtherCosts</DataField>
+        </Field>
+        <Field Name="QuantityRequired_OtherCosts">
+          <DataField>QuantityRequired_OtherCosts</DataField>
+        </Field>
+        <Field Name="QuantityRequired_OtherCostsFormat">
+          <DataField>QuantityRequired_OtherCostsFormat</DataField>
+        </Field>
+        <Field Name="UnitCost_OtherCosts">
+          <DataField>UnitCost_OtherCosts</DataField>
+        </Field>
+        <Field Name="UnitCost_OtherCostsFormat">
+          <DataField>UnitCost_OtherCostsFormat</DataField>
+        </Field>
+        <Field Name="RequiredFor_OtherCosts">
+          <DataField>RequiredFor_OtherCosts</DataField>
+        </Field>
+        <Field Name="LineAmount_OtherCosts">
+          <DataField>LineAmount_OtherCosts</DataField>
+        </Field>
+        <Field Name="LineAmount_OtherCostsFormat">
+          <DataField>LineAmount_OtherCostsFormat</DataField>
+        </Field>
+        <Field Name="WorkType_OtherCosts">
+          <DataField>WorkType_OtherCosts</DataField>
+        </Field>
+        <Field Name="No_OtherCosts">
+          <DataField>No_OtherCosts</DataField>
+        </Field>
+        <Field Name="Posted_OtherCosts">
+          <DataField>Posted_OtherCosts</DataField>
+        </Field>
+        <Field Name="Linked_OtherCosts">
+          <DataField>Linked_OtherCosts</DataField>
+        </Field>
+        <Field Name="Type_OtherCosts">
+          <DataField>Type_OtherCosts</DataField>
+        </Field>
+        <Field Name="Project_OtherCosts">
+          <DataField>Project_OtherCosts</DataField>
+        </Field>
+        <Field Name="Task_OtherCosts">
+          <DataField>Task_OtherCosts</DataField>
+        </Field>
+        <Field Name="ReportForNavId_1000000111">
+          <DataField>ReportForNavId_1000000111</DataField>
+        </Field>
+        <Field Name="Day_Period_ExecutionPlan">
+          <DataField>Day_Period_ExecutionPlan</DataField>
+        </Field>
+        <Field Name="Activity_ExecutionPlan">
+          <DataField>Activity_ExecutionPlan</DataField>
+        </Field>
+        <Field Name="Duration_ExecutionPlan">
+          <DataField>Duration_ExecutionPlan</DataField>
+        </Field>
+        <Field Name="DailyOutputExecPlan">
+          <DataField>DailyOutputExecPlan</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

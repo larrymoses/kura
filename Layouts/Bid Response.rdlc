@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="logo">
+          <DataField>logo</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="BuyfromVendorNo_PurchaseHeader">
+          <DataField>BuyfromVendorNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="No_PurchaseHeader">
+          <DataField>No_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromVendorName_PurchaseHeader">
+          <DataField>BuyfromVendorName_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromAddress_PurchaseHeader">
+          <DataField>BuyfromAddress_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromAddress2_PurchaseHeader">
+          <DataField>BuyfromAddress2_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromCity_PurchaseHeader">
+          <DataField>BuyfromCity_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromContactNo_PurchaseHeader">
+          <DataField>BuyfromContactNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromPostCode_PurchaseHeader">
+          <DataField>BuyfromPostCode_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromCounty_PurchaseHeader">
+          <DataField>BuyfromCounty_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuyfromCountryRegionCode_PurchaseHeader">
+          <DataField>BuyfromCountryRegionCode_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="InvitationForSupplyNo_PurchaseHeader">
+          <DataField>InvitationForSupplyNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BidEnvelopeType_PurchaseHeader">
+          <DataField>BidEnvelopeType_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="TenderDescription_PurchaseHeader">
+          <DataField>TenderDescription_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BidderType_PurchaseHeader">
+          <DataField>BidderType_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BidderRepresentativeName_PurchaseHeader">
+          <DataField>BidderRepresentativeName_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BidderRepresentativeDesgn_PurchaseHeader">
+          <DataField>BidderRepresentativeDesgn_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BidderRepresentativeAddress_PurchaseHeader">
+          <DataField>BidderRepresentativeAddress_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BidderWitnessName_PurchaseHeader">
+          <DataField>BidderWitnessName_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BidderWitnessDesignation_PurchaseHeader">
+          <DataField>BidderWitnessDesignation_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BidderWitnessAddress_PurchaseHeader">
+          <DataField>BidderWitnessAddress_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="TenderDocumentSource_PurchaseHeader">
+          <DataField>TenderDocumentSource_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BidChargeLCY_PurchaseHeader">
+          <DataField>BidChargeLCY_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BidChargeLCY_PurchaseHeaderFormat">
+          <DataField>BidChargeLCY_PurchaseHeaderFormat</DataField>
+        </Field>
+        <Field Name="PrimaryRegion_PurchaseHeader">
+          <DataField>PrimaryRegion_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BuildingHouseNo_PurchaseHeader">
+          <DataField>BuildingHouseNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="PlotNo_PurchaseHeader">
+          <DataField>PlotNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="Street_PurchaseHeader">
+          <DataField>Street_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="NatureofBusiness_PurchaseHeader">
+          <DataField>NatureofBusiness_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="CurrentTradeLicenceNo_PurchaseHeader">
+          <DataField>CurrentTradeLicenceNo_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="TradeLicenceExpiryDate_PurchaseHeader">
+          <DataField>TradeLicenceExpiryDate_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="MaxValueofBusiness_PurchaseHeader">
+          <DataField>MaxValueofBusiness_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="MaxValueofBusiness_PurchaseHeaderFormat">
+          <DataField>MaxValueofBusiness_PurchaseHeaderFormat</DataField>
+        </Field>
+        <Field Name="PreferredBankAccountCode_PurchaseHeader">
+          <DataField>PreferredBankAccountCode_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BankersName_PurchaseHeader">
+          <DataField>BankersName_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="BusinessType_PurchaseHeader">
+          <DataField>BusinessType_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="NominalCapitalLCY_PurchaseHeader">
+          <DataField>NominalCapitalLCY_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="NominalCapitalLCY_PurchaseHeaderFormat">
+          <DataField>NominalCapitalLCY_PurchaseHeaderFormat</DataField>
+        </Field>
+        <Field Name="IssuedCapitalLCY_PurchaseHeader">
+          <DataField>IssuedCapitalLCY_PurchaseHeader</DataField>
+        </Field>
+        <Field Name="IssuedCapitalLCY_PurchaseHeaderFormat">
+          <DataField>IssuedCapitalLCY_PurchaseHeaderFormat</DataField>
+        </Field>
+        <Field Name="ReportForNavId_24">
+          <DataField>ReportForNavId_24</DataField>
+        </Field>
+        <Field Name="Type_PurchaseLine">
+          <DataField>Type_PurchaseLine</DataField>
+        </Field>
+        <Field Name="DocumentNo_PurchaseLine">
+          <DataField>DocumentNo_PurchaseLine</DataField>
+        </Field>
+        <Field Name="No_PurchaseLine">
+          <DataField>No_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Description_PurchaseLine">
+          <DataField>Description_PurchaseLine</DataField>
+        </Field>
+        <Field Name="UnitofMeasure_PurchaseLine">
+          <DataField>UnitofMeasure_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Quantity_PurchaseLine">
+          <DataField>Quantity_PurchaseLine</DataField>
+        </Field>
+        <Field Name="Quantity_PurchaseLineFormat">
+          <DataField>Quantity_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="UnitCostLCY_PurchaseLine">
+          <DataField>UnitCostLCY_PurchaseLine</DataField>
+        </Field>
+        <Field Name="UnitCostLCY_PurchaseLineFormat">
+          <DataField>UnitCostLCY_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="AmountIncludingVAT_PurchaseLine">
+          <DataField>AmountIncludingVAT_PurchaseLine</DataField>
+        </Field>
+        <Field Name="AmountIncludingVAT_PurchaseLineFormat">
+          <DataField>AmountIncludingVAT_PurchaseLineFormat</DataField>
+        </Field>
+        <Field Name="ReportForNavId_46">
+          <DataField>ReportForNavId_46</DataField>
+        </Field>
+        <Field Name="Description_BidFiledDocument">
+          <DataField>Description_BidFiledDocument</DataField>
+        </Field>
+        <Field Name="CertificateNo_BidFiledDocument">
+          <DataField>CertificateNo_BidFiledDocument</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

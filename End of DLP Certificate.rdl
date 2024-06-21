@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="CompanyAddress1">
+          <DataField>CompanyAddress1</DataField>
+        </Field>
+        <Field Name="CompanyAddress2">
+          <DataField>CompanyAddress2</DataField>
+        </Field>
+        <Field Name="CompanyAddress3">
+          <DataField>CompanyAddress3</DataField>
+        </Field>
+        <Field Name="CompanyAddress4">
+          <DataField>CompanyAddress4</DataField>
+        </Field>
+        <Field Name="CompanyAddress5">
+          <DataField>CompanyAddress5</DataField>
+        </Field>
+        <Field Name="CompanyAddress6">
+          <DataField>CompanyAddress6</DataField>
+        </Field>
+        <Field Name="CompanyAddress7">
+          <DataField>CompanyAddress7</DataField>
+        </Field>
+        <Field Name="CompanyAddress8">
+          <DataField>CompanyAddress8</DataField>
+        </Field>
+        <Field Name="CIName">
+          <DataField>CIName</DataField>
+        </Field>
+        <Field Name="CIAddress">
+          <DataField>CIAddress</DataField>
+        </Field>
+        <Field Name="CIAddress2">
+          <DataField>CIAddress2</DataField>
+        </Field>
+        <Field Name="CICity">
+          <DataField>CICity</DataField>
+        </Field>
+        <Field Name="CIPicture">
+          <DataField>CIPicture</DataField>
+        </Field>
+        <Field Name="DirectorateName">
+          <DataField>DirectorateName</DataField>
+        </Field>
+        <Field Name="DepartmentName">
+          <DataField>DepartmentName</DataField>
+        </Field>
+        <Field Name="InspectionNo_InspectionHeadersss">
+          <DataField>InspectionNo_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="InspectionType_InspectionHeadersss">
+          <DataField>InspectionType_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="ProjectID_InspectionHeadersss">
+          <DataField>ProjectID_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="ContractID_InspectionHeadersss">
+          <DataField>ContractID_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="InspectionDate_InspectionHeadersss">
+          <DataField>InspectionDate_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="ContractorNo_InspectionHeadersss">
+          <DataField>ContractorNo_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="ContractorName_InspectionHeadersss">
+          <DataField>ContractorName_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="ProjectStartDate_InspectionHeadersss">
+          <DataField>ProjectStartDate_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="ProjectEndDate_InspectionHeadersss">
+          <DataField>ProjectEndDate_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="DLPStartDate_InspectionHeadersss">
+          <DataField>DLPStartDate_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="DLPPeriod_InspectionHeadersss">
+          <DataField>DLPPeriod_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="DLPEndDate_InspectionHeadersss">
+          <DataField>DLPEndDate_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="AwardedTenderSumIncTax_InspectionHeadersss">
+          <DataField>AwardedTenderSumIncTax_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="AwardedTenderSumIncTax_InspectionHeadersssFormat">
+          <DataField>AwardedTenderSumIncTax_InspectionHeadersssFormat</DataField>
+        </Field>
+        <Field Name="PaymentsToDate_InspectionHeadersss">
+          <DataField>PaymentsToDate_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="PaymentsToDate_InspectionHeadersssFormat">
+          <DataField>PaymentsToDate_InspectionHeadersssFormat</DataField>
+        </Field>
+        <Field Name="Status_InspectionHeadersss">
+          <DataField>Status_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="CommitteeDecision_InspectionHeadersss">
+          <DataField>CommitteeDecision_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="PrimaryContractorRep_InspectionHeadersss">
+          <DataField>PrimaryContractorRep_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="ContractorRepresentativeRole_InspectionHeadersss">
+          <DataField>ContractorRepresentativeRole_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="ContractorRepEmail_InspectionHeadersss">
+          <DataField>ContractorRepEmail_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="WorkExecutionPlan1D_InspectionHeadersss">
+          <DataField>WorkExecutionPlan1D_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="CommencementOrderNo_InspectionHeadersss">
+          <DataField>CommencementOrderNo_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="ProjectName_InspectionHeadersss">
+          <DataField>ProjectName_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="ProjectManagerEngineer_InspectionHeadersss">
+          <DataField>ProjectManagerEngineer_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="RegionID_InspectionHeadersss">
+          <DataField>RegionID_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="DirectorateID_InspectionHeadersss">
+          <DataField>DirectorateID_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="DepartmentID_InspectionHeadersss">
+          <DataField>DepartmentID_InspectionHeadersss</DataField>
+        </Field>
+        <Field Name="VendorAddress">
+          <DataField>VendorAddress</DataField>
+        </Field>
+        <Field Name="VendorAddress2">
+          <DataField>VendorAddress2</DataField>
+        </Field>
+        <Field Name="InspectionNo_TakingOverSection">
+          <DataField>InspectionNo_TakingOverSection</DataField>
+        </Field>
+        <Field Name="InspectionType_TakingOverSection">
+          <DataField>InspectionType_TakingOverSection</DataField>
+        </Field>
+        <Field Name="LineNo_TakingOverSection">
+          <DataField>LineNo_TakingOverSection</DataField>
+        </Field>
+        <Field Name="TakingOverStartChainage_TakingOverSection">
+          <DataField>TakingOverStartChainage_TakingOverSection</DataField>
+        </Field>
+        <Field Name="TakingOverStartChainage_TakingOverSectionFormat">
+          <DataField>TakingOverStartChainage_TakingOverSectionFormat</DataField>
+        </Field>
+        <Field Name="TakingOverEndChainage_TakingOverSection">
+          <DataField>TakingOverEndChainage_TakingOverSection</DataField>
+        </Field>
+        <Field Name="TakingOverEndChainage_TakingOverSectionFormat">
+          <DataField>TakingOverEndChainage_TakingOverSectionFormat</DataField>
+        </Field>
+        <Field Name="Comments_TakingOverSection">
+          <DataField>Comments_TakingOverSection</DataField>
+        </Field>
+        <Field Name="ProjectID_TakingOverSection">
+          <DataField>ProjectID_TakingOverSection</DataField>
+        </Field>
+        <Field Name="ContractID_TakingOverSection">
+          <DataField>ContractID_TakingOverSection</DataField>
+        </Field>
+        <Field Name="RoadCode_TakingOverSection">
+          <DataField>RoadCode_TakingOverSection</DataField>
+        </Field>
+        <Field Name="RoadSectionNo_TakingOverSection">
+          <DataField>RoadSectionNo_TakingOverSection</DataField>
+        </Field>
+        <Field Name="LinkName_TakingOverSection">
+          <DataField>LinkName_TakingOverSection</DataField>
+        </Field>
+        <Field Name="SectionName_TakingOverSection">
+          <DataField>SectionName_TakingOverSection</DataField>
+        </Field>
+        <Field Name="StartChainage_TakingOverSection">
+          <DataField>StartChainage_TakingOverSection</DataField>
+        </Field>
+        <Field Name="StartChainage_TakingOverSectionFormat">
+          <DataField>StartChainage_TakingOverSectionFormat</DataField>
+        </Field>
+        <Field Name="EndChainage_TakingOverSection">
+          <DataField>EndChainage_TakingOverSection</DataField>
+        </Field>
+        <Field Name="EndChainage_TakingOverSectionFormat">
+          <DataField>EndChainage_TakingOverSectionFormat</DataField>
+        </Field>
+        <Field Name="WorkplannnedLength_TakingOverSection">
+          <DataField>WorkplannnedLength_TakingOverSection</DataField>
+        </Field>
+        <Field Name="WorkplannnedLength_TakingOverSectionFormat">
+          <DataField>WorkplannnedLength_TakingOverSectionFormat</DataField>
+        </Field>
+        <Field Name="TakingOverLength_TakingOverSection">
+          <DataField>TakingOverLength_TakingOverSection</DataField>
+        </Field>
+        <Field Name="TakingOverLength_TakingOverSectionFormat">
+          <DataField>TakingOverLength_TakingOverSectionFormat</DataField>
+        </Field>
+        <Field Name="InspectionNo_TakingOverSectionLine">
+          <DataField>InspectionNo_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="InspectionType_TakingOverSectionLine">
+          <DataField>InspectionType_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="LineNo_TakingOverSectionLine">
+          <DataField>LineNo_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="TakingOverStartChainage_TakingOverSectionLine">
+          <DataField>TakingOverStartChainage_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="TakingOverStartChainage_TakingOverSectionLineFormat">
+          <DataField>TakingOverStartChainage_TakingOverSectionLineFormat</DataField>
+        </Field>
+        <Field Name="TakingOverEndChainage_TakingOverSectionLine">
+          <DataField>TakingOverEndChainage_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="TakingOverEndChainage_TakingOverSectionLineFormat">
+          <DataField>TakingOverEndChainage_TakingOverSectionLineFormat</DataField>
+        </Field>
+        <Field Name="Comments_TakingOverSectionLine">
+          <DataField>Comments_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="ProjectID_TakingOverSectionLine">
+          <DataField>ProjectID_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="ContractID_TakingOverSectionLine">
+          <DataField>ContractID_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="RoadCode_TakingOverSectionLine">
+          <DataField>RoadCode_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="RoadSectionNo_TakingOverSectionLine">
+          <DataField>RoadSectionNo_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="LinkName_TakingOverSectionLine">
+          <DataField>LinkName_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="SectionName_TakingOverSectionLine">
+          <DataField>SectionName_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="StartChainage_TakingOverSectionLine">
+          <DataField>StartChainage_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="StartChainage_TakingOverSectionLineFormat">
+          <DataField>StartChainage_TakingOverSectionLineFormat</DataField>
+        </Field>
+        <Field Name="EndChainage_TakingOverSectionLine">
+          <DataField>EndChainage_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="EndChainage_TakingOverSectionLineFormat">
+          <DataField>EndChainage_TakingOverSectionLineFormat</DataField>
+        </Field>
+        <Field Name="WorkplannnedLength_TakingOverSectionLine">
+          <DataField>WorkplannnedLength_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="WorkplannnedLength_TakingOverSectionLineFormat">
+          <DataField>WorkplannnedLength_TakingOverSectionLineFormat</DataField>
+        </Field>
+        <Field Name="TakingOverLength_TakingOverSectionLine">
+          <DataField>TakingOverLength_TakingOverSectionLine</DataField>
+        </Field>
+        <Field Name="TakingOverLength_TakingOverSectionLineFormat">
+          <DataField>TakingOverLength_TakingOverSectionLineFormat</DataField>
+        </Field>
+        <Field Name="EntryNo_TakingOverSectionLine">
+          <DataField>EntryNo_TakingOverSectionLine</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

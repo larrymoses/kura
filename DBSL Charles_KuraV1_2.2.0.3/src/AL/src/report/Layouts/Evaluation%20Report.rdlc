@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_2">
+          <DataField>ReportForNavId_2</DataField>
+        </Field>
+        <Field Name="Specification_Mandatory">
+          <DataField>Specification_Mandatory</DataField>
+        </Field>
+        <Field Name="Complied_Mandatory">
+          <DataField>Complied_Mandatory</DataField>
+        </Field>
+        <Field Name="EvaluaterUserId_Mandatory">
+          <DataField>EvaluaterUserId_Mandatory</DataField>
+        </Field>
+        <Field Name="CompanyName_Mandatory">
+          <DataField>CompanyName_Mandatory</DataField>
+        </Field>
+        <Field Name="Ref_no">
+          <DataField>Ref_no</DataField>
+        </Field>
+        <Field Name="logo">
+          <DataField>logo</DataField>
+        </Field>
+        <Field Name="passedmandatory">
+          <DataField>passedmandatory</DataField>
+        </Field>
+        <Field Name="i">
+          <DataField>i</DataField>
+        </Field>
+        <Field Name="ReportForNavId_3">
+          <DataField>ReportForNavId_3</DataField>
+        </Field>
+        <Field Name="Specification_Financial">
+          <DataField>Specification_Financial</DataField>
+        </Field>
+        <Field Name="Technicalscore_Financial">
+          <DataField>Technicalscore_Financial</DataField>
+        </Field>
+        <Field Name="Technicalscore_FinancialFormat">
+          <DataField>Technicalscore_FinancialFormat</DataField>
+        </Field>
+        <Field Name="SystemScore_Financial">
+          <DataField>SystemScore_Financial</DataField>
+        </Field>
+        <Field Name="SystemScore_FinancialFormat">
+          <DataField>SystemScore_FinancialFormat</DataField>
+        </Field>
+        <Field Name="EvaluaterUserId_Financial">
+          <DataField>EvaluaterUserId_Financial</DataField>
+        </Field>
+        <Field Name="CompanyName_Financial">
+          <DataField>CompanyName_Financial</DataField>
+        </Field>
+        <Field Name="TechnicalMaximumScore_Financial">
+          <DataField>TechnicalMaximumScore_Financial</DataField>
+        </Field>
+        <Field Name="TechnicalMaximumScore_FinancialFormat">
+          <DataField>TechnicalMaximumScore_FinancialFormat</DataField>
+        </Field>
+        <Field Name="Financialavg">
+          <DataField>Financialavg</DataField>
+        </Field>
+        <Field Name="FinancialavgFormat">
+          <DataField>FinancialavgFormat</DataField>
+        </Field>
+        <Field Name="J">
+          <DataField>J</DataField>
+        </Field>
+        <Field Name="Financialthreshold">
+          <DataField>Financialthreshold</DataField>
+        </Field>
+        <Field Name="FinancialthresholdFormat">
+          <DataField>FinancialthresholdFormat</DataField>
+        </Field>
+        <Field Name="k">
+          <DataField>k</DataField>
+        </Field>
+        <Field Name="Financialquote">
+          <DataField>Financialquote</DataField>
+        </Field>
+        <Field Name="FinancialquoteFormat">
+          <DataField>FinancialquoteFormat</DataField>
+        </Field>
+        <Field Name="financialscore">
+          <DataField>financialscore</DataField>
+        </Field>
+        <Field Name="financialscoreFormat">
+          <DataField>financialscoreFormat</DataField>
+        </Field>
+        <Field Name="leastfinancial">
+          <DataField>leastfinancial</DataField>
+        </Field>
+        <Field Name="leastfinancialFormat">
+          <DataField>leastfinancialFormat</DataField>
+        </Field>
+        <Field Name="biddingwinner">
+          <DataField>biddingwinner</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

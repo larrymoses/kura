@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1000000000">
+          <DataField>ReportForNavId_1000000000</DataField>
+        </Field>
+        <Field Name="CompanyLogo">
+          <DataField>CompanyLogo</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyAddress">
+          <DataField>CompanyAddress</DataField>
+        </Field>
+        <Field Name="CompanyAddress2">
+          <DataField>CompanyAddress2</DataField>
+        </Field>
+        <Field Name="CompanyPostCode">
+          <DataField>CompanyPostCode</DataField>
+        </Field>
+        <Field Name="CompanyCity">
+          <DataField>CompanyCity</DataField>
+        </Field>
+        <Field Name="CompanyPhone">
+          <DataField>CompanyPhone</DataField>
+        </Field>
+        <Field Name="CompanyFax">
+          <DataField>CompanyFax</DataField>
+        </Field>
+        <Field Name="CompanyEmail">
+          <DataField>CompanyEmail</DataField>
+        </Field>
+        <Field Name="CompanyWebsite">
+          <DataField>CompanyWebsite</DataField>
+        </Field>
+        <Field Name="No_Payments">
+          <DataField>No_Payments</DataField>
+        </Field>
+        <Field Name="Date_Payments">
+          <DataField>Date_Payments</DataField>
+        </Field>
+        <Field Name="PaymentsNarration">
+          <DataField>PaymentsNarration</DataField>
+        </Field>
+        <Field Name="Type_Payments">
+          <DataField>Type_Payments</DataField>
+        </Field>
+        <Field Name="JobNo_Payments">
+          <DataField>JobNo_Payments</DataField>
+        </Field>
+        <Field Name="JobDescription_Payments">
+          <DataField>JobDescription_Payments</DataField>
+        </Field>
+        <Field Name="BankName_Payments">
+          <DataField>BankName_Payments</DataField>
+        </Field>
+        <Field Name="PayMode_Payments">
+          <DataField>PayMode_Payments</DataField>
+        </Field>
+        <Field Name="ChequeNo_Payments">
+          <DataField>ChequeNo_Payments</DataField>
+        </Field>
+        <Field Name="ChequeDate_Payments">
+          <DataField>ChequeDate_Payments</DataField>
+        </Field>
+        <Field Name="BankCode_Payments">
+          <DataField>BankCode_Payments</DataField>
+        </Field>
+        <Field Name="Payee_Payments">
+          <DataField>Payee_Payments</DataField>
+        </Field>
+        <Field Name="Onbehalfof_Payments">
+          <DataField>Onbehalfof_Payments</DataField>
+        </Field>
+        <Field Name="CreatedBy_Payments">
+          <DataField>CreatedBy_Payments</DataField>
+        </Field>
+        <Field Name="Posted_Payments">
+          <DataField>Posted_Payments</DataField>
+        </Field>
+        <Field Name="PostedBy_Payments">
+          <DataField>PostedBy_Payments</DataField>
+        </Field>
+        <Field Name="PostedDate_Payments">
+          <DataField>PostedDate_Payments</DataField>
+        </Field>
+        <Field Name="GlobalDimension1Code_Payments">
+          <DataField>GlobalDimension1Code_Payments</DataField>
+        </Field>
+        <Field Name="GlobalDimension2Code_Payments">
+          <DataField>GlobalDimension2Code_Payments</DataField>
+        </Field>
+        <Field Name="TimePosted_Payments">
+          <DataField>TimePosted_Payments</DataField>
+        </Field>
+        <Field Name="TotalAmount_Payments">
+          <DataField>TotalAmount_Payments</DataField>
+        </Field>
+        <Field Name="TotalAmount_PaymentsFormat">
+          <DataField>TotalAmount_PaymentsFormat</DataField>
+        </Field>
+        <Field Name="PayingBankAccount_Payments">
+          <DataField>PayingBankAccount_Payments</DataField>
+        </Field>
+        <Field Name="Status_Payments">
+          <DataField>Status_Payments</DataField>
+        </Field>
+        <Field Name="PaymentType_Payments">
+          <DataField>PaymentType_Payments</DataField>
+        </Field>
+        <Field Name="Currency_Payments">
+          <DataField>Currency_Payments</DataField>
+        </Field>
+        <Field Name="NoSeries_Payments">
+          <DataField>NoSeries_Payments</DataField>
+        </Field>
+        <Field Name="AccountType_Payments">
+          <DataField>AccountType_Payments</DataField>
+        </Field>
+        <Field Name="AccountNo_Payments">
+          <DataField>AccountNo_Payments</DataField>
+        </Field>
+        <Field Name="AccountName_Payments">
+          <DataField>AccountName_Payments</DataField>
+        </Field>
+        <Field Name="ImprestAmount_Payments">
+          <DataField>ImprestAmount_Payments</DataField>
+        </Field>
+        <Field Name="ImprestAmount_PaymentsFormat">
+          <DataField>ImprestAmount_PaymentsFormat</DataField>
+        </Field>
+        <Field Name="Surrendered_Payments">
+          <DataField>Surrendered_Payments</DataField>
+        </Field>
+        <Field Name="AppliesToDocNo_Payments">
+          <DataField>AppliesToDocNo_Payments</DataField>
+        </Field>
+        <Field Name="PettyCashAmount_Payments">
+          <DataField>PettyCashAmount_Payments</DataField>
+        </Field>
+        <Field Name="PettyCashAmount_PaymentsFormat">
+          <DataField>PettyCashAmount_PaymentsFormat</DataField>
+        </Field>
+        <Field Name="OriginalDocument_Payments">
+          <DataField>OriginalDocument_Payments</DataField>
+        </Field>
+        <Field Name="PVCreationDateTime_Payments">
+          <DataField>PVCreationDateTime_Payments</DataField>
+        </Field>
+        <Field Name="PVCreatorID_Payments">
+          <DataField>PVCreatorID_Payments</DataField>
+        </Field>
+        <Field Name="RemainingAmount_Payments">
+          <DataField>RemainingAmount_Payments</DataField>
+        </Field>
+        <Field Name="RemainingAmount_PaymentsFormat">
+          <DataField>RemainingAmount_PaymentsFormat</DataField>
+        </Field>
+        <Field Name="ReceiptCreated_Payments">
+          <DataField>ReceiptCreated_Payments</DataField>
+        </Field>
+        <Field Name="ImprestDeadline_Payments">
+          <DataField>ImprestDeadline_Payments</DataField>
+        </Field>
+        <Field Name="ImprestSurrenderDate_Payments">
+          <DataField>ImprestSurrenderDate_Payments</DataField>
+        </Field>
+        <Field Name="DateFilter_Payments">
+          <DataField>DateFilter_Payments</DataField>
+        </Field>
+        <Field Name="ImprestType_Payments">
+          <DataField>ImprestType_Payments</DataField>
+        </Field>
+        <Field Name="ProjectBudget_Payments">
+          <DataField>ProjectBudget_Payments</DataField>
+        </Field>
+        <Field Name="ProjectBudget_PaymentsFormat">
+          <DataField>ProjectBudget_PaymentsFormat</DataField>
+        </Field>
+        <Field Name="UsageCosts_Payments">
+          <DataField>UsageCosts_Payments</DataField>
+        </Field>
+        <Field Name="UsageCosts_PaymentsFormat">
+          <DataField>UsageCosts_PaymentsFormat</DataField>
+        </Field>
+        <Field Name="TotalCommitments_Payments">
+          <DataField>TotalCommitments_Payments</DataField>
+        </Field>
+        <Field Name="TotalCommitments_PaymentsFormat">
+          <DataField>TotalCommitments_PaymentsFormat</DataField>
+        </Field>
+        <Field Name="AvailableFunds_Payments">
+          <DataField>AvailableFunds_Payments</DataField>
+        </Field>
+        <Field Name="AvailableFunds_PaymentsFormat">
+          <DataField>AvailableFunds_PaymentsFormat</DataField>
+        </Field>
+        <Field Name="PaymentNarration_Payments">
+          <DataField>PaymentNarration_Payments</DataField>
+        </Field>
+        <Field Name="Job_Payments">
+          <DataField>Job_Payments</DataField>
+        </Field>
+        <Field Name="JobTaskNo_Payments">
+          <DataField>JobTaskNo_Payments</DataField>
+        </Field>
+        <Field Name="Number_In_Words">
+          <DataField>Number_In_Words</DataField>
+        </Field>
+        <Field Name="PreparedBy">
+          <DataField>PreparedBy</DataField>
+        </Field>
+        <Field Name="DatePrepared">
+          <DataField>DatePrepared</DataField>
+        </Field>
+        <Field Name="PreparedBy_Signature">
+          <DataField>PreparedBy_Signature</DataField>
+        </Field>
+        <Field Name="ExaminedBy">
+          <DataField>ExaminedBy</DataField>
+        </Field>
+        <Field Name="DateApproved">
+          <DataField>DateApproved</DataField>
+        </Field>
+        <Field Name="ExaminedBy_Signature">
+          <DataField>ExaminedBy_Signature</DataField>
+        </Field>
+        <Field Name="VBC">
+          <DataField>VBC</DataField>
+        </Field>
+        <Field Name="VBCDate">
+          <DataField>VBCDate</DataField>
+        </Field>
+        <Field Name="VBC_Signature">
+          <DataField>VBC_Signature</DataField>
+        </Field>
+        <Field Name="Authorizer">
+          <DataField>Authorizer</DataField>
+        </Field>
+        <Field Name="DateAuthorized">
+          <DataField>DateAuthorized</DataField>
+        </Field>
+        <Field Name="Authorizer_Signature">
+          <DataField>Authorizer_Signature</DataField>
+        </Field>
+        <Field Name="ReportForNavId_1000000024">
+          <DataField>ReportForNavId_1000000024</DataField>
+        </Field>
+        <Field Name="No_PVLines">
+          <DataField>No_PVLines</DataField>
+        </Field>
+        <Field Name="LineNo_PVLines">
+          <DataField>LineNo_PVLines</DataField>
+        </Field>
+        <Field Name="Date_PVLines">
+          <DataField>Date_PVLines</DataField>
+        </Field>
+        <Field Name="AccountType_PVLines">
+          <DataField>AccountType_PVLines</DataField>
+        </Field>
+        <Field Name="AccountNo_PVLines">
+          <DataField>AccountNo_PVLines</DataField>
+        </Field>
+        <Field Name="AccountName_PVLines">
+          <DataField>AccountName_PVLines</DataField>
+        </Field>
+        <Field Name="Description_PVLines">
+          <DataField>Description_PVLines</DataField>
+        </Field>
+        <Field Name="Amount_PVLines">
+          <DataField>Amount_PVLines</DataField>
+        </Field>
+        <Field Name="Amount_PVLinesFormat">
+          <DataField>Amount_PVLinesFormat</DataField>
+        </Field>
+        <Field Name="Posted_PVLines">
+          <DataField>Posted_PVLines</DataField>
+        </Field>
+        <Field Name="PostedDate_PVLines">
+          <DataField>PostedDate_PVLines</DataField>
+        </Field>
+        <Field Name="PostedTime_PVLines">
+          <DataField>PostedTime_PVLines</DataField>
+        </Field>
+        <Field Name="GlobalDimension1Code_PVLines">
+          <DataField>GlobalDimension1Code_PVLines</DataField>
+        </Field>
+        <Field Name="GlobalDimension2Code_PVLines">
+          <DataField>GlobalDimension2Code_PVLines</DataField>
+        </Field>
+        <Field Name="AppliestoDocNo_PVLines">
+          <DataField>AppliestoDocNo_PVLines</DataField>
+        </Field>
+        <Field Name="VATCode_PVLines">
+          <DataField>VATCode_PVLines</DataField>
+        </Field>
+        <Field Name="WTaxCode_PVLines">
+          <DataField>WTaxCode_PVLines</DataField>
+        </Field>
+        <Field Name="RetentionCode_PVLines">
+          <DataField>RetentionCode_PVLines</DataField>
+        </Field>
+        <Field Name="VATAmount_PVLines">
+          <DataField>VATAmount_PVLines</DataField>
+        </Field>
+        <Field Name="VATAmount_PVLinesFormat">
+          <DataField>VATAmount_PVLinesFormat</DataField>
+        </Field>
+        <Field Name="WTaxAmount_PVLines">
+          <DataField>WTaxAmount_PVLines</DataField>
+        </Field>
+        <Field Name="WTaxAmount_PVLinesFormat">
+          <DataField>WTaxAmount_PVLinesFormat</DataField>
+        </Field>
+        <Field Name="RetentionAmount_PVLines">
+          <DataField>RetentionAmount_PVLines</DataField>
+        </Field>
+        <Field Name="RetentionAmount_PVLinesFormat">
+          <DataField>RetentionAmount_PVLinesFormat</DataField>
+        </Field>
+        <Field Name="NetAmount_PVLines">
+          <DataField>NetAmount_PVLines</DataField>
+        </Field>
+        <Field Name="NetAmount_PVLinesFormat">
+          <DataField>NetAmount_PVLinesFormat</DataField>
+        </Field>
+        <Field Name="WTVATCode_PVLines">
+          <DataField>WTVATCode_PVLines</DataField>
+        </Field>
+        <Field Name="WTVATAmount_PVLines">
+          <DataField>WTVATAmount_PVLines</DataField>
+        </Field>
+        <Field Name="WTVATAmount_PVLinesFormat">
+          <DataField>WTVATAmount_PVLinesFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

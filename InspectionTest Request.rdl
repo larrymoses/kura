@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="CompanyAddress1">
+          <DataField>CompanyAddress1</DataField>
+        </Field>
+        <Field Name="CompanyAddress2">
+          <DataField>CompanyAddress2</DataField>
+        </Field>
+        <Field Name="CompanyAddress3">
+          <DataField>CompanyAddress3</DataField>
+        </Field>
+        <Field Name="CompanyAddress4">
+          <DataField>CompanyAddress4</DataField>
+        </Field>
+        <Field Name="CompanyAddress5">
+          <DataField>CompanyAddress5</DataField>
+        </Field>
+        <Field Name="CompanyAddress6">
+          <DataField>CompanyAddress6</DataField>
+        </Field>
+        <Field Name="CompanyAddress7">
+          <DataField>CompanyAddress7</DataField>
+        </Field>
+        <Field Name="CompanyAddress8">
+          <DataField>CompanyAddress8</DataField>
+        </Field>
+        <Field Name="CName">
+          <DataField>CName</DataField>
+        </Field>
+        <Field Name="CAddress">
+          <DataField>CAddress</DataField>
+        </Field>
+        <Field Name="CAddree2">
+          <DataField>CAddree2</DataField>
+        </Field>
+        <Field Name="CCity">
+          <DataField>CCity</DataField>
+        </Field>
+        <Field Name="CPhoneNo">
+          <DataField>CPhoneNo</DataField>
+        </Field>
+        <Field Name="CEmail">
+          <DataField>CEmail</DataField>
+        </Field>
+        <Field Name="CWebsite">
+          <DataField>CWebsite</DataField>
+        </Field>
+        <Field Name="CPic">
+          <DataField>CPic</DataField>
+        </Field>
+        <Field Name="CMotto">
+          <DataField>CMotto</DataField>
+        </Field>
+        <Field Name="DocumentNo_ContractorInspectionRequest">
+          <DataField>DocumentNo_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="DocumentDate_ContractorInspectionRequest">
+          <DataField>DocumentDate_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="RequiresLabTest_ContractorInspectionRequest">
+          <DataField>RequiresLabTest_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="ProjectID_ContractorInspectionRequest">
+          <DataField>ProjectID_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="ProjectName_ContractorInspectionRequest">
+          <DataField>ProjectName_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="PurchaseContractID_ContractorInspectionRequest">
+          <DataField>PurchaseContractID_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="ContractName_ContractorInspectionRequest">
+          <DataField>ContractName_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="ContractorNo_ContractorInspectionRequest">
+          <DataField>ContractorNo_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="ContractorName_ContractorInspectionRequest">
+          <DataField>ContractorName_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="ResidentEngineerID_ContractorInspectionRequest">
+          <DataField>ResidentEngineerID_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="ResidnetEngineerName_ContractorInspectionRequest">
+          <DataField>ResidnetEngineerName_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="SiteAgentNo_ContractorInspectionRequest">
+          <DataField>SiteAgentNo_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="SiteAgentName_ContractorInspectionRequest">
+          <DataField>SiteAgentName_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="LabRemarks_ContractorInspectionRequest">
+          <DataField>LabRemarks_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="RERemarks_ContractorInspectionRequest">
+          <DataField>RERemarks_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="SurveyRemarks_ContractorInspectionRequest">
+          <DataField>SurveyRemarks_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="LabRemarksDateTimeEntered_ContractorInspectionRequest">
+          <DataField>LabRemarksDateTimeEntered_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="RERemarksDatetimeEntered_ContractorInspectionRequest">
+          <DataField>RERemarksDatetimeEntered_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="SurveyRemarksDateTimeEnter_ContractorInspectionRequest">
+          <DataField>SurveyRemarksDateTimeEnter_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="RERemarksBy_ContractorInspectionRequest">
+          <DataField>RERemarksBy_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="InspectorateRemarks_ContractorInspectionRequest">
+          <DataField>InspectorateRemarks_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="InspectedDateTime_ContractorInspectionRequest">
+          <DataField>InspectedDateTime_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="Inspected_ContractorInspectionRequest">
+          <DataField>Inspected_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="Tested_ContractorInspectionRequest">
+          <DataField>Tested_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="Measured_ContractorInspectionRequest">
+          <DataField>Measured_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="Approved_ContractorInspectionRequest">
+          <DataField>Approved_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="InspectedButNotApproved_ContractorInspectionRequest">
+          <DataField>InspectedButNotApproved_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="RequiresSurvey_ContractorInspectionRequest">
+          <DataField>RequiresSurvey_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="SubmissionDate_ContractorInspectionRequest">
+          <DataField>SubmissionDate_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="ARERemarks_ContractorInspectionRequest">
+          <DataField>ARERemarks_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="ARERemarksDateTime_ContractorInspectionRequest">
+          <DataField>ARERemarksDateTime_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="ARERemarksBy_ContractorInspectionRequest">
+          <DataField>ARERemarksBy_ContractorInspectionRequest</DataField>
+        </Field>
+        <Field Name="InspectedR">
+          <DataField>InspectedR</DataField>
+        </Field>
+        <Field Name="TestedR">
+          <DataField>TestedR</DataField>
+        </Field>
+        <Field Name="MeasuredR">
+          <DataField>MeasuredR</DataField>
+        </Field>
+        <Field Name="ApprovedR">
+          <DataField>ApprovedR</DataField>
+        </Field>
+        <Field Name="InspectedButNotApprovedR">
+          <DataField>InspectedButNotApprovedR</DataField>
+        </Field>
+        <Field Name="SurveyName">
+          <DataField>SurveyName</DataField>
+        </Field>
+        <Field Name="LabName">
+          <DataField>LabName</DataField>
+        </Field>
+        <Field Name="InspectorateName">
+          <DataField>InspectorateName</DataField>
+        </Field>
+        <Field Name="AREName">
+          <DataField>AREName</DataField>
+        </Field>
+        <Field Name="Road_Code">
+          <DataField>Road_Code</DataField>
+        </Field>
+        <Field Name="Road_Name">
+          <DataField>Road_Name</DataField>
+        </Field>
+        <Field Name="ActivityCode_TestRequestLine">
+          <DataField>ActivityCode_TestRequestLine</DataField>
+        </Field>
+        <Field Name="ActivityDescription_TestRequestLine">
+          <DataField>ActivityDescription_TestRequestLine</DataField>
+        </Field>
+        <Field Name="TotalDoneTodate_TestRequestLine">
+          <DataField>TotalDoneTodate_TestRequestLine</DataField>
+        </Field>
+        <Field Name="TotalDoneTodate_TestRequestLineFormat">
+          <DataField>TotalDoneTodate_TestRequestLineFormat</DataField>
+        </Field>
+        <Field Name="UnitOfMeasure_TestRequestLine">
+          <DataField>UnitOfMeasure_TestRequestLine</DataField>
+        </Field>
+        <Field Name="ForemanID_TestRequestLine">
+          <DataField>ForemanID_TestRequestLine</DataField>
+        </Field>
+        <Field Name="ForemanName_TestRequestLine">
+          <DataField>ForemanName_TestRequestLine</DataField>
+        </Field>
+        <Field Name="TestsRequired_TestRequestLine">
+          <DataField>TestsRequired_TestRequestLine</DataField>
+        </Field>
+        <Field Name="WorksStartChainageKM_TestRequestLine">
+          <DataField>WorksStartChainageKM_TestRequestLine</DataField>
+        </Field>
+        <Field Name="WorksStartChainageKM_TestRequestLineFormat">
+          <DataField>WorksStartChainageKM_TestRequestLineFormat</DataField>
+        </Field>
+        <Field Name="WorksEndChanageKM_TestRequestLine">
+          <DataField>WorksEndChanageKM_TestRequestLine</DataField>
+        </Field>
+        <Field Name="WorksEndChanageKM_TestRequestLineFormat">
+          <DataField>WorksEndChanageKM_TestRequestLineFormat</DataField>
+        </Field>
+        <Field Name="Site_Instruction_No_">
+          <DataField>Site_Instruction_No_</DataField>
+        </Field>
+        <Field Name="Planning_Line_No_">
+          <DataField>Planning_Line_No_</DataField>
+        </Field>
+        <Field Name="Bill_Item_No_">
+          <DataField>Bill_Item_No_</DataField>
+        </Field>
+        <Field Name="Bill_Item_Description">
+          <DataField>Bill_Item_Description</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

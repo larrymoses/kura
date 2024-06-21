@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="CompanyAddress1">
+          <DataField>CompanyAddress1</DataField>
+        </Field>
+        <Field Name="CompanyAddress2">
+          <DataField>CompanyAddress2</DataField>
+        </Field>
+        <Field Name="CompanyAddress3">
+          <DataField>CompanyAddress3</DataField>
+        </Field>
+        <Field Name="CompanyAddress4">
+          <DataField>CompanyAddress4</DataField>
+        </Field>
+        <Field Name="CompanyAddress5">
+          <DataField>CompanyAddress5</DataField>
+        </Field>
+        <Field Name="CompanyAddress6">
+          <DataField>CompanyAddress6</DataField>
+        </Field>
+        <Field Name="CompanyAddress7">
+          <DataField>CompanyAddress7</DataField>
+        </Field>
+        <Field Name="CompanyAddress8">
+          <DataField>CompanyAddress8</DataField>
+        </Field>
+        <Field Name="DocumentNo_ProjectStaffTerminationLine">
+          <DataField>DocumentNo_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="LineNo_ProjectStaffTerminationLine">
+          <DataField>LineNo_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="ResourceNo_ProjectStaffTerminationLine">
+          <DataField>ResourceNo_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="Name_ProjectStaffTerminationLine">
+          <DataField>Name_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="TerminationEffectiveDate_ProjectStaffTerminationLine">
+          <DataField>TerminationEffectiveDate_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="TerminationCategory_ProjectStaffTerminationLine">
+          <DataField>TerminationCategory_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="TerminationDetails_ProjectStaffTerminationLine">
+          <DataField>TerminationDetails_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="Email_ProjectStaffTerminationLine">
+          <DataField>Email_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="AppointmentDocumentNo_ProjectStaffTerminationLine">
+          <DataField>AppointmentDocumentNo_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="ProjectStartDate_ProjectStaffTerminationLine">
+          <DataField>ProjectStartDate_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="ProjectEndDate_ProjectStaffTerminationLine">
+          <DataField>ProjectEndDate_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="RoleCode_ProjectStaffTerminationLine">
+          <DataField>RoleCode_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="Designation_ProjectStaffTerminationLine">
+          <DataField>Designation_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="StaffCategory_ProjectStaffTerminationLine">
+          <DataField>StaffCategory_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="ProjectID_ProjectStaffTerminationLine">
+          <DataField>ProjectID_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="NoticePeriodDays_ProjectStaffTerminationLine">
+          <DataField>NoticePeriodDays_ProjectStaffTerminationLine</DataField>
+        </Field>
+        <Field Name="PhoneNo">
+          <DataField>PhoneNo</DataField>
+        </Field>
+        <Field Name="Email">
+          <DataField>Email</DataField>
+        </Field>
+        <Field Name="Website">
+          <DataField>Website</DataField>
+        </Field>
+        <Field Name="logo">
+          <DataField>logo</DataField>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="Address2">
+          <DataField>Address2</DataField>
+        </Field>
+        <Field Name="City">
+          <DataField>City</DataField>
+        </Field>
+        <Field Name="HeadedBy">
+          <DataField>HeadedBy</DataField>
+        </Field>
+        <Field Name="Motto">
+          <DataField>Motto</DataField>
+        </Field>
+        <Field Name="CurrentHeadName">
+          <DataField>CurrentHeadName</DataField>
+        </Field>
+        <Field Name="JobTitle">
+          <DataField>JobTitle</DataField>
+        </Field>
+        <Field Name="DirectorName">
+          <DataField>DirectorName</DataField>
+        </Field>
+        <Field Name="Director_Signature">
+          <DataField>Director_Signature</DataField>
+        </Field>
+        <Field Name="ProjectNo">
+          <DataField>ProjectNo</DataField>
+        </Field>
+        <Field Name="ProjectName">
+          <DataField>ProjectName</DataField>
+        </Field>
+        <Field Name="Contractor_Name">
+          <DataField>Contractor_Name</DataField>
+        </Field>
+        <Field Name="Contractor_No">
+          <DataField>Contractor_No</DataField>
+        </Field>
+        <Field Name="DocumentNo_ProjectStaffVoucher">
+          <DataField>DocumentNo_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="DocumentType_ProjectStaffVoucher">
+          <DataField>DocumentType_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="DocumentDate_ProjectStaffVoucher">
+          <DataField>DocumentDate_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="ProjectStaffTemplateID_ProjectStaffVoucher">
+          <DataField>ProjectStaffTemplateID_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="ProjectID_ProjectStaffVoucher">
+          <DataField>ProjectID_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="Description_ProjectStaffVoucher">
+          <DataField>Description_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="AppointingAuthority_ProjectStaffVoucSher">
+          <DataField>AppointingAuthority_ProjectStaffVoucSher</DataField>
+        </Field>
+        <Field Name="ProjectName_ProjectStaffVoucher">
+          <DataField>ProjectName_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="RoadCode_ProjectStaffVoucher">
+          <DataField>RoadCode_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="RoadName_ProjectStaffVoucher">
+          <DataField>RoadName_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="RoadSectionNo_ProjectStaffVoucher">
+          <DataField>RoadSectionNo_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="SectionName_ProjectStaffVoucher">
+          <DataField>SectionName_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="ProjectStartDate_ProjectStaffVoucher">
+          <DataField>ProjectStartDate_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="ProjectEndDate_ProjectStaffVoucher">
+          <DataField>ProjectEndDate_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="RegionID_ProjectStaffVoucher">
+          <DataField>RegionID_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="DirectorateID_ProjectStaffVoucher">
+          <DataField>DirectorateID_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="DepartmentID_ProjectStaffVoucher">
+          <DataField>DepartmentID_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="CreatedBy_ProjectStaffVoucher">
+          <DataField>CreatedBy_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="CreatedDateTime_ProjectStaffVoucher">
+          <DataField>CreatedDateTime_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="Status_ProjectStaffVoucher">
+          <DataField>Status_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="Posted_ProjectStaffVoucher">
+          <DataField>Posted_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="NoSeries_ProjectStaffVoucher">
+          <DataField>NoSeries_ProjectStaffVoucher</DataField>
+        </Field>
+        <Field Name="PreparedBy">
+          <DataField>PreparedBy</DataField>
+        </Field>
+        <Field Name="DatePrepared">
+          <DataField>DatePrepared</DataField>
+        </Field>
+        <Field Name="ExaminedBy">
+          <DataField>ExaminedBy</DataField>
+        </Field>
+        <Field Name="DateApproved">
+          <DataField>DateApproved</DataField>
+        </Field>
+        <Field Name="ExaminedBy_Signature">
+          <DataField>ExaminedBy_Signature</DataField>
+        </Field>
+        <Field Name="VBC">
+          <DataField>VBC</DataField>
+        </Field>
+        <Field Name="VBCDate">
+          <DataField>VBCDate</DataField>
+        </Field>
+        <Field Name="VBC_Signature">
+          <DataField>VBC_Signature</DataField>
+        </Field>
+        <Field Name="Authorizer">
+          <DataField>Authorizer</DataField>
+        </Field>
+        <Field Name="DateAuthorized">
+          <DataField>DateAuthorized</DataField>
+        </Field>
+        <Field Name="Authorizer_Signature">
+          <DataField>Authorizer_Signature</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

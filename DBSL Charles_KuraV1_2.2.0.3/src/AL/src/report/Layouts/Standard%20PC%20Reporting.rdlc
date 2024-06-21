@@ -1,0 +1,1423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>5599161e-d38d-43c4-8097-82b016e7bdfd</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Rectangle Name="Rectangle1">
+            <ReportItems>
+              <Textbox Name="Textbox4">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value EvaluationMode="Auto">=First(Fields!AnnualReportingCode_PerfomanceContractHeader.Value, "DataSet_Result")</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox4</rd:DefaultName>
+                <Top>0.52667in</Top>
+                <Left>0.00555in</Left>
+                <Height>0.25in</Height>
+                <Width>1.125in</Width>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                    <Width>2pt</Width>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox5">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value EvaluationMode="Auto">FINANCIAL YEAR </Value>
+                        <Style />
+                      </TextRun>
+                      <TextRun>
+                        <Value EvaluationMode="Auto">=First(Fields!AnnualReportingCode_PerfomanceContractHeader.Value, "DataSet_Result")</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox5</rd:DefaultName>
+                <Top>0.52667in</Top>
+                <Left>3.78056in</Left>
+                <Height>0.25in</Height>
+                <Width>3.04444in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                    <Width>2pt</Width>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox6">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value EvaluationMode="Auto">PERFORMANCE INDICATORS</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox6</rd:DefaultName>
+                <Top>0.90722in</Top>
+                <Height>0.25in</Height>
+                <Width>2.35556in</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                    <Width>2pt</Width>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox3">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value EvaluationMode="Auto">QUARTERLY PROGRESS REPORT FOR KENYA RURAL ROADS AUTHORITY (KeRRA)</Value>
+                        <Style />
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>0.10722in</Top>
+                <Left>1.26389in</Left>
+                <Height>0.25in</Height>
+                <Width>8.61111in</Width>
+                <ZIndex>3</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                    <Width>2pt</Width>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.11389in</Top>
+            <Left>0.15778in</Left>
+            <Height>1.21278in</Height>
+            <Width>10.22778in</Width>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1.86944in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.83056in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.53333in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox29">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto" />
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox29</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox30">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto" />
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox30</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox31">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto" />
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox31</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox32">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">CURRENT QUATER'S ACHIEVEMENT</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox32</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox35">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">CUMULATIVE TO DATE</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox35</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox38">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto" />
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox38</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox9">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">UNITS</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox9</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox11">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">TARGET FOR PERIOD</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox17">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">ACTUAL</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox19">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">TARGET</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox21">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">VARIANCE</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox23">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">ACTUAL</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox23</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox27">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">TARGET</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox27</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox25">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">VARIANCE</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox25</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ObjectiveInitiative_PCObjective">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!ObjectiveInitiative_PCObjective.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ObjectiveInitiative_PCObjective</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="UnitofMeasure_PCObjective">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!UnitofMeasure_PCObjective.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>UnitofMeasure_PCObjective</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ImportedAnnualTargetQty_PCObjective">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!ImportedAnnualTargetQty_PCObjective.Value</Value>
+                                  <Style>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ImportedAnnualTargetQty_PCObjective</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="IndividualAchievedTargets_PCObjective">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!IndividualAchievedTargets_PCObjective.Value</Value>
+                                  <Style>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>IndividualAchievedTargets_PCObjective</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ImportedAnnualTargetQty_PCObjective1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!ImportedAnnualTargetQty_PCObjective.Value</Value>
+                                  <Style>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ImportedAnnualTargetQty_PCObjective1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox22">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=(Fields!ImportedAnnualTargetQty_PCObjective.Value)-(Fields!IndividualAchievedTargets_PCObjective.Value)</Value>
+                                  <Style>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="IndividualAchievedTargets_PCObjective1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!IndividualAchievedTargets_PCObjective.Value</Value>
+                                  <Style>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>IndividualAchievedTargets_PCObjective1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ImportedAnnualTargetQty_PCObjective2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!ImportedAnnualTargetQty_PCObjective.Value</Value>
+                                  <Style>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>ImportedAnnualTargetQty_PCObjective2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox24">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!ImportedAnnualTargetQty_PCObjective.Value - Fields!IndividualAchievedTargets_PCObjective.Value</Value>
+                                  <Style>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                              <Width>2pt</Width>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details" />
+                  <Visibility>
+                    <Hidden>=IsNothing(Fields!ObjectiveInitiative_PCObjective.Value)</Hidden>
+                  </Visibility>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Top>1.56667in</Top>
+            <Left>0.15778in</Left>
+            <Height>0.75in</Height>
+            <Width>10.23333in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>2pt</Width>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>2.50556in</Height>
+        <Style />
+      </Body>
+      <Width>10.51889in</Width>
+      <Page>
+        <PageHeader>
+          <Height>0.94111in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">PERFORMANCE CONTRACT REPORTING</Value>
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <TextDecoration>Underline</TextDecoration>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.26333in</Top>
+              <Left>1.42167in</Left>
+              <Height>0.35in</Height>
+              <Width>6.96945in</Width>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>2pt</Width>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Image Name="Image1">
+              <Source>Database</Source>
+              <Value>=First(Fields!CIPicture.Value, "DataSet_Result")</Value>
+              <MIMEType>image/jpeg</MIMEType>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.13in</Top>
+              <Left>0.16333in</Left>
+              <Height>0.68333in</Height>
+              <Width>1.125in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                  <Width>2pt</Width>
+                </Border>
+              </Style>
+            </Image>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageHeight>8.5in</PageHeight>
+        <PageWidth>11in</PageWidth>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="CIName">
+          <DataField>CIName</DataField>
+        </Field>
+        <Field Name="CIPicture">
+          <DataField>CIPicture</DataField>
+        </Field>
+        <Field Name="No_PerfomanceContractHeader">
+          <DataField>No_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="DocumentDate_PerfomanceContractHeader">
+          <DataField>DocumentDate_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="StrategyPlanID_PerfomanceContractHeader">
+          <DataField>StrategyPlanID_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="AnnualReportingCode_PerfomanceContractHeader">
+          <DataField>AnnualReportingCode_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="StartDate_PerfomanceContractHeader">
+          <DataField>StartDate_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="EndDate_PerfomanceContractHeader">
+          <DataField>EndDate_PerfomanceContractHeader</DataField>
+        </Field>
+        <Field Name="ReportForNavId_8">
+          <DataField>ReportForNavId_8</DataField>
+        </Field>
+        <Field Name="WorkplanNo_PCObjective">
+          <DataField>WorkplanNo_PCObjective</DataField>
+        </Field>
+        <Field Name="InitiativeNo_PCObjective">
+          <DataField>InitiativeNo_PCObjective</DataField>
+        </Field>
+        <Field Name="ObjectiveInitiative_PCObjective">
+          <DataField>ObjectiveInitiative_PCObjective</DataField>
+        </Field>
+        <Field Name="GoalID_PCObjective">
+          <DataField>GoalID_PCObjective</DataField>
+        </Field>
+        <Field Name="InitiativeType_PCObjective">
+          <DataField>InitiativeType_PCObjective</DataField>
+        </Field>
+        <Field Name="TaskType_PCObjective">
+          <DataField>TaskType_PCObjective</DataField>
+        </Field>
+        <Field Name="Indentation_PCObjective">
+          <DataField>Indentation_PCObjective</DataField>
+        </Field>
+        <Field Name="Indentation_PCObjectiveFormat">
+          <DataField>Indentation_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Totaling_PCObjective">
+          <DataField>Totaling_PCObjective</DataField>
+        </Field>
+        <Field Name="Totaling_PCObjectiveFormat">
+          <DataField>Totaling_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Progress_PCObjective">
+          <DataField>Progress_PCObjective</DataField>
+        </Field>
+        <Field Name="Complete_PCObjective">
+          <DataField>Complete_PCObjective</DataField>
+        </Field>
+        <Field Name="Complete_PCObjectiveFormat">
+          <DataField>Complete_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="PriorityLevel_PCObjective">
+          <DataField>PriorityLevel_PCObjective</DataField>
+        </Field>
+        <Field Name="StrategyPlanID_PCObjective">
+          <DataField>StrategyPlanID_PCObjective</DataField>
+        </Field>
+        <Field Name="YearReportingCode_PCObjective">
+          <DataField>YearReportingCode_PCObjective</DataField>
+        </Field>
+        <Field Name="StartDate_PCObjective">
+          <DataField>StartDate_PCObjective</DataField>
+        </Field>
+        <Field Name="DueDate_PCObjective">
+          <DataField>DueDate_PCObjective</DataField>
+        </Field>
+        <Field Name="PrimaryDirectorate_PCObjective">
+          <DataField>PrimaryDirectorate_PCObjective</DataField>
+        </Field>
+        <Field Name="PrimaryDepartment_PCObjective">
+          <DataField>PrimaryDepartment_PCObjective</DataField>
+        </Field>
+        <Field Name="OverallOwner_PCObjective">
+          <DataField>OverallOwner_PCObjective</DataField>
+        </Field>
+        <Field Name="OutcomePerfomanceIndicator_PCObjective">
+          <DataField>OutcomePerfomanceIndicator_PCObjective</DataField>
+        </Field>
+        <Field Name="UnitofMeasure_PCObjective">
+          <DataField>UnitofMeasure_PCObjective</DataField>
+        </Field>
+        <Field Name="DesiredPerfomanceDirection_PCObjective">
+          <DataField>DesiredPerfomanceDirection_PCObjective</DataField>
+        </Field>
+        <Field Name="KPIType_PCObjective">
+          <DataField>KPIType_PCObjective</DataField>
+        </Field>
+        <Field Name="ImportedAnnualTargetQty_PCObjective">
+          <DataField>ImportedAnnualTargetQty_PCObjective</DataField>
+        </Field>
+        <Field Name="ImportedAnnualTargetQty_PCObjectiveFormat">
+          <DataField>ImportedAnnualTargetQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q1TargetQty_PCObjective">
+          <DataField>Q1TargetQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q1TargetQty_PCObjectiveFormat">
+          <DataField>Q1TargetQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q1SelfReviewQty_PCObjective">
+          <DataField>Q1SelfReviewQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q1SelfReviewQty_PCObjectiveFormat">
+          <DataField>Q1SelfReviewQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q1ManagerReviewQty_PCObjective">
+          <DataField>Q1ManagerReviewQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q1ManagerReviewQty_PCObjectiveFormat">
+          <DataField>Q1ManagerReviewQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q1ActualQty_PCObjective">
+          <DataField>Q1ActualQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q1ActualQty_PCObjectiveFormat">
+          <DataField>Q1ActualQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q2TargetQty_PCObjective">
+          <DataField>Q2TargetQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q2TargetQty_PCObjectiveFormat">
+          <DataField>Q2TargetQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q2SelfReviewQty_PCObjective">
+          <DataField>Q2SelfReviewQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q2SelfReviewQty_PCObjectiveFormat">
+          <DataField>Q2SelfReviewQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q2ManagerReviewQty_PCObjective">
+          <DataField>Q2ManagerReviewQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q2ManagerReviewQty_PCObjectiveFormat">
+          <DataField>Q2ManagerReviewQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q2ActualQty_PCObjective">
+          <DataField>Q2ActualQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q2ActualQty_PCObjectiveFormat">
+          <DataField>Q2ActualQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q3TargetQty_PCObjective">
+          <DataField>Q3TargetQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q3TargetQty_PCObjectiveFormat">
+          <DataField>Q3TargetQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q3SelfReviewQty_PCObjective">
+          <DataField>Q3SelfReviewQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q3SelfReviewQty_PCObjectiveFormat">
+          <DataField>Q3SelfReviewQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q3ManagerReviewQty_PCObjective">
+          <DataField>Q3ManagerReviewQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q3ManagerReviewQty_PCObjectiveFormat">
+          <DataField>Q3ManagerReviewQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q3ActualQty_PCObjective">
+          <DataField>Q3ActualQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q3ActualQty_PCObjectiveFormat">
+          <DataField>Q3ActualQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q4TargetQty_PCObjective">
+          <DataField>Q4TargetQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q4TargetQty_PCObjectiveFormat">
+          <DataField>Q4TargetQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q4SelfReviewQty_PCObjective">
+          <DataField>Q4SelfReviewQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q4SelfReviewQty_PCObjectiveFormat">
+          <DataField>Q4SelfReviewQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q4ManagerReviewQty_PCObjective">
+          <DataField>Q4ManagerReviewQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q4ManagerReviewQty_PCObjectiveFormat">
+          <DataField>Q4ManagerReviewQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Q4ActualQty_PCObjective">
+          <DataField>Q4ActualQty_PCObjective</DataField>
+        </Field>
+        <Field Name="Q4ActualQty_PCObjectiveFormat">
+          <DataField>Q4ActualQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="GlobalDimension1Code_PCObjective">
+          <DataField>GlobalDimension1Code_PCObjective</DataField>
+        </Field>
+        <Field Name="GlobalDimension2Code_PCObjective">
+          <DataField>GlobalDimension2Code_PCObjective</DataField>
+        </Field>
+        <Field Name="PlanningDateFilter_PCObjective">
+          <DataField>PlanningDateFilter_PCObjective</DataField>
+        </Field>
+        <Field Name="GoalTemplateID_PCObjective">
+          <DataField>GoalTemplateID_PCObjective</DataField>
+        </Field>
+        <Field Name="IndividualAchievedTargets_PCObjective">
+          <DataField>IndividualAchievedTargets_PCObjective</DataField>
+        </Field>
+        <Field Name="IndividualAchievedTargets_PCObjectiveFormat">
+          <DataField>IndividualAchievedTargets_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="FunctionalAchievedTargets_PCObjective">
+          <DataField>FunctionalAchievedTargets_PCObjective</DataField>
+        </Field>
+        <Field Name="FunctionalAchievedTargets_PCObjectiveFormat">
+          <DataField>FunctionalAchievedTargets_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="CEOAchievedTargets_PCObjective">
+          <DataField>CEOAchievedTargets_PCObjective</DataField>
+        </Field>
+        <Field Name="CEOAchievedTargets_PCObjectiveFormat">
+          <DataField>CEOAchievedTargets_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="BoardAchievedTargets_PCObjective">
+          <DataField>BoardAchievedTargets_PCObjective</DataField>
+        </Field>
+        <Field Name="BoardAchievedTargets_PCObjectiveFormat">
+          <DataField>BoardAchievedTargets_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="AnnualWorkplanAchievedTarget_PCObjective">
+          <DataField>AnnualWorkplanAchievedTarget_PCObjective</DataField>
+        </Field>
+        <Field Name="AnnualWorkplanAchievedTarget_PCObjectiveFormat">
+          <DataField>AnnualWorkplanAchievedTarget_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="EntryNo_PCObjective">
+          <DataField>EntryNo_PCObjective</DataField>
+        </Field>
+        <Field Name="AssignedWeight_PCObjective">
+          <DataField>AssignedWeight_PCObjective</DataField>
+        </Field>
+        <Field Name="AssignedWeight_PCObjectiveFormat">
+          <DataField>AssignedWeight_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="PlogAchievedTargets_PCObjective">
+          <DataField>PlogAchievedTargets_PCObjective</DataField>
+        </Field>
+        <Field Name="PlogAchievedTargets_PCObjectiveFormat">
+          <DataField>PlogAchievedTargets_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="Datefilter_PCObjective">
+          <DataField>Datefilter_PCObjective</DataField>
+        </Field>
+        <Field Name="FrameworkPerspective_PCObjective">
+          <DataField>FrameworkPerspective_PCObjective</DataField>
+        </Field>
+        <Field Name="StrategyFramework_PCObjective">
+          <DataField>StrategyFramework_PCObjective</DataField>
+        </Field>
+        <Field Name="PreviousAnnualTargetQty_PCObjective">
+          <DataField>PreviousAnnualTargetQty_PCObjective</DataField>
+        </Field>
+        <Field Name="PreviousAnnualTargetQty_PCObjectiveFormat">
+          <DataField>PreviousAnnualTargetQty_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="AdditionalComments_PCObjective">
+          <DataField>AdditionalComments_PCObjective</DataField>
+        </Field>
+        <Field Name="ActivityType_PCObjective">
+          <DataField>ActivityType_PCObjective</DataField>
+        </Field>
+        <Field Name="DirectorsAchievedTargets_PCObjective">
+          <DataField>DirectorsAchievedTargets_PCObjective</DataField>
+        </Field>
+        <Field Name="DirectorsAchievedTargets_PCObjectiveFormat">
+          <DataField>DirectorsAchievedTargets_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="DepartmentAchievedTarget_PCObjective">
+          <DataField>DepartmentAchievedTarget_PCObjective</DataField>
+        </Field>
+        <Field Name="DepartmentAchievedTarget_PCObjectiveFormat">
+          <DataField>DepartmentAchievedTarget_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="KeyPerformanceIndicator_PCObjective">
+          <DataField>KeyPerformanceIndicator_PCObjective</DataField>
+        </Field>
+        <Field Name="PrimaryDirectorateName_PCObjective">
+          <DataField>PrimaryDirectorateName_PCObjective</DataField>
+        </Field>
+        <Field Name="PrimaryDepartmentName_PCObjective">
+          <DataField>PrimaryDepartmentName_PCObjective</DataField>
+        </Field>
+        <Field Name="PrincipalsAchievedTargets_PCObjective">
+          <DataField>PrincipalsAchievedTargets_PCObjective</DataField>
+        </Field>
+        <Field Name="PrincipalsAchievedTargets_PCObjectiveFormat">
+          <DataField>PrincipalsAchievedTargets_PCObjectiveFormat</DataField>
+        </Field>
+        <Field Name="SeniorsAchievedTargets_PCObjective">
+          <DataField>SeniorsAchievedTargets_PCObjective</DataField>
+        </Field>
+        <Field Name="SeniorsAchievedTargets_PCObjectiveFormat">
+          <DataField>SeniorsAchievedTargets_PCObjectiveFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Picture_CompanyInformationCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Picture_CompanyInformationCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Picture_CompanyInformationCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="Code_RequestForInformation">
+          <DataField>Code_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Description_RequestForInformation">
+          <DataField>Description_RequestForInformation</DataField>
+        </Field>
+        <Field Name="TenderSummary_RequestForInformation">
+          <DataField>TenderSummary_RequestForInformation</DataField>
+        </Field>
+        <Field Name="PrimaryTargetVendorCluster_RequestForInformation">
+          <DataField>PrimaryTargetVendorCluster_RequestForInformation</DataField>
+        </Field>
+        <Field Name="DocumentDate_RequestForInformation">
+          <DataField>DocumentDate_RequestForInformation</DataField>
+        </Field>
+        <Field Name="ExternalDocumentNo_RequestForInformation">
+          <DataField>ExternalDocumentNo_RequestForInformation</DataField>
+        </Field>
+        <Field Name="PeriodStartDate_RequestForInformation">
+          <DataField>PeriodStartDate_RequestForInformation</DataField>
+        </Field>
+        <Field Name="PeriodEndDate_RequestForInformation">
+          <DataField>PeriodEndDate_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Status_RequestForInformation">
+          <DataField>Status_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Name_RequestForInformation">
+          <DataField>Name_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Name2_RequestForInformation">
+          <DataField>Name2_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Address_RequestForInformation">
+          <DataField>Address_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Address2_RequestForInformation">
+          <DataField>Address2_RequestForInformation</DataField>
+        </Field>
+        <Field Name="PostCode_RequestForInformation">
+          <DataField>PostCode_RequestForInformation</DataField>
+        </Field>
+        <Field Name="City_RequestForInformation">
+          <DataField>City_RequestForInformation</DataField>
+        </Field>
+        <Field Name="CountryRegionCode_RequestForInformation">
+          <DataField>CountryRegionCode_RequestForInformation</DataField>
+        </Field>
+        <Field Name="PhoneNo_RequestForInformation">
+          <DataField>PhoneNo_RequestForInformation</DataField>
+        </Field>
+        <Field Name="EMail_RequestForInformation">
+          <DataField>EMail_RequestForInformation</DataField>
+        </Field>
+        <Field Name="TenderBoxLocationCode_RequestForInformation">
+          <DataField>TenderBoxLocationCode_RequestForInformation</DataField>
+        </Field>
+        <Field Name="PrequalificationChargeCode_RequestForInformation">
+          <DataField>PrequalificationChargeCode_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Published_RequestForInformation">
+          <DataField>Published_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Createdby_RequestForInformation">
+          <DataField>Createdby_RequestForInformation</DataField>
+        </Field>
+        <Field Name="SubmissionStartDate_RequestForInformation">
+          <DataField>SubmissionStartDate_RequestForInformation</DataField>
+        </Field>
+        <Field Name="SubmissionStartTime_RequestForInformation">
+          <DataField>SubmissionStartTime_RequestForInformation</DataField>
+        </Field>
+        <Field Name="SubmissionEndDate_RequestForInformation">
+          <DataField>SubmissionEndDate_RequestForInformation</DataField>
+        </Field>
+        <Field Name="SubmissionEndTime_RequestForInformation">
+          <DataField>SubmissionEndTime_RequestForInformation</DataField>
+        </Field>
+        <Field Name="NoofSubmission_RequestForInformation">
+          <DataField>NoofSubmission_RequestForInformation</DataField>
+        </Field>
+        <Field Name="EnforceMandatoryEReceipt_RequestForInformation">
+          <DataField>EnforceMandatoryEReceipt_RequestForInformation</DataField>
+        </Field>
+        <Field Name="ProcurementDocumentTemplate_RequestForInformation">
+          <DataField>ProcurementDocumentTemplate_RequestForInformation</DataField>
+        </Field>
+        <Field Name="DisplayScoringCriteriaVendo_RequestForInformation">
+          <DataField>DisplayScoringCriteriaVendo_RequestForInformation</DataField>
+        </Field>
+        <Field Name="RFIScoringTemplate_RequestForInformation">
+          <DataField>RFIScoringTemplate_RequestForInformation</DataField>
+        </Field>
+        <Field Name="CreatedDateTime_RequestForInformation">
+          <DataField>CreatedDateTime_RequestForInformation</DataField>
+        </Field>
+        <Field Name="SummarizedTermsConditions_RequestForInformation">
+          <DataField>SummarizedTermsConditions_RequestForInformation</DataField>
+        </Field>
+        <Field Name="NoSeries_RequestForInformation">
+          <DataField>NoSeries_RequestForInformation</DataField>
+        </Field>
+        <Field Name="GlobalDimension1Code_RequestForInformation">
+          <DataField>GlobalDimension1Code_RequestForInformation</DataField>
+        </Field>
+        <Field Name="GlobalDimension2Code_RequestForInformation">
+          <DataField>GlobalDimension2Code_RequestForInformation</DataField>
+        </Field>
+        <Field Name="GlobalDimension3Code_RequestForInformation">
+          <DataField>GlobalDimension3Code_RequestForInformation</DataField>
+        </Field>
+        <Field Name="County_RequestForInformation">
+          <DataField>County_RequestForInformation</DataField>
+        </Field>
+        <Field Name="DocumentType_RequestForInformation">
+          <DataField>DocumentType_RequestForInformation</DataField>
+        </Field>
+        <Field Name="AssignedProcurementOfficer_RequestForInformation">
+          <DataField>AssignedProcurementOfficer_RequestForInformation</DataField>
+        </Field>
+        <Field Name="ProcurementType_RequestForInformation">
+          <DataField>ProcurementType_RequestForInformation</DataField>
+        </Field>
+        <Field Name="SolicitationType_RequestForInformation">
+          <DataField>SolicitationType_RequestForInformation</DataField>
+        </Field>
+        <Field Name="ResponsibilityCentre_RequestForInformation">
+          <DataField>ResponsibilityCentre_RequestForInformation</DataField>
+        </Field>
+        <Field Name="ChargeAmountLCY_RequestForInformation">
+          <DataField>ChargeAmountLCY_RequestForInformation</DataField>
+        </Field>
+        <Field Name="ChargeAmountLCY_RequestForInformationFormat">
+          <DataField>ChargeAmountLCY_RequestForInformationFormat</DataField>
+        </Field>
+        <Field Name="ChargeBankCode_RequestForInformation">
+          <DataField>ChargeBankCode_RequestForInformation</DataField>
+        </Field>
+        <Field Name="ResponsibilityCenterdescr_RequestForInformation">
+          <DataField>ResponsibilityCenterdescr_RequestForInformation</DataField>
+        </Field>
+        <Field Name="BankName_RequestForInformation">
+          <DataField>BankName_RequestForInformation</DataField>
+        </Field>
+        <Field Name="AccountHolderName_RequestForInformation">
+          <DataField>AccountHolderName_RequestForInformation</DataField>
+        </Field>
+        <Field Name="ChargeBankBranch_RequestForInformation">
+          <DataField>ChargeBankBranch_RequestForInformation</DataField>
+        </Field>
+        <Field Name="ChargeBankACNo_RequestForInformation">
+          <DataField>ChargeBankACNo_RequestForInformation</DataField>
+        </Field>
+        <Field Name="DateTimePublished_RequestForInformation">
+          <DataField>DateTimePublished_RequestForInformation</DataField>
+        </Field>
+        <Field Name="RFIDocumentStatus_RequestForInformation">
+          <DataField>RFIDocumentStatus_RequestForInformation</DataField>
+        </Field>
+        <Field Name="DimensionSetID_RequestForInformation">
+          <DataField>DimensionSetID_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Constituency_RequestForInformation">
+          <DataField>Constituency_RequestForInformation</DataField>
+        </Field>
+        <Field Name="DateFilter_RequestForInformation">
+          <DataField>DateFilter_RequestForInformation</DataField>
+        </Field>
+        <Field Name="Company">
+          <DataField>Company</DataField>
+        </Field>
+        <Field Name="compemail">
+          <DataField>compemail</DataField>
+        </Field>
+        <Field Name="Homepage">
+          <DataField>Homepage</DataField>
+        </Field>
+        <Field Name="LOGO">
+          <DataField>LOGO</DataField>
+        </Field>
+        <Field Name="ReportForNavId_77">
+          <DataField>ReportForNavId_77</DataField>
+        </Field>
+        <Field Name="DocumentType_RFIRequiredDocument">
+          <DataField>DocumentType_RFIRequiredDocument</DataField>
+        </Field>
+        <Field Name="DocumentNo_RFIRequiredDocument">
+          <DataField>DocumentNo_RFIRequiredDocument</DataField>
+        </Field>
+        <Field Name="ProcurementDocumentTypeID_RFIRequiredDocument">
+          <DataField>ProcurementDocumentTypeID_RFIRequiredDocument</DataField>
+        </Field>
+        <Field Name="Document_desc">
+          <DataField>Document_desc</DataField>
+        </Field>
+        <Field Name="TrackCertificateExpiry_RFIRequiredDocument">
+          <DataField>TrackCertificateExpiry_RFIRequiredDocument</DataField>
+        </Field>
+        <Field Name="documentrec_type">
+          <DataField>documentrec_type</DataField>
+        </Field>
+        <Field Name="SpecialGroupRequirement_RFIRequiredDocument">
+          <DataField>SpecialGroupRequirement_RFIRequiredDocument</DataField>
+        </Field>
+        <Field Name="SpecializedProviderReq_RFIRequiredDocument">
+          <DataField>SpecializedProviderReq_RFIRequiredDocument</DataField>
+        </Field>
+        <Field Name="ReportForNavId_91">
+          <DataField>ReportForNavId_91</DataField>
+        </Field>
+        <Field Name="Picture_CompanyInformation">
+          <DataField>Picture_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Name_CompanyInformation">
+          <DataField>Name_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Name2_CompanyInformation">
+          <DataField>Name2_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address_CompanyInformation">
+          <DataField>Address_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address2_CompanyInformation">
+          <DataField>Address2_CompanyInformation</DataField>
+        </Field>
+        <Field Name="City_CompanyInformation">
+          <DataField>City_CompanyInformation</DataField>
+        </Field>
+        <Field Name="PhoneNo_CompanyInformation">
+          <DataField>PhoneNo_CompanyInformation</DataField>
+        </Field>
+        <Field Name="PhoneNo2_CompanyInformation">
+          <DataField>PhoneNo2_CompanyInformation</DataField>
+        </Field>
+        <Field Name="LocationCode_CompanyInformation">
+          <DataField>LocationCode_CompanyInformation</DataField>
+        </Field>
+        <Field Name="ProcurementSupportEmail_CompanyInformation">
+          <DataField>ProcurementSupportEmail_CompanyInformation</DataField>
+        </Field>
+        <Field Name="EMail_CompanyInformation">
+          <DataField>EMail_CompanyInformation</DataField>
+        </Field>
+        <Field Name="HomePage_CompanyInformation">
+          <DataField>HomePage_CompanyInformation</DataField>
+        </Field>
+        <Field Name="ReportForNavId_58">
+          <DataField>ReportForNavId_58</DataField>
+        </Field>
+        <Field Name="DocumentNo_RFIPrequalificationCategory">
+          <DataField>DocumentNo_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="PrequalificationCategoryID_RFIPrequalificationCategory">
+          <DataField>PrequalificationCategoryID_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="Description_RFIPrequalificationCategory">
+          <DataField>Description_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="Amount_RFIPrequalificationCategory">
+          <DataField>Amount_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="Amount_RFIPrequalificationCategoryFormat">
+          <DataField>Amount_RFIPrequalificationCategoryFormat</DataField>
+        </Field>
+        <Field Name="PeriodStartDate_RFIPrequalificationCategory">
+          <DataField>PeriodStartDate_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="PeriodEndDate_RFIPrequalificationCategory">
+          <DataField>PeriodEndDate_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="SubmissionStartDate_RFIPrequalificationCategory">
+          <DataField>SubmissionStartDate_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="SubmissionStartTime_RFIPrequalificationCategory">
+          <DataField>SubmissionStartTime_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="SubmissionEndDate_RFIPrequalificationCategory">
+          <DataField>SubmissionEndDate_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="SubmissionEndTime_RFIPrequalificationCategory">
+          <DataField>SubmissionEndTime_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="ApplicableLocation_RFIPrequalificationCategory">
+          <DataField>ApplicableLocation_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="RestrictedRC_RFIPrequalificationCategory">
+          <DataField>RestrictedRC_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="RestrictedRCType_RFIPrequalificationCategory">
+          <DataField>RestrictedRCType_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="RestrictedRCCode_RFIPrequalificationCategory">
+          <DataField>RestrictedRCCode_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="NoofSubmissions_RFIPrequalificationCategory">
+          <DataField>NoofSubmissions_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="DocumentType_RFIPrequalificationCategory">
+          <DataField>DocumentType_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="SpecialGroupReservation_RFIPrequalificationCategory">
+          <DataField>SpecialGroupReservation_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="ProcurementType_RFIPrequalificationCategory">
+          <DataField>ProcurementType_RFIPrequalificationCategory</DataField>
+        </Field>
+        <Field Name="ReportForNavId_86">
+          <DataField>ReportForNavId_86</DataField>
+        </Field>
+        <Field Name="CategoryID_RFICategoryRequirement">
+          <DataField>CategoryID_RFICategoryRequirement</DataField>
+        </Field>
+        <Field Name="RequirementCode_RFICategoryRequirement">
+          <DataField>RequirementCode_RFICategoryRequirement</DataField>
+        </Field>
+        <Field Name="Description_RFICategoryRequirement">
+          <DataField>Description_RFICategoryRequirement</DataField>
+        </Field>
+        <Field Name="RequirementType_RFICategoryRequirement">
+          <DataField>RequirementType_RFICategoryRequirement</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

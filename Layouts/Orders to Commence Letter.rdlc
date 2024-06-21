@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyPicture">
+          <DataField>CompanyPicture</DataField>
+        </Field>
+        <Field Name="CompanyAddress1">
+          <DataField>CompanyAddress1</DataField>
+        </Field>
+        <Field Name="CompanyAddress2">
+          <DataField>CompanyAddress2</DataField>
+        </Field>
+        <Field Name="CompanyAddress3">
+          <DataField>CompanyAddress3</DataField>
+        </Field>
+        <Field Name="CompanyAddress4">
+          <DataField>CompanyAddress4</DataField>
+        </Field>
+        <Field Name="CompanyAddress5">
+          <DataField>CompanyAddress5</DataField>
+        </Field>
+        <Field Name="CompanyAddress6">
+          <DataField>CompanyAddress6</DataField>
+        </Field>
+        <Field Name="CompanyAddress7">
+          <DataField>CompanyAddress7</DataField>
+        </Field>
+        <Field Name="CompanyAddress8">
+          <DataField>CompanyAddress8</DataField>
+        </Field>
+        <Field Name="CAddress">
+          <DataField>CAddress</DataField>
+        </Field>
+        <Field Name="CName">
+          <DataField>CName</DataField>
+        </Field>
+        <Field Name="Commencement_Period">
+          <DataField>Commencement_Period</DataField>
+        </Field>
+        <Field Name="Address2">
+          <DataField>Address2</DataField>
+        </Field>
+        <Field Name="CPic">
+          <DataField>CPic</DataField>
+        </Field>
+        <Field Name="CPhone">
+          <DataField>CPhone</DataField>
+        </Field>
+        <Field Name="CEmail">
+          <DataField>CEmail</DataField>
+        </Field>
+        <Field Name="CWebsite">
+          <DataField>CWebsite</DataField>
+        </Field>
+        <Field Name="CMotto">
+          <DataField>CMotto</DataField>
+        </Field>
+        <Field Name="DirectorateName">
+          <DataField>DirectorateName</DataField>
+        </Field>
+        <Field Name="DirectorUserID">
+          <DataField>DirectorUserID</DataField>
+        </Field>
+        <Field Name="DirectorName">
+          <DataField>DirectorName</DataField>
+        </Field>
+        <Field Name="DirectorSignature">
+          <DataField>DirectorSignature</DataField>
+        </Field>
+        <Field Name="DocumentType_ProjectMobilizationHeader">
+          <DataField>DocumentType_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="DocumentNo_ProjectMobilizationHeader">
+          <DataField>DocumentNo_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="DocumentDate_ProjectMobilizationHeader">
+          <DataField>DocumentDate_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="CommencementOrderID_ProjectMobilizationHeader">
+          <DataField>CommencementOrderID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="PurchaseContractID_ProjectMobilizationHeader">
+          <DataField>PurchaseContractID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectID_ProjectMobilizationHeader">
+          <DataField>ProjectID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="Description_ProjectMobilizationHeader">
+          <DataField>Description_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectMission_ProjectMobilizationHeader">
+          <DataField>ProjectMission_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="StaffAppointmentVoucherNo_ProjectMobilizationHeader">
+          <DataField>StaffAppointmentVoucherNo_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ContractorNo_ProjectMobilizationHeader">
+          <DataField>ContractorNo_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ContractorName_ProjectMobilizationHeader">
+          <DataField>ContractorName_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="VendorAddress_ProjectMobilizationHeader">
+          <DataField>VendorAddress_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="VendorAddress2_ProjectMobilizationHeader">
+          <DataField>VendorAddress2_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="VendorPostCode_ProjectMobilizationHeader">
+          <DataField>VendorPostCode_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="PrimaryEmail_ProjectMobilizationHeader">
+          <DataField>PrimaryEmail_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="VendorCity_ProjectMobilizationHeader">
+          <DataField>VendorCity_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectDeliveryStrategy_ProjectMobilizationHeader">
+          <DataField>ProjectDeliveryStrategy_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="IFSCode_ProjectMobilizationHeader">
+          <DataField>IFSCode_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectName_ProjectMobilizationHeader">
+          <DataField>ProjectName_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectStartDate_ProjectMobilizationHeader">
+          <DataField>ProjectStartDate_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectEndDate_ProjectMobilizationHeader">
+          <DataField>ProjectEndDate_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectEngineerNo_ProjectMobilizationHeader">
+          <DataField>ProjectEngineerNo_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectManager_ProjectMobilizationHeader">
+          <DataField>ProjectManager_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectEngineerName_ProjectMobilizationHeader">
+          <DataField>ProjectEngineerName_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="EngineerRepresentativeNo_ProjectMobilizationHeader">
+          <DataField>EngineerRepresentativeNo_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="EngineerRepresentativeName_ProjectMobilizationHeader">
+          <DataField>EngineerRepresentativeName_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="RegionID_ProjectMobilizationHeader">
+          <DataField>RegionID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="DirectorateID_ProjectMobilizationHeader">
+          <DataField>DirectorateID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="DepartmentID_ProjectMobilizationHeader">
+          <DataField>DepartmentID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ConstituencyID_ProjectMobilizationHeader">
+          <DataField>ConstituencyID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="CountyID_ProjectMobilizationHeader">
+          <DataField>CountyID_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="ProjectSiteDescription_ProjectMobilizationHeader">
+          <DataField>ProjectSiteDescription_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="StartChainage_ProjectMobilizationHeader">
+          <DataField>StartChainage_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="StartChainage_ProjectMobilizationHeaderFormat">
+          <DataField>StartChainage_ProjectMobilizationHeaderFormat</DataField>
+        </Field>
+        <Field Name="EndChainage_ProjectMobilizationHeader">
+          <DataField>EndChainage_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="EndChainage_ProjectMobilizationHeaderFormat">
+          <DataField>EndChainage_ProjectMobilizationHeaderFormat</DataField>
+        </Field>
+        <Field Name="OrdertoCommenceReference_ProjectMobilizationHeader">
+          <DataField>OrdertoCommenceReference_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="PossessionofSiteReference_ProjectMobilizationHeader">
+          <DataField>PossessionofSiteReference_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="PossessionofSiteDate_ProjectMobilizationHeader">
+          <DataField>PossessionofSiteDate_ProjectMobilizationHeader</DataField>
+        </Field>
+        <Field Name="PreparedBy">
+          <DataField>PreparedBy</DataField>
+        </Field>
+        <Field Name="DatePrepared">
+          <DataField>DatePrepared</DataField>
+        </Field>
+        <Field Name="PreparedBy_Signature">
+          <DataField>PreparedBy_Signature</DataField>
+        </Field>
+        <Field Name="ExaminedBy">
+          <DataField>ExaminedBy</DataField>
+        </Field>
+        <Field Name="DateApproved">
+          <DataField>DateApproved</DataField>
+        </Field>
+        <Field Name="ExaminedBy_Signature">
+          <DataField>ExaminedBy_Signature</DataField>
+        </Field>
+        <Field Name="VBC">
+          <DataField>VBC</DataField>
+        </Field>
+        <Field Name="VBCDate">
+          <DataField>VBCDate</DataField>
+        </Field>
+        <Field Name="VBC_Signature">
+          <DataField>VBC_Signature</DataField>
+        </Field>
+        <Field Name="Authorizer">
+          <DataField>Authorizer</DataField>
+        </Field>
+        <Field Name="DateAuthorized">
+          <DataField>DateAuthorized</DataField>
+        </Field>
+        <Field Name="Authorizer_Signature">
+          <DataField>Authorizer_Signature</DataField>
+        </Field>
+        <Field Name="Program_of_WorksDocuments">
+          <DataField>Program_of_WorksDocuments</DataField>
+        </Field>
+        <Field Name="MobilizationDocuments">
+          <DataField>MobilizationDocuments</DataField>
+        </Field>
+        <Field Name="Code">
+          <DataField>Code</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

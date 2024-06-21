@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="No_AnnualStrategyWorkplan">
+          <DataField>No_AnnualStrategyWorkplan</DataField>
+        </Field>
+        <Field Name="Description_AnnualStrategyWorkplan">
+          <DataField>Description_AnnualStrategyWorkplan</DataField>
+        </Field>
+        <Field Name="StrategyPlanID_AnnualStrategyWorkplan">
+          <DataField>StrategyPlanID_AnnualStrategyWorkplan</DataField>
+        </Field>
+        <Field Name="YearReportingCode_AnnualStrategyWorkplan">
+          <DataField>YearReportingCode_AnnualStrategyWorkplan</DataField>
+        </Field>
+        <Field Name="StartDate_AnnualStrategyWorkplan">
+          <DataField>StartDate_AnnualStrategyWorkplan</DataField>
+        </Field>
+        <Field Name="EndDate_AnnualStrategyWorkplan">
+          <DataField>EndDate_AnnualStrategyWorkplan</DataField>
+        </Field>
+        <Field Name="NoSeries_AnnualStrategyWorkplan">
+          <DataField>NoSeries_AnnualStrategyWorkplan</DataField>
+        </Field>
+        <Field Name="CompanyInfoName">
+          <DataField>CompanyInfoName</DataField>
+        </Field>
+        <Field Name="CompanyInfoPicture">
+          <DataField>CompanyInfoPicture</DataField>
+        </Field>
+        <Field Name="ReportForNavId_124">
+          <DataField>ReportForNavId_124</DataField>
+        </Field>
+        <Field Name="Name_CompanyInformation">
+          <DataField>Name_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Name2_CompanyInformation">
+          <DataField>Name2_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address_CompanyInformation">
+          <DataField>Address_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address2_CompanyInformation">
+          <DataField>Address2_CompanyInformation</DataField>
+        </Field>
+        <Field Name="City_CompanyInformation">
+          <DataField>City_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Picture_CompanyInformation">
+          <DataField>Picture_CompanyInformation</DataField>
+        </Field>
+        <Field Name="PostCode_CompanyInformation">
+          <DataField>PostCode_CompanyInformation</DataField>
+        </Field>
+        <Field Name="County_CompanyInformation">
+          <DataField>County_CompanyInformation</DataField>
+        </Field>
+        <Field Name="CountryName">
+          <DataField>CountryName</DataField>
+        </Field>
+        <Field Name="ReportForNavId_17">
+          <DataField>ReportForNavId_17</DataField>
+        </Field>
+        <Field Name="No_StrategyWorkplanLines">
+          <DataField>No_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="StrategyPlanID_StrategyWorkplanLines">
+          <DataField>StrategyPlanID_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="ActivityID_StrategyWorkplanLines">
+          <DataField>ActivityID_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="Description_StrategyWorkplanLines">
+          <DataField>Description_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="ImportedAnnualTargetQty_StrategyWorkplanLines">
+          <DataField>ImportedAnnualTargetQty_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="ImportedAnnualTargetQty_StrategyWorkplanLinesFormat">
+          <DataField>ImportedAnnualTargetQty_StrategyWorkplanLinesFormat</DataField>
+        </Field>
+        <Field Name="ImportedAnnualBudgetEst_StrategyWorkplanLines">
+          <DataField>ImportedAnnualBudgetEst_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="ImportedAnnualBudgetEst_StrategyWorkplanLinesFormat">
+          <DataField>ImportedAnnualBudgetEst_StrategyWorkplanLinesFormat</DataField>
+        </Field>
+        <Field Name="PerfomanceIndicator_StrategyWorkplanLines">
+          <DataField>PerfomanceIndicator_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="SourceOfFund_StrategyWorkplanLines">
+          <DataField>SourceOfFund_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="PrimaryDirectorate_StrategyWorkplanLines">
+          <DataField>PrimaryDirectorate_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="PrimaryDepartment_StrategyWorkplanLines">
+          <DataField>PrimaryDepartment_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="Q1Target_StrategyWorkplanLines">
+          <DataField>Q1Target_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="Q1Target_StrategyWorkplanLinesFormat">
+          <DataField>Q1Target_StrategyWorkplanLinesFormat</DataField>
+        </Field>
+        <Field Name="Q1Budget_StrategyWorkplanLines">
+          <DataField>Q1Budget_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="Q1Budget_StrategyWorkplanLinesFormat">
+          <DataField>Q1Budget_StrategyWorkplanLinesFormat</DataField>
+        </Field>
+        <Field Name="Q2Target_StrategyWorkplanLines">
+          <DataField>Q2Target_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="Q2Target_StrategyWorkplanLinesFormat">
+          <DataField>Q2Target_StrategyWorkplanLinesFormat</DataField>
+        </Field>
+        <Field Name="Q2Budget_StrategyWorkplanLines">
+          <DataField>Q2Budget_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="Q2Budget_StrategyWorkplanLinesFormat">
+          <DataField>Q2Budget_StrategyWorkplanLinesFormat</DataField>
+        </Field>
+        <Field Name="Q3Target_StrategyWorkplanLines">
+          <DataField>Q3Target_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="Q3Target_StrategyWorkplanLinesFormat">
+          <DataField>Q3Target_StrategyWorkplanLinesFormat</DataField>
+        </Field>
+        <Field Name="Q3Budget_StrategyWorkplanLines">
+          <DataField>Q3Budget_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="Q3Budget_StrategyWorkplanLinesFormat">
+          <DataField>Q3Budget_StrategyWorkplanLinesFormat</DataField>
+        </Field>
+        <Field Name="Q4Target_StrategyWorkplanLines">
+          <DataField>Q4Target_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="Q4Target_StrategyWorkplanLinesFormat">
+          <DataField>Q4Target_StrategyWorkplanLinesFormat</DataField>
+        </Field>
+        <Field Name="Q4Budget_StrategyWorkplanLines">
+          <DataField>Q4Budget_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="Q4Budget_StrategyWorkplanLinesFormat">
+          <DataField>Q4Budget_StrategyWorkplanLinesFormat</DataField>
+        </Field>
+        <Field Name="EntryType_StrategyWorkplanLines">
+          <DataField>EntryType_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="YearReportingCode_StrategyWorkplanLines">
+          <DataField>YearReportingCode_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="AnnualWorkplanTarget">
+          <DataField>AnnualWorkplanTarget</DataField>
+        </Field>
+        <Field Name="AnnualWorkplanTargetFormat">
+          <DataField>AnnualWorkplanTargetFormat</DataField>
+        </Field>
+        <Field Name="PrimaryDirectorateName_StrategyWorkplanLines">
+          <DataField>PrimaryDirectorateName_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="PrimaryDepartmentName_StrategyWorkplanLines">
+          <DataField>PrimaryDepartmentName_StrategyWorkplanLines</DataField>
+        </Field>
+        <Field Name="KeyPerformanceIndicator_StrategyWorkplanLines">
+          <DataField>KeyPerformanceIndicator_StrategyWorkplanLines</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

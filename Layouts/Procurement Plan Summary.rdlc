@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="FinancialYearCode_ProcurementPlan">
+          <DataField>FinancialYearCode_ProcurementPlan</DataField>
+        </Field>
+        <Field Name="totalG">
+          <DataField>totalG</DataField>
+        </Field>
+        <Field Name="totalGFormat">
+          <DataField>totalGFormat</DataField>
+        </Field>
+        <Field Name="totalS">
+          <DataField>totalS</DataField>
+        </Field>
+        <Field Name="totalSFormat">
+          <DataField>totalSFormat</DataField>
+        </Field>
+        <Field Name="totalW">
+          <DataField>totalW</DataField>
+        </Field>
+        <Field Name="totalWFormat">
+          <DataField>totalWFormat</DataField>
+        </Field>
+        <Field Name="TotalPPG">
+          <DataField>TotalPPG</DataField>
+        </Field>
+        <Field Name="TotalPPGFormat">
+          <DataField>TotalPPGFormat</DataField>
+        </Field>
+        <Field Name="TotalPPS">
+          <DataField>TotalPPS</DataField>
+        </Field>
+        <Field Name="TotalPPSFormat">
+          <DataField>TotalPPSFormat</DataField>
+        </Field>
+        <Field Name="TotalPPW">
+          <DataField>TotalPPW</DataField>
+        </Field>
+        <Field Name="TotalPPWFormat">
+          <DataField>TotalPPWFormat</DataField>
+        </Field>
+        <Field Name="Total_Budget_R11__Goods_">
+          <DataField>Total_Budget_R11__Goods_</DataField>
+        </Field>
+        <Field Name="Total_Budget_R11__Goods_Format">
+          <DataField>Total_Budget_R11__Goods_Format</DataField>
+        </Field>
+        <Field Name="Total_Budget_R11__Services_">
+          <DataField>Total_Budget_R11__Services_</DataField>
+        </Field>
+        <Field Name="Total_Budget_R11__Services_Format">
+          <DataField>Total_Budget_R11__Services_Format</DataField>
+        </Field>
+        <Field Name="Total_Budget_R11__Works_">
+          <DataField>Total_Budget_R11__Works_</DataField>
+        </Field>
+        <Field Name="Total_Budget_R11__Works_Format">
+          <DataField>Total_Budget_R11__Works_Format</DataField>
+        </Field>
+        <Field Name="ppeximservices">
+          <DataField>ppeximservices</DataField>
+        </Field>
+        <Field Name="ppeximservicesFormat">
+          <DataField>ppeximservicesFormat</DataField>
+        </Field>
+        <Field Name="ppeximworks">
+          <DataField>ppeximworks</DataField>
+        </Field>
+        <Field Name="ppeximworksFormat">
+          <DataField>ppeximworksFormat</DataField>
+        </Field>
+        <Field Name="REGIONG1">
+          <DataField>REGIONG1</DataField>
+        </Field>
+        <Field Name="REGIONG1Format">
+          <DataField>REGIONG1Format</DataField>
+        </Field>
+        <Field Name="REGIONS1">
+          <DataField>REGIONS1</DataField>
+        </Field>
+        <Field Name="REGIONS1Format">
+          <DataField>REGIONS1Format</DataField>
+        </Field>
+        <Field Name="REGIONW1">
+          <DataField>REGIONW1</DataField>
+        </Field>
+        <Field Name="REGIONW1Format">
+          <DataField>REGIONW1Format</DataField>
+        </Field>
+        <Field Name="PlanningCategory_PPEntryRegionsRMLF">
+          <DataField>PlanningCategory_PPEntryRegionsRMLF</DataField>
+        </Field>
+        <Field Name="Description_PPEntryRegionsRMLF">
+          <DataField>Description_PPEntryRegionsRMLF</DataField>
+        </Field>
+        <Field Name="ProcurementType_PPEntryRegionsRMLF">
+          <DataField>ProcurementType_PPEntryRegionsRMLF</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeRMLF">
+          <DataField>Goods_Total_Per_ProTypeRMLF</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeRMLFFormat">
+          <DataField>Goods_Total_Per_ProTypeRMLFFormat</DataField>
+        </Field>
+        <Field Name="Services_Total_Per_ProTypeRMLF">
+          <DataField>Services_Total_Per_ProTypeRMLF</DataField>
+        </Field>
+        <Field Name="Services_Total_Per_ProTypeRMLFFormat">
+          <DataField>Services_Total_Per_ProTypeRMLFFormat</DataField>
+        </Field>
+        <Field Name="Works_Total_Per_ProTypeRMLF">
+          <DataField>Works_Total_Per_ProTypeRMLF</DataField>
+        </Field>
+        <Field Name="Works_Total_Per_ProTypeRMLFFormat">
+          <DataField>Works_Total_Per_ProTypeRMLFFormat</DataField>
+        </Field>
+        <Field Name="FundingSourceID_PPEntryRegionsRMLF">
+          <DataField>FundingSourceID_PPEntryRegionsRMLF</DataField>
+        </Field>
+        <Field Name="Region_PPEntryRegionsRMLF">
+          <DataField>Region_PPEntryRegionsRMLF</DataField>
+        </Field>
+        <Field Name="Directorate_PPEntryRegionsRMLF">
+          <DataField>Directorate_PPEntryRegionsRMLF</DataField>
+        </Field>
+        <Field Name="Department_PPEntryRegionsRMLF">
+          <DataField>Department_PPEntryRegionsRMLF</DataField>
+        </Field>
+        <Field Name="LineBudgetCost_PPEntryRegionsRMLF">
+          <DataField>LineBudgetCost_PPEntryRegionsRMLF</DataField>
+        </Field>
+        <Field Name="LineBudgetCost_PPEntryRegionsRMLFFormat">
+          <DataField>LineBudgetCost_PPEntryRegionsRMLFFormat</DataField>
+        </Field>
+        <Field Name="RegionNameRMLF">
+          <DataField>RegionNameRMLF</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeR05">
+          <DataField>Goods_Total_Per_ProTypeR05</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeR05Format">
+          <DataField>Goods_Total_Per_ProTypeR05Format</DataField>
+        </Field>
+        <Field Name="Total_Goods_Total_Per_ProTypeR">
+          <DataField>Total_Goods_Total_Per_ProTypeR</DataField>
+        </Field>
+        <Field Name="Total_Goods_Total_Per_ProTypeRFormat">
+          <DataField>Total_Goods_Total_Per_ProTypeRFormat</DataField>
+        </Field>
+        <Field Name="TotalServicesTotalPerProTypeR">
+          <DataField>TotalServicesTotalPerProTypeR</DataField>
+        </Field>
+        <Field Name="TotalServicesTotalPerProTypeRFormat">
+          <DataField>TotalServicesTotalPerProTypeRFormat</DataField>
+        </Field>
+        <Field Name="TotalWorksTotalPerProTypeR">
+          <DataField>TotalWorksTotalPerProTypeR</DataField>
+        </Field>
+        <Field Name="TotalWorksTotalPerProTypeRFormat">
+          <DataField>TotalWorksTotalPerProTypeRFormat</DataField>
+        </Field>
+        <Field Name="REGIONG">
+          <DataField>REGIONG</DataField>
+        </Field>
+        <Field Name="REGIONGFormat">
+          <DataField>REGIONGFormat</DataField>
+        </Field>
+        <Field Name="REGIONS">
+          <DataField>REGIONS</DataField>
+        </Field>
+        <Field Name="REGIONSFormat">
+          <DataField>REGIONSFormat</DataField>
+        </Field>
+        <Field Name="REGIONW">
+          <DataField>REGIONW</DataField>
+        </Field>
+        <Field Name="REGIONWFormat">
+          <DataField>REGIONWFormat</DataField>
+        </Field>
+        <Field Name="PlanningCategory_PPEntryHQRMLF">
+          <DataField>PlanningCategory_PPEntryHQRMLF</DataField>
+        </Field>
+        <Field Name="Description_PPEntryHQRMLF">
+          <DataField>Description_PPEntryHQRMLF</DataField>
+        </Field>
+        <Field Name="ProcurementType_PPEntryHQRMLF">
+          <DataField>ProcurementType_PPEntryHQRMLF</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeHQRRMLF">
+          <DataField>Goods_Total_Per_ProTypeHQRRMLF</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeHQRRMLFFormat">
+          <DataField>Goods_Total_Per_ProTypeHQRRMLFFormat</DataField>
+        </Field>
+        <Field Name="Services_Total_Per_ProTypeHQRRMLF">
+          <DataField>Services_Total_Per_ProTypeHQRRMLF</DataField>
+        </Field>
+        <Field Name="Services_Total_Per_ProTypeHQRRMLFFormat">
+          <DataField>Services_Total_Per_ProTypeHQRRMLFFormat</DataField>
+        </Field>
+        <Field Name="Works_Total_Per_ProTypeHQRRMLF">
+          <DataField>Works_Total_Per_ProTypeHQRRMLF</DataField>
+        </Field>
+        <Field Name="Works_Total_Per_ProTypeHQRRMLFFormat">
+          <DataField>Works_Total_Per_ProTypeHQRRMLFFormat</DataField>
+        </Field>
+        <Field Name="FundingSourceID_PPEntryHQRMLF">
+          <DataField>FundingSourceID_PPEntryHQRMLF</DataField>
+        </Field>
+        <Field Name="LineBudgetCost_PPEntryHQRMLF">
+          <DataField>LineBudgetCost_PPEntryHQRMLF</DataField>
+        </Field>
+        <Field Name="LineBudgetCost_PPEntryHQRMLFFormat">
+          <DataField>LineBudgetCost_PPEntryHQRMLFFormat</DataField>
+        </Field>
+        <Field Name="Region_PPEntryHQRMLF">
+          <DataField>Region_PPEntryHQRMLF</DataField>
+        </Field>
+        <Field Name="Directorate_PPEntryHQRMLF">
+          <DataField>Directorate_PPEntryHQRMLF</DataField>
+        </Field>
+        <Field Name="Department_PPEntryHQRMLF">
+          <DataField>Department_PPEntryHQRMLF</DataField>
+        </Field>
+        <Field Name="DepartmentNameHQRMLF">
+          <DataField>DepartmentNameHQRMLF</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProType">
+          <DataField>Goods_Total_Per_ProType</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeFormat">
+          <DataField>Goods_Total_Per_ProTypeFormat</DataField>
+        </Field>
+        <Field Name="Total_Goods_Total_Per_HQRLMF">
+          <DataField>Total_Goods_Total_Per_HQRLMF</DataField>
+        </Field>
+        <Field Name="Total_Goods_Total_Per_HQRLMFFormat">
+          <DataField>Total_Goods_Total_Per_HQRLMFFormat</DataField>
+        </Field>
+        <Field Name="Total_Services_Total_Per_HQRLMF">
+          <DataField>Total_Services_Total_Per_HQRLMF</DataField>
+        </Field>
+        <Field Name="Total_Services_Total_Per_HQRLMFFormat">
+          <DataField>Total_Services_Total_Per_HQRLMFFormat</DataField>
+        </Field>
+        <Field Name="Total_Works_Total_Per_HQRLMF">
+          <DataField>Total_Works_Total_Per_HQRLMF</DataField>
+        </Field>
+        <Field Name="Total_Works_Total_Per_HQRLMFFormat">
+          <DataField>Total_Works_Total_Per_HQRLMFFormat</DataField>
+        </Field>
+        <Field Name="TOTALregionG">
+          <DataField>TOTALregionG</DataField>
+        </Field>
+        <Field Name="TOTALregionGFormat">
+          <DataField>TOTALregionGFormat</DataField>
+        </Field>
+        <Field Name="ReportForNavId_25">
+          <DataField>ReportForNavId_25</DataField>
+        </Field>
+        <Field Name="PlanningCategory_PPEntryHQGOK">
+          <DataField>PlanningCategory_PPEntryHQGOK</DataField>
+        </Field>
+        <Field Name="Description_PPEntryHQGOK">
+          <DataField>Description_PPEntryHQGOK</DataField>
+        </Field>
+        <Field Name="ProcurementType_PPEntryHQGOK">
+          <DataField>ProcurementType_PPEntryHQGOK</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeHQGOK">
+          <DataField>Goods_Total_Per_ProTypeHQGOK</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeHQGOKFormat">
+          <DataField>Goods_Total_Per_ProTypeHQGOKFormat</DataField>
+        </Field>
+        <Field Name="Services_Total_Per_ProTypHQGOK">
+          <DataField>Services_Total_Per_ProTypHQGOK</DataField>
+        </Field>
+        <Field Name="Services_Total_Per_ProTypHQGOKFormat">
+          <DataField>Services_Total_Per_ProTypHQGOKFormat</DataField>
+        </Field>
+        <Field Name="Works_Total_Per_ProTypeHQGOH">
+          <DataField>Works_Total_Per_ProTypeHQGOH</DataField>
+        </Field>
+        <Field Name="Works_Total_Per_ProTypeHQGOHFormat">
+          <DataField>Works_Total_Per_ProTypeHQGOHFormat</DataField>
+        </Field>
+        <Field Name="FundingSourceID_PPEntryHQGOK">
+          <DataField>FundingSourceID_PPEntryHQGOK</DataField>
+        </Field>
+        <Field Name="LineBudgetCost_PPEntryHQGOK">
+          <DataField>LineBudgetCost_PPEntryHQGOK</DataField>
+        </Field>
+        <Field Name="LineBudgetCost_PPEntryHQGOKFormat">
+          <DataField>LineBudgetCost_PPEntryHQGOKFormat</DataField>
+        </Field>
+        <Field Name="Region_PPEntryHQGOK">
+          <DataField>Region_PPEntryHQGOK</DataField>
+        </Field>
+        <Field Name="Directorate_PPEntryHQGOK">
+          <DataField>Directorate_PPEntryHQGOK</DataField>
+        </Field>
+        <Field Name="Department_PPEntryHQGOK">
+          <DataField>Department_PPEntryHQGOK</DataField>
+        </Field>
+        <Field Name="DepartmentNameHQGOK">
+          <DataField>DepartmentNameHQGOK</DataField>
+        </Field>
+        <Field Name="ReportForNavId_34">
+          <DataField>ReportForNavId_34</DataField>
+        </Field>
+        <Field Name="PlanningCategory_PPEntryDONOR">
+          <DataField>PlanningCategory_PPEntryDONOR</DataField>
+        </Field>
+        <Field Name="Description_PPEntryDONOR">
+          <DataField>Description_PPEntryDONOR</DataField>
+        </Field>
+        <Field Name="ProcurementType_PPEntryDONOR">
+          <DataField>ProcurementType_PPEntryDONOR</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeDONOR">
+          <DataField>Goods_Total_Per_ProTypeDONOR</DataField>
+        </Field>
+        <Field Name="Goods_Total_Per_ProTypeDONORFormat">
+          <DataField>Goods_Total_Per_ProTypeDONORFormat</DataField>
+        </Field>
+        <Field Name="Services_Total_Per_ProTypeDONOR">
+          <DataField>Services_Total_Per_ProTypeDONOR</DataField>
+        </Field>
+        <Field Name="Services_Total_Per_ProTypeDONORFormat">
+          <DataField>Services_Total_Per_ProTypeDONORFormat</DataField>
+        </Field>
+        <Field Name="Works_Total_Per_ProTypeDONOR">
+          <DataField>Works_Total_Per_ProTypeDONOR</DataField>
+        </Field>
+        <Field Name="Works_Total_Per_ProTypeDONORFormat">
+          <DataField>Works_Total_Per_ProTypeDONORFormat</DataField>
+        </Field>
+        <Field Name="LineBudgetCost_PPEntryDONOR">
+          <DataField>LineBudgetCost_PPEntryDONOR</DataField>
+        </Field>
+        <Field Name="LineBudgetCost_PPEntryDONORFormat">
+          <DataField>LineBudgetCost_PPEntryDONORFormat</DataField>
+        </Field>
+        <Field Name="Region_PPEntryDONOR">
+          <DataField>Region_PPEntryDONOR</DataField>
+        </Field>
+        <Field Name="Directorate_PPEntryDONOR">
+          <DataField>Directorate_PPEntryDONOR</DataField>
+        </Field>
+        <Field Name="Department_PPEntryDONOR">
+          <DataField>Department_PPEntryDONOR</DataField>
+        </Field>
+        <Field Name="DepartmentNameDonors">
+          <DataField>DepartmentNameDonors</DataField>
+        </Field>
+        <Field Name="Services_Total_Total_Per_ProTypeEXIM">
+          <DataField>Services_Total_Total_Per_ProTypeEXIM</DataField>
+        </Field>
+        <Field Name="Services_Total_Total_Per_ProTypeEXIMFormat">
+          <DataField>Services_Total_Total_Per_ProTypeEXIMFormat</DataField>
+        </Field>
+        <Field Name="Works_Total_Total_Per_ProTypeEXIM">
+          <DataField>Works_Total_Total_Per_ProTypeEXIM</DataField>
+        </Field>
+        <Field Name="Works_Total_Total_Per_ProTypeEXIMFormat">
+          <DataField>Works_Total_Total_Per_ProTypeEXIMFormat</DataField>
+        </Field>
+        <Field Name="Services_Total_Per_ProTypeEXIM">
+          <DataField>Services_Total_Per_ProTypeEXIM</DataField>
+        </Field>
+        <Field Name="Services_Total_Per_ProTypeEXIMFormat">
+          <DataField>Services_Total_Per_ProTypeEXIMFormat</DataField>
+        </Field>
+        <Field Name="Works_Total_Per_ProTypeEXIM">
+          <DataField>Works_Total_Per_ProTypeEXIM</DataField>
+        </Field>
+        <Field Name="Works_Total_Per_ProTypeEXIMFormat">
+          <DataField>Works_Total_Per_ProTypeEXIMFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

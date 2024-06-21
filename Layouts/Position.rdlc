@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="CI_Picture">
+          <DataField>CI_Picture</DataField>
+        </Field>
+        <Field Name="CI_Address">
+          <DataField>CI_Address</DataField>
+        </Field>
+        <Field Name="CI__Address_2______CI__Post_Code_">
+          <DataField>CI__Address_2______CI__Post_Code_</DataField>
+        </Field>
+        <Field Name="CI_City">
+          <DataField>CI_City</DataField>
+        </Field>
+        <Field Name="CI_PhoneNo">
+          <DataField>CI_PhoneNo</DataField>
+        </Field>
+        <Field Name="COMPANYNAME">
+          <DataField>COMPANYNAME</DataField>
+        </Field>
+        <Field Name="JobID_CompanyPositions">
+          <DataField>JobID_CompanyPositions</DataField>
+        </Field>
+        <Field Name="JobDescription_CompanyPositions">
+          <DataField>JobDescription_CompanyPositions</DataField>
+        </Field>
+        <Field Name="DirectlyReportsTo_CompanyPositions">
+          <DataField>DirectlyReportsTo_CompanyPositions</DataField>
+        </Field>
+        <Field Name="IndirectlyReportsTo_CompanyPositions">
+          <DataField>IndirectlyReportsTo_CompanyPositions</DataField>
+        </Field>
+        <Field Name="ExecutiveSummaryJobPurpose_CompanyPositions">
+          <DataField>ExecutiveSummaryJobPurpose_CompanyPositions</DataField>
+        </Field>
+        <Field Name="DesignationGroup_CompanyPositions">
+          <DataField>DesignationGroup_CompanyPositions</DataField>
+        </Field>
+        <Field Name="JobGradeID_CompanyPositions">
+          <DataField>JobGradeID_CompanyPositions</DataField>
+        </Field>
+        <Field Name="OverallAppointmentAuthority_CompanyPositions">
+          <DataField>OverallAppointmentAuthority_CompanyPositions</DataField>
+        </Field>
+        <Field Name="SeniorityLevel_CompanyPositions">
+          <DataField>SeniorityLevel_CompanyPositions</DataField>
+        </Field>
+        <Field Name="DefaultTermsofService_CompanyPositions">
+          <DataField>DefaultTermsofService_CompanyPositions</DataField>
+        </Field>
+        <Field Name="EmploymentType_CompanyPositions">
+          <DataField>EmploymentType_CompanyPositions</DataField>
+        </Field>
+        <Field Name="Directorate_CompanyPositions">
+          <DataField>Directorate_CompanyPositions</DataField>
+        </Field>
+        <Field Name="Department_CompanyPositions">
+          <DataField>Department_CompanyPositions</DataField>
+        </Field>
+        <Field Name="MinimumAcademicQualification_CompanyPositions">
+          <DataField>MinimumAcademicQualification_CompanyPositions</DataField>
+        </Field>
+        <Field Name="MinimumWorkExperience_CompanyPositions">
+          <DataField>MinimumWorkExperience_CompanyPositions</DataField>
+        </Field>
+        <Field Name="MinimumMngmntExperience_CompanyPositions">
+          <DataField>MinimumMngmntExperience_CompanyPositions</DataField>
+        </Field>
+        <Field Name="DefaultProbationPeriod_CompanyPositions">
+          <DataField>DefaultProbationPeriod_CompanyPositions</DataField>
+        </Field>
+        <Field Name="DefaultDutyStation_CompanyPositions">
+          <DataField>DefaultDutyStation_CompanyPositions</DataField>
+        </Field>
+        <Field Name="EffectiveDate_CompanyPositions">
+          <DataField>EffectiveDate_CompanyPositions</DataField>
+        </Field>
+        <Field Name="TravelFrequency_CompanyPositions">
+          <DataField>TravelFrequency_CompanyPositions</DataField>
+        </Field>
+        <Field Name="DefaultWorkShift_CompanyPositions">
+          <DataField>DefaultWorkShift_CompanyPositions</DataField>
+        </Field>
+        <Field Name="WorkShiftDescription_CompanyPositions">
+          <DataField>WorkShiftDescription_CompanyPositions</DataField>
+        </Field>
+        <Field Name="AdditionalResponsibilities_CompanyPositions">
+          <DataField>AdditionalResponsibilities_CompanyPositions</DataField>
+        </Field>
+        <Field Name="LocRelocationTransfers_CompanyPositions">
+          <DataField>LocRelocationTransfers_CompanyPositions</DataField>
+        </Field>
+        <Field Name="IntRelocationTransfers_CompanyPositions">
+          <DataField>IntRelocationTransfers_CompanyPositions</DataField>
+        </Field>
+        <Field Name="QualifiesforOvertime_CompanyPositions">
+          <DataField>QualifiesforOvertime_CompanyPositions</DataField>
+        </Field>
+        <Field Name="DirectHireUnitCost_CompanyPositions">
+          <DataField>DirectHireUnitCost_CompanyPositions</DataField>
+        </Field>
+        <Field Name="DirectHireUnitCost_CompanyPositionsFormat">
+          <DataField>DirectHireUnitCost_CompanyPositionsFormat</DataField>
+        </Field>
+        <Field Name="AverageMonthlySalaryLCY_CompanyPositions">
+          <DataField>AverageMonthlySalaryLCY_CompanyPositions</DataField>
+        </Field>
+        <Field Name="AverageMonthlySalaryLCY_CompanyPositionsFormat">
+          <DataField>AverageMonthlySalaryLCY_CompanyPositionsFormat</DataField>
+        </Field>
+        <Field Name="ApprovedEstablishment_CompanyPositions">
+          <DataField>ApprovedEstablishment_CompanyPositions</DataField>
+        </Field>
+        <Field Name="NoofActiveContracts_CompanyPositions">
+          <DataField>NoofActiveContracts_CompanyPositions</DataField>
+        </Field>
+        <Field Name="NoofTerminatedContracts_CompanyPositions">
+          <DataField>NoofTerminatedContracts_CompanyPositions</DataField>
+        </Field>
+        <Field Name="DimensionSetID_CompanyPositions">
+          <DataField>DimensionSetID_CompanyPositions</DataField>
+        </Field>
+        <Field Name="Blocked_CompanyPositions">
+          <DataField>Blocked_CompanyPositions</DataField>
+        </Field>
+        <Field Name="AcademicHierarchyCode_CompanyPositions">
+          <DataField>AcademicHierarchyCode_CompanyPositions</DataField>
+        </Field>
+        <Field Name="ReportForNavId_19">
+          <DataField>ReportForNavId_19</DataField>
+        </Field>
+        <Field Name="PositionID_PositionsResponsibility">
+          <DataField>PositionID_PositionsResponsibility</DataField>
+        </Field>
+        <Field Name="LineNo_PositionsResponsibility">
+          <DataField>LineNo_PositionsResponsibility</DataField>
+        </Field>
+        <Field Name="Description_PositionsResponsibility">
+          <DataField>Description_PositionsResponsibility</DataField>
+        </Field>
+        <Field Name="ReportForNavId_23">
+          <DataField>ReportForNavId_23</DataField>
+        </Field>
+        <Field Name="PositionID_PositionRequirement">
+          <DataField>PositionID_PositionRequirement</DataField>
+        </Field>
+        <Field Name="RequirementID_PositionRequirement">
+          <DataField>RequirementID_PositionRequirement</DataField>
+        </Field>
+        <Field Name="QualificationCategory_PositionRequirement">
+          <DataField>QualificationCategory_PositionRequirement</DataField>
+        </Field>
+        <Field Name="Description_PositionRequirement">
+          <DataField>Description_PositionRequirement</DataField>
+        </Field>
+        <Field Name="RequirementType_PositionRequirement">
+          <DataField>RequirementType_PositionRequirement</DataField>
+        </Field>
+        <Field Name="SubstituteQualification_PositionRequirement">
+          <DataField>SubstituteQualification_PositionRequirement</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

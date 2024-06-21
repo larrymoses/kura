@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportForNavId_1">
+          <DataField>ReportForNavId_1</DataField>
+        </Field>
+        <Field Name="CIName">
+          <DataField>CIName</DataField>
+        </Field>
+        <Field Name="CIAddress">
+          <DataField>CIAddress</DataField>
+        </Field>
+        <Field Name="CIAddress2">
+          <DataField>CIAddress2</DataField>
+        </Field>
+        <Field Name="CICity">
+          <DataField>CICity</DataField>
+        </Field>
+        <Field Name="CIPhoneNo">
+          <DataField>CIPhoneNo</DataField>
+        </Field>
+        <Field Name="CIPic">
+          <DataField>CIPic</DataField>
+        </Field>
+        <Field Name="CIEmail">
+          <DataField>CIEmail</DataField>
+        </Field>
+        <Field Name="CIWebsite">
+          <DataField>CIWebsite</DataField>
+        </Field>
+        <Field Name="CIMotto">
+          <DataField>CIMotto</DataField>
+        </Field>
+        <Field Name="MonthName">
+          <DataField>MonthName</DataField>
+        </Field>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+        </Field>
+        <Field Name="CIContactPersom">
+          <DataField>CIContactPersom</DataField>
+        </Field>
+        <Field Name="Code_BidTabulationHeader">
+          <DataField>Code_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="IFSCode_BidTabulationHeader">
+          <DataField>IFSCode_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="DocumentDate_BidTabulationHeader">
+          <DataField>DocumentDate_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="TenderName_BidTabulationHeader">
+          <DataField>TenderName_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="ProgramTitle_BidTabulationHeader">
+          <DataField>ProgramTitle_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="ExecutiveSummary_BidTabulationHeader">
+          <DataField>ExecutiveSummary_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="LocationofProject_BidTabulationHeader">
+          <DataField>LocationofProject_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="ExtentofContract_BidTabulationHeader">
+          <DataField>ExtentofContract_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="InvitationtoTender_BidTabulationHeader">
+          <DataField>InvitationtoTender_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="PrebidSiteVisitMeeting_BidTabulationHeader">
+          <DataField>PrebidSiteVisitMeeting_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="BidNotices_BidTabulationHeader">
+          <DataField>BidNotices_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="LastEvaluationVersionNo_BidTabulationHeader">
+          <DataField>LastEvaluationVersionNo_BidTabulationHeader</DataField>
+        </Field>
+        <Field Name="EvaluationVersionNo">
+          <DataField>EvaluationVersionNo</DataField>
+        </Field>
+        <Field Name="ReportForNavId_25">
+          <DataField>ReportForNavId_25</DataField>
+        </Field>
+        <Field Name="Code_StandardPurchaseCode">
+          <DataField>Code_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="RequestingDirectorate_StandardPurchaseCode">
+          <DataField>RequestingDirectorate_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="LastEvaluationVersionNo_StandardPurchaseCode">
+          <DataField>LastEvaluationVersionNo_StandardPurchaseCode</DataField>
+        </Field>
+        <Field Name="DirectorateName">
+          <DataField>DirectorateName</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
